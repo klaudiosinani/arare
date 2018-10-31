@@ -4,6 +4,7 @@ const add = require('./src/add');
 const and = require('./src/and');
 const curry = require('./src/curry');
 const or = require('./src/or');
+const sub = require('./src/sub');
 const xcurry = require('./src/xcurry');
 
 module.exports = {
@@ -12,5 +13,6 @@ module.exports = {
   and,
   curry,
   or,
+  sub,
   xcurry
 };
