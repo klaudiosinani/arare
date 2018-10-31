@@ -7,6 +7,7 @@ const apply = require('./src/apply');
 const curry = require('./src/curry');
 const eq = require('./src/eq');
 const isArr = require('./src/is-arr');
+const isNull = require('./src/is-null');
 const not = require('./src/not');
 const or = require('./src/or');
 const sub = require('./src/sub');
@@ -21,6 +22,7 @@ module.exports = {
   curry,
   eq,
   isArr,
+  isNull,
   not,
   or,
   sub,
