@@ -1,0 +1,35 @@
+{
+  "name": "arare",
+  "version": "0.0.0",
+  "description": "Lightweight auto-curried functional programming library",
+  "license": "MIT",
+  "repository": "klauscfhq/arare",
+  "author": {
+    "name": "Klaus Sinani",
+    "email": "klauscfhq@protonmail.com",
+    "url": "https://klauscfhq.github.io"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "keywords": [
+    "functional",
+    "javascript",
+    "library",
+    "programming"
+  ],
+  "scripts": {
+    "test": "xo"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-beta.8",
+    "xo": "*"
+  },
+  "xo": {
+    "space": 2
+  }
+}
