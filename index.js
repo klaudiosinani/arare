@@ -11,6 +11,7 @@ const div = require('./src/div');
 const eq = require('./src/eq');
 const even = require('./src/even');
 const ext = require('./src/ext');
+const gcd = require('./src/gcd');
 const gt = require('./src/gt');
 const gte = require('./src/gte');
 const id = require('./src/id');
@@ -74,6 +75,7 @@ module.exports = {
   eq,
   even,
   ext,
+  gcd,
   gt,
   gte,
   id,
