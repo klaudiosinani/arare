@@ -8,6 +8,7 @@ const cube = require('./src/cube');
 const curry = require('./src/curry');
 const decr = require('./src/decr');
 const div = require('./src/div');
+const drop = require('./src/drop');
 const empty = require('./src/empty');
 const eq = require('./src/eq');
 const even = require('./src/even');
@@ -76,6 +77,7 @@ module.exports = {
   curry,
   decr,
   div,
+  drop,
   empty,
   eq,
   even,
