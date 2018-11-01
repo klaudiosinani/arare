@@ -14,6 +14,7 @@ const isArr = require('./src/is-arr');
 const isInt = require('./src/is-num');
 const isNull = require('./src/is-null');
 const isNum = require('./src/is-num');
+const isObj = require('./src/is-obj');
 const isStr = require('./src/is-str');
 const len = require('./src/len');
 const lt = require('./src/lt');
@@ -42,6 +43,7 @@ module.exports = {
   isInt,
   isNull,
   isNum,
+  isObj,
   isStr,
   len,
   lt,
