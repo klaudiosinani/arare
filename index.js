@@ -82,6 +82,7 @@ const odd = require('./src/odd');
 const one = require('./src/one');
 const ones = require('./src/ones');
 const or = require('./src/or');
+const partial = require('./src/partial');
 const pow = require('./src/pow');
 const prepend = require('./src/prepend');
 const props = require('./src/props');
@@ -190,6 +191,7 @@ module.exports = {
   one,
   ones,
   or,
+  partial,
   pow,
   prepend,
   props,
