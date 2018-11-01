@@ -22,6 +22,7 @@ const concat = require('./src/concat');
 const cons = require('./src/cons');
 const copy = require('./src/copy');
 const count = require('./src/count');
+const countBy = require('./src/count-by');
 const cube = require('./src/cube');
 const curry = require('./src/curry');
 const decr = require('./src/decr');
@@ -157,6 +158,7 @@ module.exports = {
   cons,
   copy,
   count,
+  countBy,
   cube,
   curry,
   decr,
