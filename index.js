@@ -6,6 +6,7 @@ const and = require('./src/and');
 const apply = require('./src/apply');
 const curry = require('./src/curry');
 const eq = require('./src/eq');
+const ext = require('./src/ext');
 const isArr = require('./src/is-arr');
 const isInt = require('./src/is-num');
 const isNull = require('./src/is-null');
@@ -24,6 +25,7 @@ module.exports = {
   apply,
   curry,
   eq,
+  ext,
   isArr,
   isInt,
   isNull,
