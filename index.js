@@ -13,6 +13,7 @@ const arrayMax = require('./src/array-max');
 const arrayMin = require('./src/array-min');
 const binary = require('./src/binary');
 const bool = require('./src/bool');
+const comp = require('./src/comp');
 const concat = require('./src/concat');
 const cons = require('./src/cons');
 const cube = require('./src/cube');
@@ -135,6 +136,7 @@ module.exports = {
   arrayMin,
   binary,
   bool,
+  comp,
   concat,
   cons,
   cube,
