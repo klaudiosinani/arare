@@ -83,6 +83,7 @@ const sub = require('./src/sub');
 const tail = require('./src/tail');
 const take = require('./src/take');
 const takeRight = require('./src/take-right');
+const ternary = require('./src/ternary');
 const trunc = require('./src/trunc');
 const unary = require('./src/unary');
 const uneq = require('./src/uneq');
@@ -175,6 +176,7 @@ module.exports = {
   tail,
   take,
   takeRight,
+  ternary,
   trunc,
   unary,
   uneq,
