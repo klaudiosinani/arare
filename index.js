@@ -38,6 +38,7 @@ const isRegExp = require('./src/is-reg-exp');
 const isStr = require('./src/is-str');
 const isUndef = require('./src/is-def');
 const ite = require('./src/ite');
+const last = require('./src/last');
 const lcm = require('./src/lcm');
 const len = require('./src/len');
 const lt = require('./src/lt');
@@ -116,6 +117,7 @@ module.exports = {
   isStr,
   isUndef,
   ite,
+  last,
   lcm,
   len,
   lt,
