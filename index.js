@@ -15,6 +15,7 @@ const eq = require('./src/eq');
 const even = require('./src/even');
 const ext = require('./src/ext');
 const gcd = require('./src/gcd');
+const getNth = require('./src/get-nth');
 const gt = require('./src/gt');
 const gte = require('./src/gte');
 const head = require('./src/head');
@@ -92,6 +93,7 @@ module.exports = {
   even,
   ext,
   gcd,
+  getNth,
   gt,
   gte,
   head,
