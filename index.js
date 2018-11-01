@@ -13,6 +13,7 @@ const isNull = require('./src/is-null');
 const isNum = require('./src/is-num');
 const isStr = require('./src/is-str');
 const len = require('./src/len');
+const max = require('./src/max');
 const not = require('./src/not');
 const or = require('./src/or');
 const sub = require('./src/sub');
@@ -33,6 +34,7 @@ module.exports = {
   isNum,
   isStr,
   len,
+  max,
   not,
   or,
   sub,
