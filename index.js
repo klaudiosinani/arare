@@ -91,6 +91,7 @@ const odd = require('./src/odd');
 const one = require('./src/one');
 const ones = require('./src/ones');
 const or = require('./src/or');
+const pair = require('./src/pair');
 const partial = require('./src/partial');
 const partialRight = require('./src/partial-right');
 const pipe = require('./src/pipe');
@@ -219,6 +220,7 @@ module.exports = {
   one,
   ones,
   or,
+  pair,
   partial,
   partialRight,
   pipe,
