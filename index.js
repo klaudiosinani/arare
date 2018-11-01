@@ -16,6 +16,7 @@ const bool = require('./src/bool');
 const comp = require('./src/comp');
 const concat = require('./src/concat');
 const cons = require('./src/cons');
+const copy = require('./src/copy');
 const cube = require('./src/cube');
 const curry = require('./src/curry');
 const decr = require('./src/decr');
@@ -141,6 +142,7 @@ module.exports = {
   comp,
   concat,
   cons,
+  copy,
   cube,
   curry,
   decr,
