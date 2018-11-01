@@ -82,6 +82,7 @@ const tail = require('./src/tail');
 const take = require('./src/take');
 const takeRight = require('./src/take-right');
 const trunc = require('./src/trunc');
+const unary = require('./src/unary');
 const uneq = require('./src/uneq');
 const xcurry = require('./src/xcurry');
 const xnor = require('./src/xnor');
@@ -171,6 +172,7 @@ module.exports = {
   take,
   takeRight,
   trunc,
+  unary,
   uneq,
   xcurry,
   xnor,
