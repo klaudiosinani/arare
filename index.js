@@ -51,6 +51,7 @@ const notNum = require('./src/not-num');
 const notObj = require('./src/not-obj');
 const notRegExp = require('./src/not-reg-exp');
 const notStr = require('./src/not-str');
+const odd = require('./src/odd');
 const or = require('./src/or');
 const pow = require('./src/pow');
 const square = require('./src/square');
@@ -111,6 +112,7 @@ module.exports = {
   notObj,
   notRegExp,
   notStr,
+  odd,
   or,
   pow,
   square,
