@@ -2,6 +2,7 @@
 const abs = require('./src/abs');
 const absDiff = require('./src/abs-diff');
 const add = require('./src/add');
+const adjustIndex = require('./src/adjust-index');
 const and = require('./src/and');
 const apply = require('./src/apply');
 const applyArgs = require('./src/apply-args');
@@ -95,6 +96,7 @@ module.exports = {
   abs,
   absDiff,
   add,
+  adjustIndex,
   and,
   apply,
   applyArgs,
