@@ -80,6 +80,7 @@ const nullary = require('./src/nullary');
 const num = require('./src/num');
 const odd = require('./src/odd');
 const one = require('./src/one');
+const ones = require('./src/ones');
 const or = require('./src/or');
 const pow = require('./src/pow');
 const prepend = require('./src/prepend');
@@ -185,6 +186,7 @@ module.exports = {
   num,
   odd,
   one,
+  ones,
   or,
   pow,
   prepend,
