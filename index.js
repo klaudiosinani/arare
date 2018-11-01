@@ -31,6 +31,7 @@ const isPos = require('./src/is-pos');
 const isRegExp = require('./src/is-reg-exp');
 const isStr = require('./src/is-str');
 const isUndef = require('./src/is-def');
+const lcm = require('./src/lcm');
 const len = require('./src/len');
 const lt = require('./src/lt');
 const lte = require('./src/lte');
@@ -95,6 +96,7 @@ module.exports = {
   isRegExp,
   isStr,
   isUndef,
+  lcm,
   len,
   lt,
   lte,
