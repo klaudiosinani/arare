@@ -11,6 +11,7 @@ const div = require('./src/div');
 const drop = require('./src/drop');
 const dropRight = require('./src/drop-right');
 const empty = require('./src/empty');
+const endsWith = require('./src/ends-with');
 const eq = require('./src/eq');
 const even = require('./src/even');
 const ext = require('./src/ext');
@@ -90,6 +91,7 @@ module.exports = {
   drop,
   dropRight,
   empty,
+  endsWith,
   eq,
   even,
   ext,
