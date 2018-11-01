@@ -92,6 +92,7 @@ const uneq = require('./src/uneq');
 const xcurry = require('./src/xcurry');
 const xnor = require('./src/xnor');
 const xor = require('./src/xor');
+const zero = require('./src/zero');
 
 module.exports = {
   abs,
@@ -186,5 +187,6 @@ module.exports = {
   uneq,
   xcurry,
   xnor,
-  xor
+  xor,
+  zero
 };
