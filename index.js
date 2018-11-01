@@ -9,6 +9,7 @@ const eq = require('./src/eq');
 const ext = require('./src/ext');
 const gt = require('./src/gt');
 const gte = require('./src/gte');
+const id = require('./src/id');
 const isArr = require('./src/is-arr');
 const isInt = require('./src/is-num');
 const isNull = require('./src/is-null');
@@ -36,6 +37,7 @@ module.exports = {
   ext,
   gt,
   gte,
+  id,
   isArr,
   isInt,
   isNull,
