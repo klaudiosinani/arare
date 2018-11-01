@@ -227,6 +227,7 @@ module.exports = {
   range,
   recip,
   reduce,
+  reduceRight,
   reverse,
   reverseArgs,
   slice,
