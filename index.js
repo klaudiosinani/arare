@@ -75,6 +75,7 @@ const sub = require('./src/sub');
 const tail = require('./src/tail');
 const take = require('./src/take');
 const takeRight = require('./src/take-right');
+const trunc = require('./src/trunc');
 const uneq = require('./src/uneq');
 const xcurry = require('./src/xcurry');
 
@@ -155,6 +156,7 @@ module.exports = {
   tail,
   take,
   takeRight,
+  trunc,
   uneq,
   xcurry
 };
