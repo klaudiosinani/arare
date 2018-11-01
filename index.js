@@ -29,6 +29,7 @@ const gcd = require('./src/gcd');
 const getNth = require('./src/get-nth');
 const gt = require('./src/gt');
 const gte = require('./src/gte');
+const hasProp = require('./src/has-prop');
 const head = require('./src/head');
 const id = require('./src/id');
 const incr = require('./src/incr');
@@ -132,6 +133,7 @@ module.exports = {
   getNth,
   gt,
   gte,
+  hasProp,
   head,
   id,
   incr,
