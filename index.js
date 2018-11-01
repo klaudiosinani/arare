@@ -30,6 +30,7 @@ const lte = require('./src/lte');
 const max = require('./src/max');
 const min = require('./src/min');
 const mult = require('./src/mult');
+const nand = require('./src/nand');
 const neg = require('./src/neg');
 const nor = require('./src/nor');
 const not = require('./src/not');
@@ -69,6 +70,7 @@ module.exports = {
   max,
   min,
   mult,
+  nand,
   neg,
   nor,
   not,
