@@ -62,6 +62,7 @@ const pow = require('./src/pow');
 const slice = require('./src/slice');
 const square = require('./src/square');
 const sub = require('./src/sub');
+const take = require('./src/take');
 const uneq = require('./src/uneq');
 const xcurry = require('./src/xcurry');
 
@@ -129,6 +130,7 @@ module.exports = {
   slice,
   square,
   sub,
+  take,
   uneq,
   xcurry
 };
