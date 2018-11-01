@@ -20,6 +20,7 @@ const gte = require('./src/gte');
 const head = require('./src/head');
 const id = require('./src/id');
 const incr = require('./src/incr');
+const init = require('./src/init');
 const isArr = require('./src/is-arr');
 const isDate = require('./src/is-date');
 const isDef = require('./src/is-def');
@@ -94,6 +95,7 @@ module.exports = {
   head,
   id,
   incr,
+  init,
   isArr,
   isDate,
   isDef,
