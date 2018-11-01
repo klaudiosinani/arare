@@ -67,6 +67,7 @@ const pow = require('./src/pow');
 const slice = require('./src/slice');
 const square = require('./src/square');
 const startsWith = require('./src/starts-with');
+const str = require('./src/str');
 const sub = require('./src/sub');
 const tail = require('./src/tail');
 const take = require('./src/take');
@@ -143,6 +144,7 @@ module.exports = {
   slice,
   square,
   startsWith,
+  str,
   sub,
   tail,
   take,
