@@ -4,6 +4,7 @@ const absDiff = require('./src/abs-diff');
 const add = require('./src/add');
 const and = require('./src/and');
 const apply = require('./src/apply');
+const applyArgs = require('./src/apply-args');
 const arrayify = require('./src/arrayify');
 const bool = require('./src/bool');
 const cons = require('./src/cons');
@@ -91,6 +92,7 @@ module.exports = {
   add,
   and,
   apply,
+  applyArgs,
   arrayify,
   bool,
   cons,
