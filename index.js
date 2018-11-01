@@ -10,6 +10,7 @@ const arity = require('./src/arity');
 const arrayify = require('./src/arrayify');
 const binary = require('./src/binary');
 const bool = require('./src/bool');
+const concat = require('./src/concat');
 const cons = require('./src/cons');
 const cube = require('./src/cube');
 const curry = require('./src/curry');
@@ -106,6 +107,7 @@ module.exports = {
   arrayify,
   binary,
   bool,
+  concat,
   cons,
   cube,
   curry,
