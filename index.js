@@ -47,6 +47,7 @@ const notRegExp = require('./src/not-reg-exp');
 const notStr = require('./src/not-str');
 const or = require('./src/or');
 const sub = require('./src/sub');
+const uneq = require('./src/uneq');
 const xcurry = require('./src/xcurry');
 
 module.exports = {
@@ -98,5 +99,6 @@ module.exports = {
   notStr,
   or,
   sub,
+  uneq,
   xcurry
 };
