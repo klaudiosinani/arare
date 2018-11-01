@@ -85,6 +85,7 @@ const or = require('./src/or');
 const pow = require('./src/pow');
 const prepend = require('./src/prepend');
 const props = require('./src/props');
+const range = require('./src/range');
 const recip = require('./src/recip');
 const slice = require('./src/slice');
 const spread = require('./src/spread');
@@ -192,6 +193,7 @@ module.exports = {
   pow,
   prepend,
   props,
+  range,
   recip,
   slice,
   spread,
