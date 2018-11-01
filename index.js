@@ -25,6 +25,7 @@ const eq = require('./src/eq');
 const even = require('./src/even');
 const ext = require('./src/ext');
 const fill = require('./src/fill');
+const filter = require('./src/filter');
 const flip = require('./src/flip');
 const gather = require('./src/gather');
 const gcd = require('./src/gcd');
@@ -139,6 +140,7 @@ module.exports = {
   even,
   ext,
   fill,
+  filter,
   flip,
   gather,
   gcd,
