@@ -73,6 +73,7 @@ const notStr = require('./src/not-str');
 const nullary = require('./src/nullary');
 const num = require('./src/num');
 const odd = require('./src/odd');
+const one = require('./src/one');
 const or = require('./src/or');
 const pow = require('./src/pow');
 const slice = require('./src/slice');
@@ -167,6 +168,7 @@ module.exports = {
   nullary,
   num,
   odd,
+  one,
   or,
   pow,
   slice,
