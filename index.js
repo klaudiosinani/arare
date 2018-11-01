@@ -8,6 +8,7 @@ const append = require('./src/append');
 const apply = require('./src/apply');
 const applyArgs = require('./src/apply-args');
 const arity = require('./src/arity');
+const array = require('./src/array');
 const arrayify = require('./src/arrayify');
 const arrayMax = require('./src/array-max');
 const arrayMin = require('./src/array-min');
@@ -135,6 +136,7 @@ module.exports = {
   apply,
   applyArgs,
   arity,
+  array,
   arrayify,
   arrayMax,
   arrayMin,
