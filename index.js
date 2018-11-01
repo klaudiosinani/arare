@@ -15,6 +15,7 @@ const isStr = require('./src/is-str');
 const len = require('./src/len');
 const max = require('./src/max');
 const min = require('./src/min');
+const mult = require('./src/mult');
 const not = require('./src/not');
 const or = require('./src/or');
 const sub = require('./src/sub');
@@ -37,6 +38,7 @@ module.exports = {
   len,
   max,
   min,
+  mult,
   not,
   or,
   sub,
