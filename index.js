@@ -22,6 +22,7 @@ const dropRight = require('./src/drop-right');
 const empty = require('./src/empty');
 const endsWith = require('./src/ends-with');
 const eq = require('./src/eq');
+const eqProp = require('./src/eq-prop');
 const even = require('./src/even');
 const ext = require('./src/ext');
 const fill = require('./src/fill');
@@ -138,6 +139,7 @@ module.exports = {
   empty,
   endsWith,
   eq,
+  eqProp,
   even,
   ext,
   fill,
