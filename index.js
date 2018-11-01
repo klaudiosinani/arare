@@ -9,6 +9,7 @@ const apply = require('./src/apply');
 const applyArgs = require('./src/apply-args');
 const arity = require('./src/arity');
 const arrayify = require('./src/arrayify');
+const arrayMax = require('./src/array-max');
 const binary = require('./src/binary');
 const bool = require('./src/bool');
 const concat = require('./src/concat');
@@ -127,6 +128,7 @@ module.exports = {
   applyArgs,
   arity,
   arrayify,
+  arrayMax,
   binary,
   bool,
   concat,
