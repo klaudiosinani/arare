@@ -24,6 +24,7 @@ const endsWith = require('./src/ends-with');
 const eq = require('./src/eq');
 const even = require('./src/even');
 const ext = require('./src/ext');
+const fill = require('./src/fill');
 const gather = require('./src/gather');
 const gcd = require('./src/gcd');
 const getNth = require('./src/get-nth');
@@ -128,6 +129,7 @@ module.exports = {
   eq,
   even,
   ext,
+  fill,
   gather,
   gcd,
   getNth,
