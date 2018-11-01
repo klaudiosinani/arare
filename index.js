@@ -91,6 +91,7 @@ const props = require('./src/props');
 const range = require('./src/range');
 const recip = require('./src/recip');
 const reverse = require('./src/reverse');
+const reverseArgs = require('./src/reverse-args');
 const slice = require('./src/slice');
 const spread = require('./src/spread');
 const square = require('./src/square');
@@ -203,6 +204,7 @@ module.exports = {
   range,
   recip,
   reverse,
+  reverseArgs,
   slice,
   spread,
   square,
