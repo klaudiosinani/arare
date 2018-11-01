@@ -55,6 +55,7 @@ const notStr = require('./src/not-str');
 const odd = require('./src/odd');
 const or = require('./src/or');
 const pow = require('./src/pow');
+const slice = require('./src/slice');
 const square = require('./src/square');
 const sub = require('./src/sub');
 const uneq = require('./src/uneq');
@@ -117,6 +118,7 @@ module.exports = {
   odd,
   or,
   pow,
+  slice,
   square,
   sub,
   uneq,
