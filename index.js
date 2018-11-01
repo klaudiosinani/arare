@@ -81,6 +81,7 @@ const takeRight = require('./src/take-right');
 const trunc = require('./src/trunc');
 const uneq = require('./src/uneq');
 const xcurry = require('./src/xcurry');
+const xnor = require('./src/xnor');
 const xor = require('./src/xor');
 
 module.exports = {
@@ -166,5 +167,6 @@ module.exports = {
   trunc,
   uneq,
   xcurry,
+  xnor,
   xor
 };
