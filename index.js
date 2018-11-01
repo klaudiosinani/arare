@@ -7,6 +7,7 @@ const apply = require('./src/apply');
 const applyArgs = require('./src/apply-args');
 const arity = require('./src/arity');
 const arrayify = require('./src/arrayify');
+const binary = require('./src/binary');
 const bool = require('./src/bool');
 const cons = require('./src/cons');
 const cube = require('./src/cube');
@@ -98,6 +99,7 @@ module.exports = {
   applyArgs,
   arity,
   arrayify,
+  binary,
   bool,
   cons,
   cube,
