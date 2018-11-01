@@ -2,6 +2,7 @@
 const curry = require('./curry');
 const head = require('./head');
 const isEmpty = require('./is-empty');
+const notArr = require('./not-arr');
 const tail = require('./tail');
 
 function _reduce(fn, acc, xs) {
