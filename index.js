@@ -37,6 +37,7 @@ const not = require('./src/not');
 const notArr = require('./src/not-arr');
 const notDate = require('./src/not-date');
 const notFn = require('./src/not-fn');
+const notInt = require('./src/not-int');
 const or = require('./src/or');
 const sub = require('./src/sub');
 const xcurry = require('./src/xcurry');
@@ -80,6 +81,7 @@ module.exports = {
   notArr,
   notDate,
   notFn,
+  notInt,
   or,
   sub,
   xcurry
