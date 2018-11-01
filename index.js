@@ -71,6 +71,7 @@ const odd = require('./src/odd');
 const or = require('./src/or');
 const pow = require('./src/pow');
 const slice = require('./src/slice');
+const spread = require('./src/spread');
 const square = require('./src/square');
 const startsWith = require('./src/starts-with');
 const str = require('./src/str');
@@ -157,6 +158,7 @@ module.exports = {
   or,
   pow,
   slice,
+  spread,
   square,
   startsWith,
   str,
