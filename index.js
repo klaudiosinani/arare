@@ -78,6 +78,7 @@ const odd = require('./src/odd');
 const one = require('./src/one');
 const or = require('./src/or');
 const pow = require('./src/pow');
+const prepend = require('./src/prepend');
 const slice = require('./src/slice');
 const spread = require('./src/spread');
 const square = require('./src/square');
@@ -176,6 +177,7 @@ module.exports = {
   one,
   or,
   pow,
+  prepend,
   slice,
   spread,
   square,
