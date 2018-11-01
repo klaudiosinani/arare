@@ -40,6 +40,7 @@ const notFn = require('./src/not-fn');
 const notInt = require('./src/not-int');
 const notNil = require('./src/not-nil');
 const notNull = require('./src/not-null');
+const notNum = require('./src/not-num');
 const or = require('./src/or');
 const sub = require('./src/sub');
 const xcurry = require('./src/xcurry');
@@ -86,6 +87,7 @@ module.exports = {
   notInt,
   notNil,
   notNull,
+  notNum,
   or,
   sub,
   xcurry
