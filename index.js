@@ -90,6 +90,7 @@ const prepend = require('./src/prepend');
 const props = require('./src/props');
 const range = require('./src/range');
 const recip = require('./src/recip');
+const reverse = require('./src/reverse');
 const slice = require('./src/slice');
 const spread = require('./src/spread');
 const square = require('./src/square');
@@ -201,6 +202,7 @@ module.exports = {
   props,
   range,
   recip,
+  reverse,
   slice,
   spread,
   square,
