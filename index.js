@@ -43,6 +43,7 @@ const notNull = require('./src/not-null');
 const notNum = require('./src/not-num');
 const notObj = require('./src/not-obj');
 const notRegExp = require('./src/not-reg-exp');
+const notStr = require('./src/not-srt');
 const or = require('./src/or');
 const sub = require('./src/sub');
 const xcurry = require('./src/xcurry');
@@ -92,6 +93,7 @@ module.exports = {
   notNum,
   notObj,
   notRegExp,
+  notStr,
   or,
   sub,
   xcurry
