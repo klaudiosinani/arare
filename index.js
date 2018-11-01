@@ -15,6 +15,7 @@ const isDate = require('./src/is-date');
 const isDef = require('./src/is-def');
 const isFn = require('./src/is-fn');
 const isInt = require('./src/is-num');
+const isNeg = require('./src/is-neg');
 const isNull = require('./src/is-null');
 const isNum = require('./src/is-num');
 const isObj = require('./src/is-obj');
@@ -48,6 +49,7 @@ module.exports = {
   isDef,
   isFn,
   isInt,
+  isNeg,
   isNull,
   isNum,
   isObj,
