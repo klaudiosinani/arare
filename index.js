@@ -38,6 +38,7 @@ const ext = require('./src/ext');
 const fill = require('./src/fill');
 const filter = require('./src/filter');
 const flip = require('./src/flip');
+const fst = require('./src/fst');
 const gather = require('./src/gather');
 const gcd = require('./src/gcd');
 const getNth = require('./src/get-nth');
@@ -174,6 +175,7 @@ module.exports = {
   fill,
   filter,
   flip,
+  fst,
   gather,
   gcd,
   getNth,
