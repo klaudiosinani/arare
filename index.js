@@ -8,6 +8,7 @@ const curry = require('./src/curry');
 const eq = require('./src/eq');
 const ext = require('./src/ext');
 const gt = require('./src/gt');
+const gte = require('./src/gte');
 const isArr = require('./src/is-arr');
 const isInt = require('./src/is-num');
 const isNull = require('./src/is-null');
@@ -34,6 +35,7 @@ module.exports = {
   eq,
   ext,
   gt,
+  gte,
   isArr,
   isInt,
   isNull,
