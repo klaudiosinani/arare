@@ -9,6 +9,7 @@ const curry = require('./src/curry');
 const decr = require('./src/decr');
 const div = require('./src/div');
 const drop = require('./src/drop');
+const dropRight = require('./src/drop-right');
 const empty = require('./src/empty');
 const eq = require('./src/eq');
 const even = require('./src/even');
@@ -80,6 +81,7 @@ module.exports = {
   decr,
   div,
   drop,
+  dropRight,
   empty,
   eq,
   even,
