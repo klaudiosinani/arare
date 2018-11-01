@@ -17,6 +17,7 @@ const isNull = require('./src/is-null');
 const isNum = require('./src/is-num');
 const isObj = require('./src/is-obj');
 const isStr = require('./src/is-str');
+const isUndef = require('./src/is-def');
 const len = require('./src/len');
 const lt = require('./src/lt');
 const lte = require('./src/lte');
@@ -47,6 +48,7 @@ module.exports = {
   isNum,
   isObj,
   isStr,
+  isUndef,
   len,
   lt,
   lte,
