@@ -5,6 +5,7 @@ const add = require('./src/add');
 const and = require('./src/and');
 const apply = require('./src/apply');
 const applyArgs = require('./src/apply-args');
+const arity = require('./src/arity');
 const arrayify = require('./src/arrayify');
 const bool = require('./src/bool');
 const cons = require('./src/cons');
@@ -93,6 +94,7 @@ module.exports = {
   and,
   apply,
   applyArgs,
+  arity,
   arrayify,
   bool,
   cons,
