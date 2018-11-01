@@ -84,6 +84,7 @@ const notNil = require('./src/not-nil');
 const notNull = require('./src/not-null');
 const notNum = require('./src/not-num');
 const notObj = require('./src/not-obj');
+const notPair = require('./src/not-pair');
 const notRegExp = require('./src/not-reg-exp');
 const notStr = require('./src/not-str');
 const nullary = require('./src/nullary');
@@ -214,6 +215,7 @@ module.exports = {
   notNull,
   notNum,
   notObj,
+  notPair,
   notRegExp,
   notStr,
   nullary,
