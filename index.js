@@ -54,6 +54,7 @@ const isNil = require('./src/is-nil');
 const isNull = require('./src/is-null');
 const isNum = require('./src/is-num');
 const isObj = require('./src/is-obj');
+const isPair = require('./src/is-pair');
 const isPos = require('./src/is-pos');
 const isRegExp = require('./src/is-reg-exp');
 const isStr = require('./src/is-str');
@@ -183,6 +184,7 @@ module.exports = {
   isNull,
   isNum,
   isObj,
+  isPair,
   isPos,
   isRegExp,
   isStr,
