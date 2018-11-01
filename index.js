@@ -17,6 +17,7 @@ const ext = require('./src/ext');
 const gcd = require('./src/gcd');
 const gt = require('./src/gt');
 const gte = require('./src/gte');
+const head = require('./src/head');
 const id = require('./src/id');
 const incr = require('./src/incr');
 const isArr = require('./src/is-arr');
@@ -90,6 +91,7 @@ module.exports = {
   gcd,
   gt,
   gte,
+  head,
   id,
   incr,
   isArr,
