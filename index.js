@@ -103,6 +103,7 @@ const xcurry = require('./src/xcurry');
 const xnor = require('./src/xnor');
 const xor = require('./src/xor');
 const zero = require('./src/zero');
+const zeros = require('./src/zeros');
 
 module.exports = {
   abs,
@@ -208,5 +209,6 @@ module.exports = {
   xcurry,
   xnor,
   xor,
-  zero
+  zero,
+  zeros
 };
