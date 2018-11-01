@@ -90,6 +90,7 @@ const ones = require('./src/ones');
 const or = require('./src/or');
 const partial = require('./src/partial');
 const partialRight = require('./src/partial-right');
+const pipe = require('./src/pipe');
 const pow = require('./src/pow');
 const prepend = require('./src/prepend');
 const props = require('./src/props');
@@ -210,6 +211,7 @@ module.exports = {
   or,
   partial,
   partialRight,
+  pipe,
   pow,
   prepend,
   props,
