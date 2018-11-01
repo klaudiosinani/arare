@@ -4,6 +4,7 @@ const absDiff = require('./src/abs-diff');
 const add = require('./src/add');
 const and = require('./src/and');
 const apply = require('./src/apply');
+const arrayify = require('./src/arrayify');
 const cube = require('./src/cube');
 const curry = require('./src/curry');
 const decr = require('./src/decr');
@@ -85,6 +86,7 @@ module.exports = {
   add,
   and,
   apply,
+  arrayify,
   cube,
   curry,
   decr,
