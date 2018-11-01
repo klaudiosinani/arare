@@ -14,6 +14,7 @@ const isNum = require('./src/is-num');
 const isStr = require('./src/is-str');
 const len = require('./src/len');
 const lt = require('./src/lt');
+const lte = require('./src/lte');
 const max = require('./src/max');
 const min = require('./src/min');
 const mult = require('./src/mult');
@@ -38,6 +39,7 @@ module.exports = {
   isStr,
   len,
   lt,
+  lte,
   max,
   min,
   mult,
