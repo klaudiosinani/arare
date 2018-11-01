@@ -40,6 +40,7 @@ const nor = require('./src/nor');
 const not = require('./src/not');
 const notArr = require('./src/not-arr');
 const notDate = require('./src/not-date');
+const notEmpty = require('./src/not-empty');
 const notFn = require('./src/not-fn');
 const notInt = require('./src/not-int');
 const notNil = require('./src/not-nil');
@@ -95,6 +96,7 @@ module.exports = {
   not,
   notArr,
   notDate,
+  notEmpty,
   notFn,
   notInt,
   notNil,
