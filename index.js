@@ -58,6 +58,7 @@ const lcm = require('./src/lcm');
 const len = require('./src/len');
 const lt = require('./src/lt');
 const lte = require('./src/lte');
+const map = require('./src/map');
 const max = require('./src/max');
 const min = require('./src/min');
 const mod = require('./src/mod');
@@ -171,6 +172,7 @@ module.exports = {
   len,
   lt,
   lte,
+  map,
   max,
   min,
   mod,
