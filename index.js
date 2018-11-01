@@ -34,6 +34,7 @@ const nand = require('./src/nand');
 const neg = require('./src/neg');
 const nor = require('./src/nor');
 const not = require('./src/not');
+const notArr = require('./src/not-arr');
 const or = require('./src/or');
 const sub = require('./src/sub');
 const xcurry = require('./src/xcurry');
@@ -74,6 +75,7 @@ module.exports = {
   neg,
   nor,
   not,
+  notArr,
   or,
   sub,
   xcurry
