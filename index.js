@@ -8,6 +8,7 @@ const curry = require('./src/curry');
 const decr = require('./src/decr');
 const div = require('./src/div');
 const eq = require('./src/eq');
+const even = require('./src/even');
 const ext = require('./src/ext');
 const gt = require('./src/gt');
 const gte = require('./src/gte');
@@ -67,6 +68,7 @@ module.exports = {
   decr,
   div,
   eq,
+  even,
   ext,
   gt,
   gte,
