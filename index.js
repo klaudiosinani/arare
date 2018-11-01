@@ -4,6 +4,7 @@ const absDiff = require('./src/abs-diff');
 const add = require('./src/add');
 const adjustIndex = require('./src/adjust-index');
 const and = require('./src/and');
+const append = require('./src/append');
 const apply = require('./src/apply');
 const applyArgs = require('./src/apply-args');
 const arity = require('./src/arity');
@@ -101,6 +102,7 @@ module.exports = {
   add,
   adjustIndex,
   and,
+  append,
   apply,
   applyArgs,
   arity,
