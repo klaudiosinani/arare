@@ -94,6 +94,7 @@ const partialRight = require('./src/partial-right');
 const pipe = require('./src/pipe');
 const pow = require('./src/pow');
 const prepend = require('./src/prepend');
+const prod = require('./src/prod');
 const props = require('./src/props');
 const range = require('./src/range');
 const recip = require('./src/recip');
@@ -217,6 +218,7 @@ module.exports = {
   pipe,
   pow,
   prepend,
+  prod,
   props,
   range,
   recip,
