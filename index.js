@@ -13,6 +13,7 @@ const arrayify = require('./src/arrayify');
 const arrayMax = require('./src/array-max');
 const arrayMin = require('./src/array-min');
 const assign = require('./src/assign');
+const assignWith = require('./src/assign-with');
 const binary = require('./src/binary');
 const breakWhen = require('./src/break-when');
 const bool = require('./src/bool');
@@ -146,6 +147,7 @@ module.exports = {
   arrayMax,
   arrayMin,
   assign,
+  assignWith,
   binary,
   breakWhen,
   bool,
