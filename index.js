@@ -15,6 +15,7 @@ const incr = require('./src/incr');
 const isArr = require('./src/is-arr');
 const isDate = require('./src/is-date');
 const isDef = require('./src/is-def');
+const isEmpty = require('./src/is-empty');
 const isFn = require('./src/is-fn');
 const isInt = require('./src/is-num');
 const isNeg = require('./src/is-neg');
@@ -69,6 +70,7 @@ module.exports = {
   isArr,
   isDate,
   isDef,
+  isEmpty,
   isFn,
   isInt,
   isNeg,
