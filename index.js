@@ -6,6 +6,7 @@ const and = require('./src/and');
 const apply = require('./src/apply');
 const curry = require('./src/curry');
 const decr = require('./src/decr');
+const div = require('./src/div');
 const eq = require('./src/eq');
 const ext = require('./src/ext');
 const gt = require('./src/gt');
@@ -63,6 +64,7 @@ module.exports = {
   apply,
   curry,
   decr,
+  div,
   eq,
   ext,
   gt,
