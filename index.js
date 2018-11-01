@@ -30,6 +30,7 @@ const lte = require('./src/lte');
 const max = require('./src/max');
 const min = require('./src/min');
 const mult = require('./src/mult');
+const nor = require('./src/nor');
 const not = require('./src/not');
 const or = require('./src/or');
 const sub = require('./src/sub');
@@ -67,6 +68,7 @@ module.exports = {
   max,
   min,
   mult,
+  nor,
   not,
   or,
   sub,
