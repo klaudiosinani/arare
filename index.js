@@ -45,6 +45,7 @@ const filter = require('./src/filter');
 const find = require('./src/find');
 const findIndex = require('./src/find-index');
 const flip = require('./src/flip');
+const forEach = require('./src/for-each');
 const fst = require('./src/fst');
 const gather = require('./src/gather');
 const gcd = require('./src/gcd');
@@ -196,6 +197,7 @@ module.exports = {
   find,
   findIndex,
   flip,
+  forEach,
   fst,
   gather,
   gcd,
