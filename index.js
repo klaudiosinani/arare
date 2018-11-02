@@ -78,6 +78,7 @@ const isStr = require('./src/is-str');
 const isUndef = require('./src/is-def');
 const ite = require('./src/ite');
 const keys = require('./src/keys');
+const join = require('./src/join');
 const last = require('./src/last');
 const lcm = require('./src/lcm');
 const len = require('./src/len');
@@ -231,6 +232,7 @@ module.exports = {
   isStr,
   isUndef,
   ite,
+  join,
   keys,
   last,
   lcm,
