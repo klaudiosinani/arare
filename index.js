@@ -138,6 +138,7 @@ const replace = require('./src/replace');
 const replaceAll = require('./src/replace-all');
 const reverse = require('./src/reverse');
 const reverseArgs = require('./src/reverse-args');
+const setNthWith = require('./src/set-nth-with');
 const shift = require('./src/shift');
 const shiftLeft = require('./src/shift-left');
 const slice = require('./src/slice');
@@ -316,6 +317,7 @@ module.exports = {
   replaceAll,
   reverse,
   reverseArgs,
+  setNthWith,
   shift,
   shiftLeft,
   slice,
