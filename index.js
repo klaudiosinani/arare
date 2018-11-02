@@ -164,6 +164,7 @@ const xcurry = require('./src/xcurry');
 const xnor = require('./src/xnor');
 const xor = require('./src/xor');
 const xshift = require('./src/xshift');
+const xshiftLeft = require('./src/xshift-left');
 const zero = require('./src/zero');
 const zeros = require('./src/zeros');
 const zip = require('./src/zip');
@@ -339,6 +340,7 @@ module.exports = {
   xnor,
   xor,
   xshift,
+  xshiftLeft,
   zero,
   zeros,
   zip,
