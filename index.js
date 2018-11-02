@@ -86,6 +86,7 @@ const lt = require('./src/lt');
 const lte = require('./src/lte');
 const map = require('./src/map');
 const max = require('./src/max');
+const merge = require('./src/merge');
 const mergeBy = require('./src/merge-by');
 const min = require('./src/min');
 const mod = require('./src/mod');
@@ -253,6 +254,7 @@ module.exports = {
   lte,
   map,
   max,
+  merge,
   mergeBy,
   min,
   mod,
