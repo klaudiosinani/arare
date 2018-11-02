@@ -153,6 +153,7 @@ const xnor = require('./src/xnor');
 const xor = require('./src/xor');
 const zero = require('./src/zero');
 const zeros = require('./src/zeros');
+const zipWith = require('./src/zip-with');
 
 module.exports = {
   abs,
@@ -308,5 +309,6 @@ module.exports = {
   xnor,
   xor,
   zero,
-  zeros
+  zeros,
+  zipWith
 };
