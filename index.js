@@ -42,6 +42,7 @@ const excludes = require('./src/excludes');
 const ext = require('./src/ext');
 const fill = require('./src/fill');
 const filter = require('./src/filter');
+const find = require('./src/find');
 const findIndex = require('./src/find-index');
 const flip = require('./src/flip');
 const fst = require('./src/fst');
@@ -192,6 +193,7 @@ module.exports = {
   ext,
   fill,
   filter,
+  find,
   findIndex,
   flip,
   fst,
