@@ -90,6 +90,7 @@ const max = require('./src/max');
 const merge = require('./src/merge');
 const mergeBy = require('./src/merge-by');
 const min = require('./src/min');
+const minMax = require('./src/min-max');
 const mod = require('./src/mod');
 const mult = require('./src/mult');
 const nand = require('./src/nand');
@@ -259,6 +260,7 @@ module.exports = {
   merge,
   mergeBy,
   min,
+  minMax,
   mod,
   mult,
   nand,
