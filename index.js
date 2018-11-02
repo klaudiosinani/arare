@@ -125,6 +125,7 @@ const recip = require('./src/recip');
 const reduce = require('./src/reduce');
 const reduceRight = require('./src/reduce-right');
 const reject = require('./src/reject');
+const replace = require('./src/replace');
 const reverse = require('./src/reverse');
 const reverseArgs = require('./src/reverse-args');
 const slice = require('./src/slice');
@@ -288,6 +289,7 @@ module.exports = {
   reduce,
   reduceRight,
   reject,
+  replace,
   reverse,
   reverseArgs,
   slice,
