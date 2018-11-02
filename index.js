@@ -154,6 +154,7 @@ const xor = require('./src/xor');
 const zero = require('./src/zero');
 const zeros = require('./src/zeros');
 const zip = require('./src/zip');
+const zipObj = require('./src/zip-obj');
 const zipReverse = require('./src/zip-reverse');
 const zipSelf = require('./src/zip-self');
 const zipTail = require('./src/zip-tail');
@@ -315,6 +316,7 @@ module.exports = {
   zero,
   zeros,
   zip,
+  zipObj,
   zipReverse,
   zipSelf,
   zipTail,
