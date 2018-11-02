@@ -83,6 +83,7 @@ const mod = require('./src/mod');
 const mult = require('./src/mult');
 const nand = require('./src/nand');
 const neg = require('./src/neg');
+const none = require('./src/none');
 const nor = require('./src/nor');
 const not = require('./src/not');
 const notArr = require('./src/not-arr');
@@ -229,6 +230,7 @@ module.exports = {
   mult,
   nand,
   neg,
+  none,
   nor,
   not,
   notArr,
