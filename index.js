@@ -44,6 +44,7 @@ const fill = require('./src/fill');
 const filter = require('./src/filter');
 const find = require('./src/find');
 const findIndex = require('./src/find-index');
+const flatten = require('./src/flatten');
 const flip = require('./src/flip');
 const forEach = require('./src/for-each');
 const fst = require('./src/fst');
@@ -196,6 +197,7 @@ module.exports = {
   filter,
   find,
   findIndex,
+  flatten,
   flip,
   forEach,
   fst,
