@@ -115,6 +115,7 @@ const reduceRight = require('./src/reduce-right');
 const reverse = require('./src/reverse');
 const reverseArgs = require('./src/reverse-args');
 const slice = require('./src/slice');
+const snd = require('./src/snd');
 const spread = require('./src/spread');
 const square = require('./src/square');
 const startsWith = require('./src/starts-with');
@@ -254,6 +255,7 @@ module.exports = {
   reverse,
   reverseArgs,
   slice,
+  snd,
   spread,
   square,
   startsWith,
