@@ -129,6 +129,7 @@ const trunc = require('./src/trunc');
 const unary = require('./src/unary');
 const uneq = require('./src/uneq');
 const uneqProp = require('./src/uneq-prop');
+const values = require('./src/values')
 const xarray = require('./src/xarray');
 const xcurry = require('./src/xcurry');
 const xnor = require('./src/xnor');
@@ -267,6 +268,7 @@ module.exports = {
   unary,
   uneq,
   uneqProp,
+  values,
   xarray,
   xcurry,
   xnor,
