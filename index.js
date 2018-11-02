@@ -37,6 +37,7 @@ const endsWith = require('./src/ends-with');
 const eq = require('./src/eq');
 const eqProp = require('./src/eq-prop');
 const even = require('./src/even');
+const every = require('./src/every');
 const ext = require('./src/ext');
 const fill = require('./src/fill');
 const filter = require('./src/filter');
@@ -181,6 +182,7 @@ module.exports = {
   eq,
   eqProp,
   even,
+  every,
   ext,
   fill,
   filter,
