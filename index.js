@@ -121,6 +121,7 @@ const or = require('./src/or');
 const pair = require('./src/pair');
 const partial = require('./src/partial');
 const partialRight = require('./src/partial-right');
+const partitionAt = require('./src/partition-at');
 const pipe = require('./src/pipe');
 const pow = require('./src/pow');
 const prepend = require('./src/prepend');
@@ -293,6 +294,7 @@ module.exports = {
   pair,
   partial,
   partialRight,
+  partitionAt,
   pipe,
   pow,
   prepend,
