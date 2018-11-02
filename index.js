@@ -51,6 +51,7 @@ const gte = require('./src/gte');
 const hasProp = require('./src/has-prop');
 const head = require('./src/head');
 const id = require('./src/id');
+const includes = require('./src/includes');
 const incr = require('./src/incr');
 const init = require('./src/init');
 const isArr = require('./src/is-arr');
@@ -198,6 +199,7 @@ module.exports = {
   hasProp,
   head,
   id,
+  includes,
   incr,
   init,
   isArr,
