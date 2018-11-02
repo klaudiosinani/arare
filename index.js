@@ -126,12 +126,13 @@ const sum = require('./src/sum');
 const tail = require('./src/tail');
 const take = require('./src/take');
 const takeRight = require('./src/take-right');
+const takeWhile = require('./src/take-while');
 const ternary = require('./src/ternary');
 const trunc = require('./src/trunc');
 const unary = require('./src/unary');
 const uneq = require('./src/uneq');
 const uneqProp = require('./src/uneq-prop');
-const values = require('./src/values')
+const values = require('./src/values');
 const xarray = require('./src/xarray');
 const xcurry = require('./src/xcurry');
 const xnor = require('./src/xnor');
@@ -267,6 +268,7 @@ module.exports = {
   tail,
   take,
   takeRight,
+  takeWhile,
   ternary,
   trunc,
   unary,
