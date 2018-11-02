@@ -126,6 +126,7 @@ const reduce = require('./src/reduce');
 const reduceRight = require('./src/reduce-right');
 const reject = require('./src/reject');
 const replace = require('./src/replace');
+const replaceAll = require('./src/replace-all');
 const reverse = require('./src/reverse');
 const reverseArgs = require('./src/reverse-args');
 const slice = require('./src/slice');
@@ -290,6 +291,7 @@ module.exports = {
   reduceRight,
   reject,
   replace,
+  replaceAll,
   reverse,
   reverseArgs,
   slice,
