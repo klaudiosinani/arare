@@ -5,7 +5,7 @@ const lte = require('./lte');
 const mult = require('./mult');
 
 function _fact(x, acc) {
-  if (lte(x, 0))  {
+  if (lte(x, 0)) {
     return acc;
   }
   return _fact(decr(x), mult(acc, x));
