@@ -12,6 +12,7 @@ const array = require('./src/array');
 const arrayify = require('./src/arrayify');
 const arrayMax = require('./src/array-max');
 const arrayMin = require('./src/array-min');
+const arrayMinMax = require('./src/array-min-max');
 const assign = require('./src/assign');
 const assignWith = require('./src/assign-with');
 const binary = require('./src/binary');
@@ -182,6 +183,7 @@ module.exports = {
   arrayify,
   arrayMax,
   arrayMin,
+  arrayMinMax,
   assign,
   assignWith,
   binary,
