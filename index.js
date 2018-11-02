@@ -157,6 +157,7 @@ const startsWith = require('./src/starts-with');
 const str = require('./src/str');
 const sub = require('./src/sub');
 const sum = require('./src/sum');
+const swap = require('./src/swap');
 const tail = require('./src/tail');
 const take = require('./src/take');
 const takeRight = require('./src/take-right');
@@ -342,6 +343,7 @@ module.exports = {
   str,
   sub,
   sum,
+  swap,
   tail,
   take,
   takeRight,
