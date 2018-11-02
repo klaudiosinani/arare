@@ -30,6 +30,7 @@ const decr = require('./src/decr');
 const div = require('./src/div');
 const drop = require('./src/drop');
 const dropRight = require('./src/drop-right');
+const dropWhile = require('./src/drop-while');
 const empty = require('./src/empty');
 const endsWith = require('./src/ends-with');
 const eq = require('./src/eq');
@@ -170,6 +171,7 @@ module.exports = {
   div,
   drop,
   dropRight,
+  dropWhile,
   empty,
   endsWith,
   eq,
