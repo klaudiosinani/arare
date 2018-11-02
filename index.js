@@ -25,6 +25,7 @@ const copy = require('./src/copy');
 const count = require('./src/count');
 const countAll = require('./src/count-all');
 const countBy = require('./src/count-by');
+const countIn = require('./src/count-in');
 const cube = require('./src/cube');
 const curry = require('./src/curry');
 const decr = require('./src/decr');
@@ -196,6 +197,7 @@ module.exports = {
   count,
   countAll,
   countBy,
+  countIn,
   cube,
   curry,
   decr,
