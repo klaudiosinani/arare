@@ -34,6 +34,7 @@ const dropRightWhile = require('./src/drop-right-while');
 const dropWhile = require('./src/drop-while');
 const empty = require('./src/empty');
 const endsWith = require('./src/ends-with');
+const entries = require('./src/entries');
 const eq = require('./src/eq');
 const eqProp = require('./src/eq-prop');
 const even = require('./src/even');
@@ -202,6 +203,7 @@ module.exports = {
   dropWhile,
   empty,
   endsWith,
+  entries,
   eq,
   eqProp,
   even,
