@@ -129,6 +129,7 @@ const reverseArgs = require('./src/reverse-args');
 const slice = require('./src/slice');
 const snd = require('./src/snd');
 const some = require('./src/some');
+const split = require('./src/split');
 const spread = require('./src/spread');
 const square = require('./src/square');
 const startsWith = require('./src/starts-with');
@@ -284,6 +285,7 @@ module.exports = {
   slice,
   snd,
   some,
+  split,
   spread,
   square,
   startsWith,
