@@ -38,6 +38,7 @@ const eq = require('./src/eq');
 const eqProp = require('./src/eq-prop');
 const even = require('./src/even');
 const every = require('./src/every');
+const excludes = require('./src/excludes');
 const ext = require('./src/ext');
 const fill = require('./src/fill');
 const filter = require('./src/filter');
@@ -186,6 +187,7 @@ module.exports = {
   eqProp,
   even,
   every,
+  excludes,
   ext,
   fill,
   filter,
