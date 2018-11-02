@@ -140,6 +140,7 @@ const reverse = require('./src/reverse');
 const reverseArgs = require('./src/reverse-args');
 const setHead = require('./src/set-head');
 const setHeadWith = require('./src/set-head-with');
+const setLast = require('./src/set-last');
 const setLastWith = require('./src/set-last-with');
 const setNth = require('./src/set-nth');
 const setNthWith = require('./src/set-nth-with');
@@ -323,6 +324,7 @@ module.exports = {
   reverseArgs,
   setHead,
   setHeadWith,
+  setLast,
   setLastWith,
   setNth,
   setNthWith,
