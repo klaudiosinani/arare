@@ -127,6 +127,7 @@ const sum = require('./src/sum');
 const tail = require('./src/tail');
 const take = require('./src/take');
 const takeRight = require('./src/take-right');
+const takeRightWhile = require('./src/take-right-while');
 const takeWhile = require('./src/take-while');
 const ternary = require('./src/ternary');
 const trunc = require('./src/trunc');
@@ -270,6 +271,7 @@ module.exports = {
   tail,
   take,
   takeRight,
+  takeRightWhile,
   takeWhile,
   ternary,
   trunc,
