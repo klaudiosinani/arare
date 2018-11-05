@@ -5,6 +5,7 @@ const add = require('./src/add');
 const adjustIndex = require('./src/adjust-index');
 const and = require('./src/and');
 const append = require('./src/append');
+const appendTo = require('./src/append-to');
 const apply = require('./src/apply');
 const applyArgs = require('./src/apply-args');
 const arity = require('./src/arity');
@@ -46,6 +47,7 @@ const ext = require('./src/ext');
 const fact = require('./src/fact');
 const fill = require('./src/fill');
 const filter = require('./src/filter');
+const filtering = require('./src/filtering');
 const find = require('./src/find');
 const findIndex = require('./src/find-index');
 const flatten = require('./src/flatten');
@@ -88,6 +90,7 @@ const len = require('./src/len');
 const lt = require('./src/lt');
 const lte = require('./src/lte');
 const map = require('./src/map');
+const mapping = require('./src/mapping');
 const mapcat = require('./src/mapcat');
 const max = require('./src/max');
 const merge = require('./src/merge');
@@ -127,6 +130,7 @@ const partitionAt = require('./src/partition-at');
 const pipe = require('./src/pipe');
 const pow = require('./src/pow');
 const prepend = require('./src/prepend');
+const prependTo = require('./src/prepend-to');
 const prod = require('./src/prod');
 const props = require('./src/props');
 const range = require('./src/range');
@@ -134,6 +138,7 @@ const recip = require('./src/recip');
 const reduce = require('./src/reduce');
 const reduceRight = require('./src/reduce-right');
 const reject = require('./src/reject');
+const rejecting = require('./src/rejecting');
 const remove = require('./src/remove');
 const replace = require('./src/replace');
 const replaceAll = require('./src/replace-all');
@@ -164,11 +169,14 @@ const takeRight = require('./src/take-right');
 const takeRightWhile = require('./src/take-right-while');
 const takeWhile = require('./src/take-while');
 const ternary = require('./src/ternary');
+const transduce = require('./src/transduce');
+const transduceRight = require('./src/transduce-right');
 const trunc = require('./src/trunc');
 const unary = require('./src/unary');
 const uneq = require('./src/uneq');
 const uneqProp = require('./src/uneq-prop');
 const values = require('./src/values');
+const xapply = require('./src/xapply');
 const xarray = require('./src/xarray');
 const xcurry = require('./src/xcurry');
 const xnor = require('./src/xnor');
@@ -191,6 +199,7 @@ module.exports = {
   adjustIndex,
   and,
   append,
+  appendTo,
   apply,
   applyArgs,
   arity,
@@ -232,6 +241,7 @@ module.exports = {
   fact,
   fill,
   filter,
+  filtering,
   find,
   findIndex,
   flatten,
@@ -274,6 +284,7 @@ module.exports = {
   lt,
   lte,
   map,
+  mapping,
   mapcat,
   max,
   merge,
@@ -313,6 +324,7 @@ module.exports = {
   pipe,
   pow,
   prepend,
+  prependTo,
   prod,
   props,
   range,
@@ -320,6 +332,7 @@ module.exports = {
   reduce,
   reduceRight,
   reject,
+  rejecting,
   remove,
   replace,
   replaceAll,
@@ -350,11 +363,14 @@ module.exports = {
   takeRightWhile,
   takeWhile,
   ternary,
+  transduce,
+  transduceRight,
   trunc,
   unary,
   uneq,
   uneqProp,
   values,
+  xapply,
   xarray,
   xcurry,
   xnor,
