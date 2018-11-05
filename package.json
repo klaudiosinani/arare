@@ -31,9 +31,11 @@
   },
   "xo": {
     "rule": {
+      "curly": 0,
       "max-params": 1,
       "no-use-extend-native/no-use-extend-native": 1
     },
+    "semicolon": false,
     "space": 2
   }
 }
