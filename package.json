@@ -30,6 +30,10 @@
     "xo": "*"
   },
   "xo": {
+    "rule": {
+      "max-params": 1,
+      "no-use-extend-native/no-use-extend-native": 1
+    },
     "space": 2
   }
 }
