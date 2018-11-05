@@ -17,8 +17,8 @@ const arrayMinMax = require('./src/array-min-max');
 const assign = require('./src/assign');
 const assignWith = require('./src/assign-with');
 const binary = require('./src/binary');
-const breakWhen = require('./src/break-when');
 const bool = require('./src/bool');
+const breakWhen = require('./src/break-when');
 const comp = require('./src/comp');
 const concat = require('./src/concat');
 const cons = require('./src/cons');
@@ -82,16 +82,16 @@ const isRegExp = require('./src/is-reg-exp');
 const isStr = require('./src/is-str');
 const isUndef = require('./src/is-def');
 const ite = require('./src/ite');
-const keys = require('./src/keys');
 const join = require('./src/join');
+const keys = require('./src/keys');
 const last = require('./src/last');
 const lcm = require('./src/lcm');
 const len = require('./src/len');
 const lt = require('./src/lt');
 const lte = require('./src/lte');
 const map = require('./src/map');
-const mapping = require('./src/mapping');
 const mapcat = require('./src/mapcat');
+const mapping = require('./src/mapping');
 const max = require('./src/max');
 const merge = require('./src/merge');
 const mergeBy = require('./src/merge-by');
@@ -211,8 +211,8 @@ module.exports = {
   assign,
   assignWith,
   binary,
-  breakWhen,
   bool,
+  breakWhen,
   comp,
   concat,
   cons,
@@ -284,8 +284,8 @@ module.exports = {
   lt,
   lte,
   map,
-  mapping,
   mapcat,
+  mapping,
   max,
   merge,
   mergeBy,
