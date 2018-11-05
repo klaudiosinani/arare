@@ -1,11 +1,9 @@
-'use strict';
-const apply = require('./apply');
-const reduceRight = require('./reduce-right');
+'use strict'
+const apply = require('./apply')
+const reduceRight = require('./reduce-right')
 
 function comp(...fns) {
-  return value => {
-    return reduceRight(apply, value, fns);
-  };
+  return value => reduceRight(apply, value, fns)
 }
 
-module.exports = comp;
+module.exports = comp

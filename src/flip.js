@@ -1,10 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function flip(fn) {
-  return curry((x, y) => {
-    return fn(y, x);
-  });
+  return curry((x, y) => fn(y, x))
 }
 
-module.exports = curry(flip);
+module.exports = curry(flip)

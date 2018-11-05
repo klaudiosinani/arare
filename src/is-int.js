@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function isInt(x) {
-  return Number.isInteger(x);
+  return Number.isInteger(x)
 }
 
-module.exports = curry(isInt);
+module.exports = curry(isInt)

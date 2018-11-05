@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function lt(x, y) {
-  return x < y;
+  return x < y
 }
 
-module.exports = curry(lt);
+module.exports = curry(lt)

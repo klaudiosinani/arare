@@ -1,9 +1,9 @@
-'use strict';
-const curry = require('./curry');
-const eq = require('./eq');
+'use strict'
+const curry = require('./curry')
+const eq = require('./eq')
 
 function isFn(x) {
-  return eq(Object.prototype.toString.call(x), '[object Function]');
+  return eq(Object.prototype.toString.call(x), '[object Function]')
 }
 
-module.exports = curry(isFn);
+module.exports = curry(isFn)

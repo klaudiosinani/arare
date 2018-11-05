@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function bool(x) {
-  return Boolean(x);
+  return Boolean(x)
 }
 
-module.exports = curry(bool);
+module.exports = curry(bool)

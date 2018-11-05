@@ -1,9 +1,9 @@
-'use strict';
-const curry = require('./curry');
-const gt = require('./gt');
+'use strict'
+const curry = require('./curry')
+const gt = require('./gt')
 
 function isPos(x) {
-  return gt(x, 0);
+  return gt(x, 0)
 }
 
-module.exports = curry(isPos);
+module.exports = curry(isPos)

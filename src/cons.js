@@ -1,10 +1,10 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function cons(x) {
   return () => {
-    return x;
-  };
+    return x
+  }
 }
 
-module.exports = curry(cons);
+module.exports = curry(cons)

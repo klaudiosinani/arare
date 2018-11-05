@@ -1,10 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function partial(fn, xs) {
-  return (...ys) => {
-    return fn(...xs, ...ys);
-  };
+  return (...ys) => fn(...xs, ...ys)
 }
 
-module.exports = curry(partial);
+module.exports = curry(partial)

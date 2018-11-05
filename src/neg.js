@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function neg(x) {
-  return -Number(x);
+  return -Number(x)
 }
 
-module.exports = curry(neg);
+module.exports = curry(neg)

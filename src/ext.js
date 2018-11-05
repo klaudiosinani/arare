@@ -1,9 +1,9 @@
-'use strict';
-const curry = require('./curry');
-const str = require('./str');
+'use strict'
+const curry = require('./curry')
+const str = require('./str')
 
 function ext(key, object) {
-  return object[str(key)];
+  return object[str(key)]
 }
 
-module.exports = curry(ext);
+module.exports = curry(ext)

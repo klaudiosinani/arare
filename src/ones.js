@@ -1,9 +1,9 @@
-'use strict';
-const curry = require('./curry');
-const fill = require('./fill');
+'use strict'
+const curry = require('./curry')
+const fill = require('./fill')
 
 function ones(n) {
-  return fill(n, 1);
+  return fill(n, 1)
 }
 
-module.exports = curry(ones);
+module.exports = curry(ones)

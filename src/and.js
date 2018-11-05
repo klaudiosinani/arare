@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function and(x, y) {
-  return x && y;
+  return x && y
 }
 
-module.exports = curry(and);
+module.exports = curry(and)

@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function head([x]) {
-  return x;
+  return x
 }
 
-module.exports = curry(head);
+module.exports = curry(head)

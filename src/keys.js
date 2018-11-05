@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function keys(x) {
-  return Object.keys(x);
+  return Object.keys(x)
 }
 
-module.exports = curry(keys);
+module.exports = curry(keys)

@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function min(x, y) {
-  return x < y ? x : y;
+  return x < y ? x : y
 }
 
-module.exports = curry(min);
+module.exports = curry(min)

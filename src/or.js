@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function or(x, y) {
-  return x || y;
+  return x || y
 }
 
-module.exports = curry(or);
+module.exports = curry(or)

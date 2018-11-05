@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function trunc(x) {
-  return Math.trunc(x);
+  return Math.trunc(x)
 }
 
-module.exports = curry(trunc);
+module.exports = curry(trunc)

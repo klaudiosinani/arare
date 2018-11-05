@@ -1,8 +1,8 @@
-'use strict';
-const curry = require('./curry');
+'use strict'
+const curry = require('./curry')
 
 function hasProp(x, obj) {
-  return Object.prototype.hasOwnProperty.call(obj, x);
+  return Object.prototype.hasOwnProperty.call(obj, x)
 }
 
-module.exports = curry(hasProp);
+module.exports = curry(hasProp)
