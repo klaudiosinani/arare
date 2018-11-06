@@ -128,6 +128,7 @@ const partialRight = require('./src/partial-right')
 const partition = require('./src/partition')
 const partitionAt = require('./src/partition-at')
 const pipe = require('./src/pipe')
+const pos = require('./src/pos')
 const pow = require('./src/pow')
 const prepend = require('./src/prepend')
 const prependTo = require('./src/prepend-to')
@@ -322,6 +323,7 @@ module.exports = {
   partition,
   partitionAt,
   pipe,
+  pos,
   pow,
   prepend,
   prependTo,
