@@ -14,7 +14,7 @@
 
 ## Description
 
-Lightweight and without any external dependencies Arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 190 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as curring, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, Arare utilizes automatic variadic currying for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular, strict currying. By all means, regular currying can still be achieved, just by applying one instead of multiple arguments at a time to a function.
+Lightweight and without any external dependencies Arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 190 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, Arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular, strict currying. By all means, regular currying can still be achieved, just by applying one instead of multiple arguments at a time to a function.
 
 Please note that project is in its early days and that it is currently under active development.
 
@@ -29,7 +29,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/arare) or [Twitter](https://tw
 - Automatically variadic curried
 - Declarative & minimal syntax
 - Side-effects & mutations free
-- Lightweight & zero-dependency
+- Lightweight with zero dependencies
 - Build with functional code
 - Actively developed
 
@@ -75,7 +75,7 @@ The following lists contain all available functions grouped into categories acco
 Also, an alphabetically ordered list of all available functions can be found [here](docs/api.EN.md).
 
 
-#### Any
+### Any
 
 <details>
 <summary>Functions whose return value varies according to their input.</summary>
@@ -97,7 +97,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-#### Array
+### Array
 
 <details>
 <summary>Functions whose return value is an array.</summary>
@@ -169,7 +169,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-#### Boolean
+### Boolean
 
 <details>
 <summary>Functions whose return value is a boolean.</summary>
@@ -229,7 +229,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-#### Function
+### Function
 
 <details>
 <summary>Functions whose return value is a function.</summary>
@@ -253,7 +253,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-#### Number
+### Number
 
 <details>
 <summary> Functions whose return value is a number.</summary>
@@ -289,7 +289,9 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`trunc`](docs/api.EN.md#trunc)
 - [`zero`](docs/api.EN.md#zero)
 
-#### String
+</details>
+
+### String
 
 <details>
 <summary>Functions whose return value is a string.</summary>
@@ -333,7 +335,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-#### Object
+### Object
 
 <details>
 <summary>Functions whose return value is a plain object.</summary>
@@ -347,7 +349,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-#### Undefined
+### Undefined
 
 <details>
 <summary>Functions whose return value is undefined.</summary>
