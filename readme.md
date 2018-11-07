@@ -75,7 +75,7 @@ The following lists contain all available functions grouped into categories acco
 Also, an alphabetically ordered list of all available functions can be found [here](docs/api.EN.md).
 
 
-### `Any`
+#### `Any`
 
 <details>
 <summary>Functions whose return value varies according to their input.</summary>
@@ -97,7 +97,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-### `Array`
+#### `Array`
 
 <details>
 <summary>Functions whose return value is an array.</summary>
@@ -169,7 +169,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-### `Boolean`
+#### `Boolean`
 
 <details>
 <summary>Functions whose return value is a boolean.</summary>
@@ -229,7 +229,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-### `Function`
+#### `Function`
 
 <details>
 <summary>Functions whose return value is a function.</summary>
@@ -253,7 +253,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-### `Number`
+#### `Number`
 
 <details>
 <summary> Functions whose return value is a number.</summary>
@@ -291,7 +291,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-### `String`
+#### `String`
 
 <details>
 <summary>Functions whose return value is a string.</summary>
@@ -335,7 +335,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-### `Object`
+#### `Object`
 
 <details>
 <summary>Functions whose return value is a plain object.</summary>
@@ -349,7 +349,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 </details>
 
-### `Undefined`
+#### `Undefined`
 
 <details>
 <summary>Functions whose return value is undefined.</summary>
