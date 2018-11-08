@@ -14,7 +14,7 @@
 
 ## Description
 
-Lightweight and without any external dependencies Arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 180 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, Arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Regular currying can still be achieved by applying one instead of multiple arguments at a time to a function.
+Lightweight and without any external dependencies arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 180 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Regular currying can still be achieved by applying one instead of multiple arguments at a time to a function. Finally, the library comes with a build-in interactive REPL environment, useful for inspecting and experimenting directly with all available modules.
 
 Please note that project is in its early days and that it is currently under active development.
 
@@ -24,9 +24,10 @@ Come over to [Gitter](https://gitter.im/klauscfhq/arare) or [Twitter](https://tw
 ## Highlights
 
 - Over 180 available functions
+- Build-in interactive REPL
 - Point-free & tacit
 - High-order & pure functions
-- Automatically variadic curried
+- Automatic variadic currying
 - Declarative & minimal syntax
 - Side-effects & mutations free
 - Lightweight with zero dependencies
@@ -57,7 +58,7 @@ Import arare and start using directly any of the available modules.
 ```js
 const A = require('arare')
 
-A.map(A.add(10), A.range(1, 3, 1)) //=> [11, 12, 13]
+A.map(A.add(10), A.range(1, 4, 1)) //=> [11, 12, 13]
 ```
 
 Alternatively, select and import only the modules that you need.
@@ -65,7 +66,7 @@ Alternatively, select and import only the modules that you need.
 ```js
 const {add, map, range} = require('arare')
 
-map(add(10), range(1, 3, 1)) //=> [11, 12, 13]
+map(add(10), range(1, 4, 1)) //=> [11, 12, 13]
 ```
 
 ## API
