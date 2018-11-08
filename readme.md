@@ -14,7 +14,7 @@
 
 ## Description
 
-Lightweight and without any external dependencies Arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 190 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, Arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular, strict currying. By all means, regular currying can still be achieved, just by applying one instead of multiple arguments at a time to a function.
+Lightweight and without any external dependencies Arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 180 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, Arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Regular currying can still be achieved by applying one instead of multiple arguments at a time to a function.
 
 Please note that project is in its early days and that it is currently under active development.
 
@@ -23,7 +23,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/arare) or [Twitter](https://tw
 
 ## Highlights
 
-- Over 190 available functions
+- Over 180 available functions
 - Point-free & tacit
 - High-order & pure functions
 - Automatically variadic curried
@@ -82,15 +82,12 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 - [`apply`](docs/api.EN.md#apply)
 - [`ext`](docs/api.EN.md#ext)
-- [`filtering`](docs/api.EN.md#filtering)
 - [`fst`](docs/api.EN.md#fst)
 - [`getNth`](docs/api.EN.md#getNth)
 - [`head`](docs/api.EN.md#head)
 - [`id`](docs/api.EN.md#id)
 - [`ite`](docs/api.EN.md#ite)
 - [`last`](docs/api.EN.md#last)
-- [`mapping`](docs/api.EN.md#mapping)
-- [`rejecting`](docs/api.EN.md#rejecting)
 - [`snd`](docs/api.EN.md#snd)
 - [`startsWith`](docs/api.EN.md#startsWith)
 - [`xapply`](docs/api.EN.md#xapply)
@@ -155,8 +152,6 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`takeRight`](docs/api.EN.md#takeRight)
 - [`takeRightWhile`](docs/api.EN.md#takeRightWhile)
 - [`takeWhile`](docs/api.EN.md#takeWhile)
-- [`transduce`](docs/api.EN.md#transduce)
-- [`transduceRight`](docs/api.EN.md#transduceRight)
 - [`values`](docs/api.EN.md#values)
 - [`xshift`](docs/api.EN.md#xshift)
 - [`xshiftLeft`](docs/api.EN.md#xshiftLeft)
@@ -259,7 +254,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 <summary> Functions whose return value is a number.</summary>
 
 - [`abs`](docs/api.EN.md#abs)
-- [`absDiff1](docs/readme.md#absDiff)
+- [`absDiff`](docs/readme.md#absDiff)
 - [`add`](docs/api.EN.md#add)
 - [`adjustIndex`](docs/api.EN.md#adjustIndex)
 - [`arrayMax`](docs/api.EN.md#arrayMax)
@@ -345,6 +340,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`copy`](docs/api.EN.md#copy)
 - [`countAll`](docs/api.EN.md#countAll)
 - [`countBy`](docs/api.EN.md#countBy)
+- [`countIn`](docs/api.EN.md#countIn)
 - [`zipObj`](docs/api.EN.md#zipObj)
 
 </details>
