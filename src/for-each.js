@@ -11,6 +11,7 @@ const tail = require('./tail')
 function _forEach(fn, xs) {
   if (notEmpty(xs))
     fn(head(xs))
+
   return _forEach(fn, tail(xs))
 }
 

@@ -47,7 +47,6 @@ const ext = require('./src/ext')
 const fact = require('./src/fact')
 const fill = require('./src/fill')
 const filter = require('./src/filter')
-const filtering = require('./src/filtering')
 const find = require('./src/find')
 const findIndex = require('./src/find-index')
 const flatten = require('./src/flatten')
@@ -91,7 +90,6 @@ const lt = require('./src/lt')
 const lte = require('./src/lte')
 const map = require('./src/map')
 const mapcat = require('./src/mapcat')
-const mapping = require('./src/mapping')
 const max = require('./src/max')
 const merge = require('./src/merge')
 const mergeBy = require('./src/merge-by')
@@ -139,7 +137,6 @@ const recip = require('./src/recip')
 const reduce = require('./src/reduce')
 const reduceRight = require('./src/reduce-right')
 const reject = require('./src/reject')
-const rejecting = require('./src/rejecting')
 const remove = require('./src/remove')
 const replace = require('./src/replace')
 const replaceAll = require('./src/replace-all')
@@ -170,8 +167,6 @@ const takeRight = require('./src/take-right')
 const takeRightWhile = require('./src/take-right-while')
 const takeWhile = require('./src/take-while')
 const ternary = require('./src/ternary')
-const transduce = require('./src/transduce')
-const transduceRight = require('./src/transduce-right')
 const trunc = require('./src/trunc')
 const unary = require('./src/unary')
 const uneq = require('./src/uneq')
@@ -242,7 +237,6 @@ module.exports = {
   fact,
   fill,
   filter,
-  filtering,
   find,
   findIndex,
   flatten,
@@ -286,7 +280,6 @@ module.exports = {
   lte,
   map,
   mapcat,
-  mapping,
   max,
   merge,
   mergeBy,
@@ -334,7 +327,6 @@ module.exports = {
   reduce,
   reduceRight,
   reject,
-  rejecting,
   remove,
   replace,
   replaceAll,
@@ -365,8 +357,6 @@ module.exports = {
   takeRightWhile,
   takeWhile,
   ternary,
-  transduce,
-  transduceRight,
   trunc,
   unary,
   uneq,
