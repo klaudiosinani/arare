@@ -7,13 +7,14 @@ const notArr = require('./not-arr')
 const tail = require('./tail')
 
 function _filter(fn, xs, acc) {
+  console.log({xs, acc})
   if (isEmpty(xs))
     return acc
 
   if (fn(head(xs)))
     return _filter(fn, tail(xs), append(head(xs), acc))
 
-  return filter(fn, tail(xs), acc)
+  return _filter(fn, tail(xs), acc)
 }
 
 function filter(fn, xs) {
