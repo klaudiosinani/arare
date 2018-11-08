@@ -9,11 +9,15 @@
     "email": "klauscfhq@protonmail.com",
     "url": "https://klauscfhq.github.io"
   },
+  "bin": {
+    "arare": "repl.js"
+  },
   "engines": {
     "node": ">=6"
   },
   "files": [
     "index.js",
+    "repl.js",
     "src"
   ],
   "keywords": [
