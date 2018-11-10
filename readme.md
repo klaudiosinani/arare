@@ -14,7 +14,7 @@
 
 ## Description
 
-Lightweight and without any external dependencies arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 180 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Regular currying can still be achieved by applying one instead of multiple arguments at a time to a function. Finally, the library comes with a build-in interactive REPL environment, useful for directly inspecting and experimenting with all available modules without leaving the console.
+Lightweight and without any external dependencies arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 190 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Regular currying can still be achieved by applying one instead of multiple arguments at a time to a function. Finally, the library comes with a build-in interactive REPL environment, useful for directly inspecting and experimenting with all available modules without leaving the console.
 
 Please note that project is in its early days and that it is currently under active development.
 
@@ -23,7 +23,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/arare) or [Twitter](https://tw
 
 ## Highlights
 
-- Over 180 available functions
+- Over 190 available functions
 - Build-in interactive REPL
 - Point-free & tacit
 - High-order & pure functions
