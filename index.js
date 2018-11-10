@@ -70,6 +70,7 @@ const isDef = require('./src/is-def')
 const isEmpty = require('./src/is-empty')
 const isFn = require('./src/is-fn')
 const isInt = require('./src/is-num')
+const isLower = require('./src/is-lower')
 const isNeg = require('./src/is-neg')
 const isNil = require('./src/is-nil')
 const isNull = require('./src/is-null')
@@ -80,6 +81,7 @@ const isPos = require('./src/is-pos')
 const isRegExp = require('./src/is-reg-exp')
 const isStr = require('./src/is-str')
 const isUndef = require('./src/is-def')
+const isUpper = require('./src/is-upper')
 const ite = require('./src/ite')
 const join = require('./src/join')
 const keys = require('./src/keys')
@@ -126,7 +128,6 @@ const partialRight = require('./src/partial-right')
 const partition = require('./src/partition')
 const partitionAt = require('./src/partition-at')
 const pipe = require('./src/pipe')
-const pos = require('./src/pos')
 const pow = require('./src/pow')
 const prepend = require('./src/prepend')
 const prependTo = require('./src/prepend-to')
@@ -167,6 +168,8 @@ const takeRight = require('./src/take-right')
 const takeRightWhile = require('./src/take-right-while')
 const takeWhile = require('./src/take-while')
 const ternary = require('./src/ternary')
+const toLower = require('./src/to-lower')
+const toUpper = require('./src/to-upper')
 const trunc = require('./src/trunc')
 const unary = require('./src/unary')
 const uneq = require('./src/uneq')
@@ -260,6 +263,7 @@ module.exports = {
   isEmpty,
   isFn,
   isInt,
+  isLower,
   isNeg,
   isNil,
   isNull,
@@ -270,6 +274,7 @@ module.exports = {
   isRegExp,
   isStr,
   isUndef,
+  isUpper,
   ite,
   join,
   keys,
@@ -316,7 +321,6 @@ module.exports = {
   partition,
   partitionAt,
   pipe,
-  pos,
   pow,
   prepend,
   prependTo,
@@ -357,6 +361,8 @@ module.exports = {
   takeRightWhile,
   takeWhile,
   ternary,
+  toLower,
+  toUpper,
   trunc,
   unary,
   uneq,
