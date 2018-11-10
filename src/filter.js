@@ -7,7 +7,6 @@ const notArr = require('./not-arr')
 const tail = require('./tail')
 
 function _filter(fn, xs, acc) {
-  console.log({xs, acc})
   if (isEmpty(xs))
     return acc
 
