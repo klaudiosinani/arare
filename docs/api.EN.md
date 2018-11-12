@@ -1263,6 +1263,23 @@ isInt(5) //=> true
 isInt(0.1) //=> false
 ```
 
+#### `isLower(xs)`
+
+- xs: `String`
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.1.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-lower.js)
+
+Accepts a string `xs`, and returns true if every character in `xs` is in lower case.
+
+```js
+isLower('foo') //=> true
+isLower('FOO') //=> false
+isLower('100') //=> false
+isUpper('%$^') //=> false
+```
+
 #### `isNeg(x)`
 
 - x: `Any`
@@ -1424,6 +1441,23 @@ Accepts a value `x`, and returns `true` if `x` is equal to `undefined`.
 ```js
 isUndef(undefined) //=> true
 isUndef('foo') //=> false
+```
+
+#### `isUpper(xs)`
+
+- xs: `String`
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.1.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-lower.js)
+
+Accepts a string `xs`, and returns true if every character in `xs` is in upper case.
+
+```js
+isUpper('foo') //=> false
+isUpper('FOO') //=> true
+isUpper('100') //=> false
+isUpper('%$^') //=> false
 ```
 
 #### `ite(fn, x, y)`
@@ -3039,6 +3073,42 @@ array3(1) //=> [1]
 array3(1, 2) //=> [1, 2]
 array3(1, 2, 3) //=> [1, 2, 3]
 array3(1, 2, 3, 4) //=> [1, 2, 3]
+```
+
+#### `toLower(xs)`
+
+- xs: `String`
+- Returns: `String`
+- Curried: `True`
+- Added on: `0.1.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/to-lower.js)
+
+Accepts a string `xs`, and returns the same string containing all characters in lower upper.
+
+```js
+toLower('foo') //=> 'foo'
+toLower('FOO') //=> 'foo'
+map(toLower, pair('FOO', 'BAR')) //=> ['foo', 'bar']
+map(toLower)(pair('FOO', 'BAR')) //=> ['foo', 'bar']
+map(toLower)(pair('FOO')('BAR')) //=> ['foo', 'bar']
+```
+
+#### `toUpper(xs)`
+
+- xs: `String`
+- Returns: `String`
+- Curried: `True`
+- Added on: `0.1.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/to-lower.js)
+
+Accepts a string `xs`, and returns the same string containing all characters in upper case.
+
+```js
+toUpper('foo') //=> 'FOO'
+toUpper('FOO') //=> 'FOO'
+map(toUpper, pair('foo', 'bar')) //=> ['FOO', 'BAR']
+map(toUpper)(pair('foo', 'bar')) //=> ['FOO', 'BAR']
+map(toUpper)(pair('foo')('bar')) //=> ['FOO', 'BAR']
 ```
 
 #### `trunc(x)`
