@@ -30,7 +30,7 @@
     "test": "xo"
   },
   "devDependencies": {
-    "ava": "1.0.0-beta.8",
+    "ava": "1.0.0-rc.2",
     "xo": "*"
   },
   "xo": {
