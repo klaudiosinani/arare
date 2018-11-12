@@ -6,6 +6,10 @@
   🍘 Lightweight auto-curried functional programming library
 </h4>
 
+<div align="center">
+  <img alt="Header" width="85%" src="media/header.png"/>
+</div>
+
 <p align="center">
   <a href="https://travis-ci.com/klauscfhq/arare">
     <img alt="Build Status" src="https://travis-ci.com/klauscfhq/arare.svg?branch=master">
@@ -84,7 +88,9 @@ To launch the REPL simply type `arare` from anywhere in your console.
 arare # launch REPL
 ```
 
-[REPL](media/repl.png)
+<div align="center">
+  <img alt="REPL" width="85%" src="media/repl.png"/>
+</div>
 
 ## API
 
