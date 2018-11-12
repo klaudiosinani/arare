@@ -52,7 +52,6 @@ const findIndex = require('./src/find-index')
 const flatten = require('./src/flatten')
 const flip = require('./src/flip')
 const forEach = require('./src/for-each')
-const fst = require('./src/fst')
 const gather = require('./src/gather')
 const gcd = require('./src/gcd')
 const getNth = require('./src/get-nth')
@@ -170,6 +169,7 @@ const takeWhile = require('./src/take-while')
 const ternary = require('./src/ternary')
 const toLower = require('./src/to-lower')
 const toUpper = require('./src/to-upper')
+const trd = require('./src/trd')
 const trunc = require('./src/trunc')
 const unary = require('./src/unary')
 const uneq = require('./src/uneq')
@@ -245,7 +245,6 @@ module.exports = {
   flatten,
   flip,
   forEach,
-  fst,
   gather,
   gcd,
   getNth,
@@ -363,6 +362,7 @@ module.exports = {
   ternary,
   toLower,
   toUpper,
+  trd,
   trunc,
   unary,
   uneq,
