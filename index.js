@@ -19,6 +19,7 @@ const assignWith = require('./src/assign-with')
 const binary = require('./src/binary')
 const bool = require('./src/bool')
 const breakWhen = require('./src/break-when')
+const ceil = require('./src/ceil')
 const comp = require('./src/comp')
 const concat = require('./src/concat')
 const cons = require('./src/cons')
@@ -213,6 +214,7 @@ module.exports = {
   binary,
   bool,
   breakWhen,
+  ceil,
   comp,
   concat,
   cons,
