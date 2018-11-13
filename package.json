@@ -27,10 +27,12 @@
     "programming"
   ],
   "scripts": {
-    "test": "xo"
+    "test": "jest",
+    "lint": "xo"
   },
   "devDependencies": {
     "ava": "1.0.0-beta.8",
+    "jest": "^23.6.0",
     "xo": "*"
   },
   "xo": {
@@ -40,6 +42,16 @@
       "no-use-extend-native/no-use-extend-native": 1
     },
     "semicolon": false,
-    "space": 2
+    "space": 2,
+    "overrides": [
+      {
+        "files": "test/*.js",
+        "globals": [
+          "describe",
+          "test",
+          "expect"
+        ]
+      }
+    ]
   }
 }

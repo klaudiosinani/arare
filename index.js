@@ -20,6 +20,7 @@ const binary = require('./src/binary')
 const bool = require('./src/bool')
 const breakWhen = require('./src/break-when')
 const comp = require('./src/comp')
+const cond = require('./src/cond')
 const concat = require('./src/concat')
 const cons = require('./src/cons')
 const copy = require('./src/copy')
@@ -213,6 +214,7 @@ module.exports = {
   bool,
   breakWhen,
   comp,
+  cond,
   concat,
   cons,
   copy,
