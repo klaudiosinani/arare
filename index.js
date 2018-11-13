@@ -57,6 +57,7 @@ const gcd = require('./src/gcd')
 const getNth = require('./src/get-nth')
 const gt = require('./src/gt')
 const gte = require('./src/gte')
+const halve = require('./src/halve.js')
 const hasProp = require('./src/has-prop')
 const head = require('./src/head')
 const id = require('./src/id')
@@ -250,6 +251,7 @@ module.exports = {
   getNth,
   gt,
   gte,
+  halve,
   hasProp,
   head,
   id,
