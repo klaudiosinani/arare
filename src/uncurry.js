@@ -1,3 +1,4 @@
+'use strict'
 const isFn = require('./is-fn')
 
 const uncurry = (fn, n) => {
@@ -12,7 +13,6 @@ const uncurry = (fn, n) => {
       } else {
         return result
       }
-
       idx += 1
     }
 
