@@ -173,6 +173,7 @@ const toLower = require('./src/to-lower')
 const toUpper = require('./src/to-upper')
 const trunc = require('./src/trunc')
 const unary = require('./src/unary')
+const uncurry = require('./src/uncurry')
 const uneq = require('./src/uneq')
 const uneqProp = require('./src/uneq-prop')
 const values = require('./src/values')
@@ -367,6 +368,7 @@ module.exports = {
   toUpper,
   trunc,
   unary,
+  uncurry,
   uneq,
   uneqProp,
   values,
