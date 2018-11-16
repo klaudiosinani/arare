@@ -141,6 +141,7 @@ const reduce = require('./src/reduce')
 const reduceRight = require('./src/reduce-right')
 const reject = require('./src/reject')
 const remove = require('./src/remove')
+const removeAll = require('./src/remove-all')
 const removeRight = require('./src/remove-right')
 const replace = require('./src/replace')
 const replaceAll = require('./src/replace-all')
@@ -338,6 +339,7 @@ module.exports = {
   reduceRight,
   reject,
   remove,
+  removeAll,
   removeRight,
   replace,
   replaceAll,
