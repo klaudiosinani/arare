@@ -140,6 +140,7 @@ const recip = require('./src/recip')
 const reduce = require('./src/reduce')
 const reduceRight = require('./src/reduce-right')
 const reject = require('./src/reject')
+const remove = require('./src/remove')
 const replace = require('./src/replace')
 const replaceAll = require('./src/replace-all')
 const reverse = require('./src/reverse')
@@ -335,6 +336,7 @@ module.exports = {
   reduce,
   reduceRight,
   reject,
+  remove,
   replace,
   replaceAll,
   reverse,
