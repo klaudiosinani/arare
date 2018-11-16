@@ -104,7 +104,7 @@ An alphabetically ordered list of all available functions can be found [**here**
 #### `Any`
 
 <details>
-<summary>Functions whose return value **varies** according to their input.</summary>
+<summary>Functions whose return value <b>varies</b> according to their input.</summary>
 
 <br/>
 
@@ -132,7 +132,7 @@ An alphabetically ordered list of all available functions can be found [**here**
 #### `Array`
 
 <details>
-<summary>Functions whose return value is an **array**.</summary>
+<summary>Functions whose return value is an <b>array</b>.</summary>
 
 <br/>
 
@@ -211,7 +211,7 @@ An alphabetically ordered list of all available functions can be found [**here**
 #### `Boolean`
 
 <details>
-<summary>Functions whose return value is a **boolean**.</summary>
+<summary>Functions whose return value is a <b>boolean</b>.</summary>
 
 <br/>
 
@@ -283,7 +283,7 @@ An alphabetically ordered list of all available functions can be found [**here**
 #### `Function`
 
 <details>
-<summary>Functions whose return value is a **function**.</summary>
+<summary>Functions whose return value is a <b>function</b>.</summary>
 
 <br/>
 
@@ -312,7 +312,7 @@ An alphabetically ordered list of all available functions can be found [**here**
 #### `Number`
 
 <details>
-<summary> Functions whose return value is a **number**.</summary>
+<summary> Functions whose return value is a <b>number</b>.</summary>
 
 <br/>
 
@@ -357,7 +357,7 @@ An alphabetically ordered list of all available functions can be found [**here**
 #### `String`
 
 <details>
-<summary>Functions whose return value is a **string**.</summary>
+<summary>Functions whose return value is a <b>string</b>.</summary>
 
 <br/>
 
@@ -411,7 +411,7 @@ An alphabetically ordered list of all available functions can be found [**here**
 #### `Object`
 
 <details>
-<summary>Functions whose return value is a plain **object**.</summary>
+<summary>Functions whose return value is a plain <b>object</b>.</summary>
 
 <br/>
 
@@ -430,7 +430,7 @@ An alphabetically ordered list of all available functions can be found [**here**
 #### `Undefined`
 
 <details>
-<summary>Functions whose return value is **undefined**.</summary>
+<summary>Functions whose return value is <b>undefined</b>.</summary>
 
 <br/>
 
