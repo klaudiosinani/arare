@@ -41,6 +41,7 @@ const endsWith = require('./src/ends-with')
 const entries = require('./src/entries')
 const eq = require('./src/eq')
 const eqProp = require('./src/eq-prop')
+const erase = require('./src/erase')
 const even = require('./src/even')
 const every = require('./src/every')
 const excludes = require('./src/excludes')
@@ -139,7 +140,6 @@ const recip = require('./src/recip')
 const reduce = require('./src/reduce')
 const reduceRight = require('./src/reduce-right')
 const reject = require('./src/reject')
-const remove = require('./src/remove')
 const replace = require('./src/replace')
 const replaceAll = require('./src/replace-all')
 const reverse = require('./src/reverse')
@@ -236,6 +236,7 @@ module.exports = {
   entries,
   eq,
   eqProp,
+  erase,
   even,
   every,
   excludes,
@@ -334,7 +335,6 @@ module.exports = {
   reduce,
   reduceRight,
   reject,
-  remove,
   replace,
   replaceAll,
   reverse,
