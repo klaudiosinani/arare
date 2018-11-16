@@ -46,6 +46,7 @@ const even = require('./src/even')
 const every = require('./src/every')
 const excludes = require('./src/excludes')
 const ext = require('./src/ext')
+const f = require('./src/f')
 const fact = require('./src/fact')
 const fill = require('./src/fill')
 const filter = require('./src/filter')
@@ -247,6 +248,7 @@ module.exports = {
   every,
   excludes,
   ext,
+  f,
   fact,
   fill,
   filter,
