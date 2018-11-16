@@ -37,7 +37,8 @@
     "rule": {
       "curly": 0,
       "max-params": 1,
-      "no-use-extend-native/no-use-extend-native": 1
+      "no-use-extend-native/no-use-extend-native": 1,
+      "unicorn/filename-case": 0
     },
     "semicolon": false,
     "space": 2
