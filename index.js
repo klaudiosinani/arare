@@ -118,6 +118,7 @@ const notObj = require('./src/not-obj')
 const notPair = require('./src/not-pair')
 const notRegExp = require('./src/not-reg-exp')
 const notStr = require('./src/not-str')
+const notUpper = require('./src/not-upper')
 const nullary = require('./src/nullary')
 const num = require('./src/num')
 const odd = require('./src/odd')
@@ -316,6 +317,7 @@ module.exports = {
   notPair,
   notRegExp,
   notStr,
+  notUpper,
   nullary,
   num,
   odd,
