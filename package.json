@@ -1,7 +1,7 @@
 {
   "name": "arare",
-  "version": "0.1.0",
-  "description": "Lightweight auto-curried functional programming library",
+  "version": "0.2.0",
+  "description": "🍘 Lightweight auto-curried functional programming library",
   "license": "MIT",
   "repository": "klauscfhq/arare",
   "author": {
