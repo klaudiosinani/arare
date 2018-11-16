@@ -46,7 +46,7 @@ const even = require('./src/even')
 const every = require('./src/every')
 const excludes = require('./src/excludes')
 const ext = require('./src/ext')
-const f = require('./src/f')
+const F = require('./src/F')
 const fact = require('./src/fact')
 const fill = require('./src/fill')
 const filter = require('./src/filter')
@@ -55,6 +55,7 @@ const findIndex = require('./src/find-index')
 const flatten = require('./src/flatten')
 const flip = require('./src/flip')
 const forEach = require('./src/for-each')
+const Fs = require('./src/Fs')
 const gather = require('./src/gather')
 const gcd = require('./src/gcd')
 const getNth = require('./src/get-nth')
@@ -169,8 +170,7 @@ const str = require('./src/str')
 const sub = require('./src/sub')
 const sum = require('./src/sum')
 const swap = require('./src/swap')
-const t = require('./src/t')
-const ts = require('./src/ts')
+const T = require('./src/T')
 const tail = require('./src/tail')
 const take = require('./src/take')
 const takeRight = require('./src/take-right')
@@ -181,6 +181,7 @@ const toLower = require('./src/to-lower')
 const toUpper = require('./src/to-upper')
 const trd = require('./src/trd')
 const trunc = require('./src/trunc')
+const Ts = require('./src/Ts')
 const unary = require('./src/unary')
 const uneq = require('./src/uneq')
 const uneqProp = require('./src/uneq-prop')
@@ -249,7 +250,7 @@ module.exports = {
   every,
   excludes,
   ext,
-  f,
+  F,
   fact,
   fill,
   filter,
@@ -258,6 +259,7 @@ module.exports = {
   flatten,
   flip,
   forEach,
+  Fs,
   gather,
   gcd,
   getNth,
@@ -372,8 +374,7 @@ module.exports = {
   sub,
   sum,
   swap,
-  t,
-  ts,
+  T,
   tail,
   take,
   takeRight,
@@ -384,6 +385,7 @@ module.exports = {
   toUpper,
   trd,
   trunc,
+  Ts,
   unary,
   uneq,
   uneqProp,
