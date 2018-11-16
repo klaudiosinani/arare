@@ -170,6 +170,7 @@ const sub = require('./src/sub')
 const sum = require('./src/sum')
 const swap = require('./src/swap')
 const t = require('./src/t')
+const ts = require('./src/ts')
 const tail = require('./src/tail')
 const take = require('./src/take')
 const takeRight = require('./src/take-right')
@@ -372,6 +373,7 @@ module.exports = {
   sum,
   swap,
   t,
+  ts,
   tail,
   take,
   takeRight,
