@@ -18,7 +18,7 @@
 
 ## Description
 
-Lightweight and without any external dependencies arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 190 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Regular currying can still be achieved by applying one instead of multiple arguments at a time to a function. Finally, the library comes with a build-in interactive REPL environment, useful for directly inspecting and experimenting with all available modules without leaving the console.
+Lightweight and without any external dependencies arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 200 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Finally, the library comes with a build-in interactive REPL environment, useful for directly inspecting and experimenting with all available modules without leaving the console.
 
 Please note that project is in its early days and that it is currently under active development.
 
@@ -27,7 +27,7 @@ Come over to [Gitter](https://gitter.im/klauscfhq/arare) or [Twitter](https://tw
 
 ## Highlights
 
-- Over 190 available functions
+- Over 200 available functions
 - Build-in interactive REPL
 - Point-free & tacit
 - High-order & pure functions
@@ -63,7 +63,8 @@ Import arare and start using directly any of the available modules.
 ```js
 const A = require('arare')
 
-A.map(A.add(10), A.range(1, 4, 1)) //=> [11, 12, 13]
+A.map(A.add(10), A.range(1, 4, 1))
+//=> [11, 12, 13]
 ```
 
 Alternatively, select and import only the modules that you need.
@@ -71,7 +72,8 @@ Alternatively, select and import only the modules that you need.
 ```js
 const {add, map, range} = require('arare')
 
-map(add(10), range(1, 4, 1)) //=> [11, 12, 13]
+map(add(10), range(1, 4, 1))
+//=> [11, 12, 13]
 ```
 
 ## REPL
@@ -96,32 +98,43 @@ arare # launch REPL
 
 The following lists contain all available functions grouped into categories according to the type of their respective returning value.
 
-Also, an alphabetically ordered list of all available functions can be found [here](docs/api.EN.md).
+An alphabetically ordered list of all available functions can be found [**here**](docs/api.EN.md).
 
 
 #### `Any`
 
 <details>
-<summary>Functions whose return value varies according to their input.</summary>
+<summary>Functions whose return value **varies** according to their input.</summary>
+
+<br/>
 
 - [`apply`](docs/api.EN.md#apply)
+- [`applyArgs`](docs/api.EN.md#applyArgs)
 - [`ext`](docs/api.EN.md#ext)
+- [`find`](docs/api.EN.md#find)
 - [`fst`](docs/api.EN.md#fst)
 - [`getNth`](docs/api.EN.md#getNth)
 - [`head`](docs/api.EN.md#head)
 - [`id`](docs/api.EN.md#id)
 - [`ite`](docs/api.EN.md#ite)
 - [`last`](docs/api.EN.md#last)
+- [`reduce`](docs/api.EN.md#reduce)
+- [`reduceRight`](docs/api.EN.md#reduceRight)
 - [`snd`](docs/api.EN.md#snd)
 - [`startsWith`](docs/api.EN.md#startsWith)
+- [`trd`](docs/api.EN.md#trd)
 - [`xapply`](docs/api.EN.md#xapply)
+
+<br/>
 
 </details>
 
 #### `Array`
 
 <details>
-<summary>Functions whose return value is an array.</summary>
+<summary>Functions whose return value is an **array**.</summary>
+
+<br/>
 
 - [`append`](docs/api.EN.md#append)
 - [`appendTo`](docs/api.EN.md#appendTo)
@@ -137,9 +150,12 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`dropWhile`](docs/api.EN.md#dropWhile)
 - [`empty`](docs/api.EN.md#empty)
 - [`entries`](docs/api.EN.md#entries)
+- [`erase`](docs/api.EN.md#erase)
+- [`Fs`](docs/api.EN.md#Fs)
 - [`fill`](docs/api.EN.md#fill)
 - [`filter`](docs/api.EN.md#filter)
 - [`flatten`](docs/api.EN.md#flatten)
+- [`halve`](docs/api.EN.md#halve)
 - [`init`](docs/api.EN.md#init)
 - [`keys`](docs/api.EN.md#keys)
 - [`map`](docs/api.EN.md#map)
@@ -154,12 +170,13 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`prependTo`](docs/api.EN.md#prependTo)
 - [`props`](docs/api.EN.md#props)
 - [`range`](docs/api.EN.md#range)
-- [`reduce`](docs/api.EN.md#reduce)
-- [`reduceRight`](docs/api.EN.md#reduceRight)
 - [`reject`](docs/api.EN.md#reject)
 - [`remove`](docs/api.EN.md#remove)
+- [`remove`](docs/api.EN.md#removeAll)
+- [`remove`](docs/api.EN.md#removeRight)
 - [`replace`](docs/api.EN.md#replace)
 - [`replaceAll`](docs/api.EN.md#replaceAll)
+- [`reverse`](docs/api.EN.md#reverse)
 - [`setHead`](docs/api.EN.md#setHead)
 - [`setHeadWith`](docs/api.EN.md#setHeadWith)
 - [`setLast`](docs/api.EN.md#setLast)
@@ -171,6 +188,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`slice`](docs/api.EN.md#slice)
 - [`split`](docs/api.EN.md#split)
 - [`swap`](docs/api.EN.md#swap)
+- [`Ts`](docs/api.EN.md#Ts)
 - [`tail`](docs/api.EN.md#tail)
 - [`take`](docs/api.EN.md#take)
 - [`takeRight`](docs/api.EN.md#takeRight)
@@ -186,12 +204,16 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`zipTail`](docs/api.EN.md#zipTail)
 - [`zipWith`](docs/api.EN.md#zipWith)
 
+<br/>
+
 </details>
 
 #### `Boolean`
 
 <details>
-<summary>Functions whose return value is a boolean.</summary>
+<summary>Functions whose return value is a **boolean**.</summary>
+
+<br/>
 
 - [`and`](docs/api.EN.md#and)
 - [`bool`](docs/api.EN.md#bool)
@@ -201,6 +223,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`even`](docs/api.EN.md#even)
 - [`every`](docs/api.EN.md#every)
 - [`excludes`](docs/api.EN.md#excludes)
+- [`F`](docs/api.EN.md#F)
 - [`gt`](docs/api.EN.md#gt)
 - [`gte`](docs/api.EN.md#gte)
 - [`hasProp`](docs/api.EN.md#hasProp)
@@ -211,6 +234,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`isEmpty`](docs/api.EN.md#isEmpty)
 - [`isFn`](docs/api.EN.md#isFn)
 - [`isInt`](docs/api.EN.md#isInt)
+- [`isLower`](docs/api.EN.md#isLower)
 - [`isNeg`](docs/api.EN.md#isNeg)
 - [`isNil`](docs/api.EN.md#isNil)
 - [`isNull`](docs/api.EN.md#isNull)
@@ -221,6 +245,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`isRegExp`](docs/api.EN.md#isRegExp)
 - [`isStr`](docs/api.EN.md#isStr)
 - [`isUndef`](docs/api.EN.md#isUndef)
+- [`isUpper`](docs/api.EN.md#isUpper)
 - [`lt`](docs/api.EN.md#lt)
 - [`lte`](docs/api.EN.md#lte)
 - [`nand`](docs/api.EN.md#nand)
@@ -232,6 +257,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`notEmpty`](docs/api.EN.md#notEmpty)
 - [`notFn`](docs/api.EN.md#notFn)
 - [`notInt`](docs/api.EN.md#notInt)
+- [`notLower`](docs/api.EN.md#notLower)
 - [`notNil`](docs/api.EN.md#notNil)
 - [`notNull`](docs/api.EN.md#notNull)
 - [`notNum`](docs/api.EN.md#notNum)
@@ -239,27 +265,35 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`notPair`](docs/api.EN.md#notPair)
 - [`notRegExp`](docs/api.EN.md#notRegExp)
 - [`notStr`](docs/api.EN.md#notStr)
+- [`notUpper`](docs/api.EN.md#notUpper)
 - [`odd`](docs/api.EN.md#odd)
 - [`or`](docs/api.EN.md#or)
 - [`some`](docs/api.EN.md#some)
 - [`startsWith`](docs/api.EN.md#startsWith)
+- [`T`](docs/api.EN.md#T)
+- [`uneq`](docs/api.EN.md#uneq)
+- [`uneqProp`](docs/api.EN.md#uneqProp)
 - [`xnor`](docs/api.EN.md#xnor)
 - [`xor`](docs/api.EN.md#xor)
+
+<br/>
 
 </details>
 
 #### `Function`
 
 <details>
-<summary>Functions whose return value is a function.</summary>
+<summary>Functions whose return value is a **function**.</summary>
 
-- [`applyArgs`](docs/api.EN.md#applyArgs)
+<br/>
+
 - [`arity`](docs/api.EN.md#arity)
 - [`binary`](docs/api.EN.md#binary)
 - [`comp`](docs/api.EN.md#comp)
 - [`cons`](docs/api.EN.md#cons)
 - [`curry`](docs/api.EN.md#curry)
-- [`gather`](docs/api.EN.md#glather)
+- [`flip`](docs/api.EN.md#flip)
+- [`gather`](docs/api.EN.md#gather)
 - [`nullary`](docs/api.EN.md#nullary)
 - [`partial`](docs/api.EN.md#partial)
 - [`partialRight`](docs/api.EN.md#partialRight)
@@ -268,14 +302,19 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`spread`](docs/api.EN.md#spread)
 - [`ternary`](docs/api.EN.md#ternary)
 - [`unary`](docs/api.EN.md#unary)
+- [`xarray`](docs/api.EN.md#xarray)
 - [`xcurry`](docs/api.EN.md#xcurry)
+
+<br/>
 
 </details>
 
 #### `Number`
 
 <details>
-<summary> Functions whose return value is a number.</summary>
+<summary> Functions whose return value is a **number**.</summary>
+
+<br/>
 
 - [`abs`](docs/api.EN.md#abs)
 - [`absDiff`](docs/readme.md#absDiff)
@@ -283,6 +322,8 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`adjustIndex`](docs/api.EN.md#adjustIndex)
 - [`arrayMax`](docs/api.EN.md#arrayMax)
 - [`arrayMin`](docs/api.EN.md#arrayMin)
+- [`ceil`](docs/api.EN.md#ceil)
+- [`count`](docs/api.EN.md#count)
 - [`cube`](docs/api.EN.md#cube)
 - [`decr`](docs/api.EN.md#decr)
 - [`div`](docs/api.EN.md#div)
@@ -304,16 +345,21 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`prod`](docs/api.EN.md#prod)
 - [`recip`](docs/api.EN.md#recip)
 - [`square`](docs/api.EN.md#square)
+- [`sub`](docs/api.EN.md#sub)
 - [`sum`](docs/api.EN.md#sum)
 - [`trunc`](docs/api.EN.md#trunc)
 - [`zero`](docs/api.EN.md#zero)
+
+<br/>
 
 </details>
 
 #### `String`
 
 <details>
-<summary>Functions whose return value is a string.</summary>
+<summary>Functions whose return value is a **string**.</summary>
+
+<br/>
 
 - [`append`](docs/api.EN.md#append)
 - [`appendTo`](docs/api.EN.md#appendTo)
@@ -324,6 +370,7 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`dropRightWhile`](docs/api.EN.md#dropRightWhile)
 - [`dropWhile`](docs/api.EN.md#dropWhile)
 - [`empty`](docs/api.EN.md#empty)
+- [`halve`](docs/api.EN.md#halve)
 - [`init`](docs/api.EN.md#init)
 - [`join`](docs/api.EN.md#join)
 - [`partition`](docs/api.EN.md#partition)
@@ -331,8 +378,11 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`prepend`](docs/api.EN.md#prepend)
 - [`prependTo`](docs/api.EN.md#prependTo)
 - [`remove`](docs/api.EN.md#remove)
+- [`remove`](docs/api.EN.md#removeAll)
+- [`remove`](docs/api.EN.md#removeRight)
 - [`replace`](docs/api.EN.md#replace)
 - [`replaceAll`](docs/api.EN.md#replaceAll)
+- [`reverse`](docs/api.EN.md#reverse)
 - [`setHead`](docs/api.EN.md#setHead)
 - [`setHeadWith`](docs/api.EN.md#setHeadWith)
 - [`setLast`](docs/api.EN.md#setLast)
@@ -349,15 +399,21 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`takeRight`](docs/api.EN.md#takeRight)
 - [`takeRightWhile`](docs/api.EN.md#takeRightWhile)
 - [`takeWhile`](docs/api.EN.md#takeWhile)
+- [`toLower`](docs/api.EN.md#toLower)
+- [`toUpper`](docs/api.EN.md#toUpper)
 - [`xshift`](docs/api.EN.md#xshift)
 - [`xshiftLeft`](docs/api.EN.md#xshiftLeft)
+
+<br/>
 
 </details>
 
 #### `Object`
 
 <details>
-<summary>Functions whose return value is a plain object.</summary>
+<summary>Functions whose return value is a plain **object**.</summary>
+
+<br/>
 
 - [`assign`](docs/api.EN.md#assign)
 - [`assignWith`](docs/api.EN.md#assignWith)
@@ -367,14 +423,20 @@ Also, an alphabetically ordered list of all available functions can be found [he
 - [`countIn`](docs/api.EN.md#countIn)
 - [`zipObj`](docs/api.EN.md#zipObj)
 
+<br/>
+
 </details>
 
 #### `Undefined`
 
 <details>
-<summary>Functions whose return value is undefined.</summary>
+<summary>Functions whose return value is **undefined**.</summary>
+
+<br/>
 
 - [`forEach`](docs/api.EN.md#forEach)
+
+<br/>
 
 </details>
 
