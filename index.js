@@ -111,6 +111,7 @@ const notDate = require('./src/not-date')
 const notEmpty = require('./src/not-empty')
 const notFn = require('./src/not-fn')
 const notInt = require('./src/not-int')
+const notLower = require('./src/not-lower')
 const notNil = require('./src/not-nil')
 const notNull = require('./src/not-null')
 const notNum = require('./src/not-num')
@@ -310,6 +311,7 @@ module.exports = {
   notEmpty,
   notFn,
   notInt,
+  notLower,
   notNil,
   notNull,
   notNum,
