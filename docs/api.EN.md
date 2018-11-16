@@ -352,6 +352,23 @@ breakWhen(eq('-'), '123-456-78') //=> ['123', '-456-78']
 breakWhen(eq('-'))('123-456-78') //=> ['123', '-456-78']
 ```
 
+#### `ceil(x)`
+
+- x: `Number`
+- Returns: `Number`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/ceil.js)
+
+Accepts a number `x`, and returns the smallest integer greater than or equal to `x`.
+
+```js
+ceil(5) //=> 5
+ceil(5.123) //=> 6
+ceil(div(5, 10)) //=> 1
+ceil(div(5)(10)) //=> 1
+```
+
 #### `comp(fn[, fn])`
 
 - fn: `Function`
@@ -735,6 +752,28 @@ eq(1, 1) //=> true
 eq(1)(1) //=> true
 ```
 
+#### `erase(i, j, xs)`
+
+- i: `Number`
+- j: `Number`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.1.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/erase.js)
+
+Accepts two numbers `i` & `j`, an array or a string `xs`, and returns a new array or a string that contains all elements of `xs`, except for the elements between the indices `i` & `j`, without including the element corresponding to the index `j`.
+
+```js
+erase(1, 5, range(0, 6, 1)) //=> [1, 5]
+erase(1, 5)(range(0, 6, 1)) //=> [1, 5]
+erase(1)(5)(range(0, 6, 1)) //=> [1, 5]
+erase(1)(5)(range(0)(6)(1)) //=> [1, 5]
+erase(1, 5, 'foobar') //=> 'for'
+erase(1, 5)('foobar') //=> 'for'
+erase(1)(5)('foobar') //=> 'for'
+```
+
 #### `even(x)`
 
 - x: `Number`
@@ -810,6 +849,23 @@ ext('a', {'a': 1}) //=> 1
 ext('a')({'a': 1}) //=> 1
 map(ext('a'), [{'a': 1}, {'a': 2}, {'a': 3}]) //=> [1, 2, 3]
 map(ext('a'))([{'a': 1}, {'a': 2}, {'a': 3}]) //=> [1, 2, 3]
+```
+
+#### `F()`
+
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/F.js)
+
+A constant function, which always returns `false` when invoked, regardless of the provided arguments.
+
+```js
+F() //=> false
+F([1, 2]) //=> false
+map(F, range(1, 4, 1)) //=> [false, false, false]
+map(F)(range(1, 4, 1)) //=> [false, false, false]
+map(F)(range(1)(4)(1)) //=> [false, false, false]
 ```
 
 #### `fact(x)`
@@ -949,18 +1005,21 @@ Accepts a function `fn`, an array `xs`, and iterates over `xs` applying `fn` to 
 forEach(incr, [1, 2, 3]) //=> 2 3 4
 ```
 
-#### `fst(xs)`
+#### `Fs(n)`
 
-- xs: `Array`
-- Returns: `Any`
+- n: `Number`
+- Returns: `Array`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/fst.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/Fs.js)
 
-Accepts an array `xs` of length 2, also known as `pair`, and returns its fist element.
+Accepts a number `n`, and returns an array of length `n`, containing only the value `false`.
 
 ```js
-fst([1, 2]) //=> 1
+Fs(0) //=> []
+Fs(1) //=> [false]
+Fs(3) //=> [false, false, false]
+map(not, Fs(3)) //=> [true, true, true]
 ```
 
 #### `gather(fn)`
@@ -1059,6 +1118,25 @@ gte(3)(2) //=> true
 every(gte(1), range(1, 10, 2)) //=> true
 every(gte(1))(range(1, 10, 2)) //=> true
 every(gte(1))(range(1)(10)(2)) //=> true
+```
+
+#### `halve(xs)`
+
+- xs: `Array|String`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/halve.js)
+
+Accepts an array or a string `xs`, partitions `xs` in half and returns a new array containing the two halves.
+
+```js
+halve([]) //=> [[], []]
+halve('') //=> ['', '']
+halve(ones(1)) //=> [[1], []]
+halve('1') //=> ['1', '']
+halve(range(1, 7, 1)) //=> [[1, 2, 3], [4, 5, 6]]
+halve(range(1)(7)(1)) //=> [[1, 2, 3], [4, 5, 6]]
+halve('foobar') //=> ['foo', 'bar']
 ```
 
 #### `hasProp(prop, obj)`
@@ -1268,10 +1346,10 @@ isInt(0.1) //=> false
 - xs: `String`
 - Returns: `Boolean`
 - Curried: `True`
-- Added on: `0.1.0`
+- Added on: `0.2.0`
 - [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-lower.js)
 
-Accepts a string `xs`, and returns true if every character in `xs` is in lower case.
+Accepts a string `xs`, and returns `true` if every character in `xs` is in lower case.
 
 ```js
 isLower('foo') //=> true
@@ -1448,10 +1526,10 @@ isUndef('foo') //=> false
 - xs: `String`
 - Returns: `Boolean`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-lower.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-upper.js)
 
-Accepts a string `xs`, and returns true if every character in `xs` is in upper case.
+Accepts a string `xs`, and returns `true` if every character in `xs` is in upper case.
 
 ```js
 isUpper('foo') //=> false
@@ -1946,6 +2024,23 @@ notInt(5) //=> false
 notInt(applyArgs(pair(2, 10), flip(div))) //=> false
 ```
 
+#### `notLower(xs)`
+
+- xs: `String`
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-lower.js)
+
+Accepts a string `xs`, and returns `true` if every character in `xs` is not in lower case.
+
+```js
+notLower('foo') //=> false
+notLower('FOO') //=> true
+notLower('100') //=> true
+notLower('%$^') //=> true
+```
+
 #### `notNil(x)`
 
 - x: `Any`
@@ -2063,6 +2158,23 @@ Accepts a value `x`, and returns `true` if `xs` is not a string.
 notStr('bar') //=> false
 notStr(range(1, 4, 1)) //=> true
 notStr(range(1)(4)(1)) //=> true
+```
+
+#### `notUpper(xs)`
+
+- xs: `String`
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-upper.js)
+
+Accepts a string `xs`, and returns `true` if every character in `xs` is not in upper case.
+
+```js
+notUpper('foo') //=> true
+notUpper('FOO') //=> false
+notUpper('100') //=> true
+notUpper('%$^') //=> true
 ```
 
 #### `not(x)`
@@ -2493,49 +2605,64 @@ reject(even)(range(0, 6, 1)) //=> [1, 3, 5]
 reject(even)(range(0)(6)(1)) //=> [1, 3, 5]
 ```
 
-#### `remove(i, j, xs)`
-
-- i: `Number`
-- j: `Number`
-- xs: `Array|String`
-- Returns: `Array|String`
-- Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/remove.js)
-
-Accepts two numbers `i` & `j`, an array or a string `xs`, and returns a new array or a string that contains all elements of `xs`, except for the elements between the indices `i` & `j`, without including the element corresponding to the index `j`.
-
-```js
-remove(1, 5, range(0, 6, 1)) //=> [1, 5]
-remove(1, 5)(range(0, 6, 1)) //=> [1, 5]
-remove(1)(5)(range(0, 6, 1)) //=> [1, 5]
-remove(1)(5)(range(0)(6)(1)) //=> [1, 5]
-remove(1, 5, 'foobar') //=> 'or'
-remove(1, 5)('foobar') //=> 'or'
-remove(1)(5)('foobar') //=> 'or'
-```
-
-#### `replaceAll(x, rep, xs)`
+#### `remove(x, xs)`
 
 - x: `Any`
-- rep: `Any`
 - xs: `Array|String`
 - Returns: `Array|String`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/replace-all.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/remove.js)
 
-Accepts a value `x`, a value `rep`, an array or a string `xs`, and returns a new array or a string, where all occurrences of `x` in `xs` are replaced by `rep`. If `xs` is a string, then `rep` is automatically converted to a string.
+Accepts a value `x`, an array or a string `xs`, and returns a new array or a string, where the first occurrence of `x` in `xs`, from the left to right side, is removed.
 
 ```js
-replaceAll(1, 10, concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
-replaceAll(1, 10)(concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
-replaceAll(1)(10)(concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
-replaceAll(1)(10)(concat(pair(1, 20))(pair(1, 50))) //=> [10, 20, 10, 50]
-replaceAll(1)(10)(concat(pair(1)(20))(pair(1)(50))) //=> [10, 20, 10, 50]
-replaceAll('_', 'o', 'f__bar') //=> 'foobar'
-replaceAll('_', 'o')('f__bar') //=> 'foobar'
-replaceAll('_')('o')('f__bar') //=> 'foobar'
+remove(0, concat(pair(0, 20), pair(0, 50))) //=> [20, 0, 50]
+remove(0)(concat(pair(0, 20), pair(0, 50))) //=> [20, 0, 50]
+remove(0)(concat(pair(0, 20))(pair(0, 50))) //=> [20, 0, 50]
+remove(0)(concat(pair(0)(20))(pair(0)(50))) //=> [20, 0, 50]
+remove('!', 'b!r!') //=> 'br!'
+remove('!')('b!r!') //=> 'br!'
+```
+
+#### `removeAll(x, xs)`
+
+- x: `Any`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/remove-all.js)
+
+Accepts a value `x`, an array or a string `xs`, and returns a new array or a string, where all occurrence of `x` in `xs`, are removed.
+
+```js
+removeAll(0, concat(pair(0, 20), pair(0, 50))) //=> [20, 50]
+removeAll(0)(concat(pair(0, 20), pair(0, 50))) //=> [20, 50]
+removeAll(0)(concat(pair(0, 20))(pair(0, 50))) //=> [20, 50]
+removeAll(0)(concat(pair(0)(20))(pair(0)(50))) //=> [20, 50]
+removeAll('!', 'b!r!') //=> 'br'
+removeAll('!')('b!r!') //=> 'br'
+```
+
+#### `removeRight(x, xs)`
+
+- x: `Any`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/remove-right.js)
+
+Accepts a value `x`, an array or a string `xs`, and returns a new array or a string, where the first occurrence of `x` in `xs`, from the right to left side, is removed.
+
+```js
+removeRight(0, concat(pair(0, 20), pair(0, 50))) //=> [0, 20, 50]
+removeRight(0)(concat(pair(0, 20), pair(0, 50))) //=> [0, 20, 50]
+removeRight(0)(concat(pair(0, 20))(pair(0, 50))) //=> [0, 20, 50]
+removeRight(0)(concat(pair(0)(20))(pair(0)(50))) //=> [0, 20, 50]
+removeRight('!', 'b!r!') //=> 'b!r'
+removeRight('!')('b!r!') //=> 'b!r'
 ```
 
 #### `replace(x, rep, xs)`
@@ -2559,6 +2686,29 @@ replace(0)(10)(concat(pair(0)(20))(pair(0)(50))) //=> [10, 10, 10, 0]
 replace('!', 'a', 'b!r!') //=> 'bar!'
 replace('!', 'a')('b!r!') //=> 'bar!'
 replace('!')('a')('b!r!') //=> 'bar!'
+```
+
+#### `replaceAll(x, rep, xs)`
+
+- x: `Any`
+- rep: `Any`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.1.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/replace-all.js)
+
+Accepts a value `x`, a value `rep`, an array or a string `xs`, and returns a new array or a string, where all occurrences of `x` in `xs` are replaced by `rep`. If `xs` is a string, then `rep` is automatically converted to a string.
+
+```js
+replaceAll(1, 10, concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
+replaceAll(1, 10)(concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
+replaceAll(1)(10)(concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
+replaceAll(1)(10)(concat(pair(1, 20))(pair(1, 50))) //=> [10, 20, 10, 50]
+replaceAll(1)(10)(concat(pair(1)(20))(pair(1)(50))) //=> [10, 20, 10, 50]
+replaceAll('_', 'o', 'f__bar') //=> 'foobar'
+replaceAll('_', 'o')('f__bar') //=> 'foobar'
+replaceAll('_')('o')('f__bar') //=> 'foobar'
 ```
 
 #### `reverseArgs(fn)`
@@ -2776,13 +2926,13 @@ slice(0)(3)('foobar') //=> 'foo'
 
 #### `snd(xs)`
 
-- xs: `Array`
-- Returns: `Array`
+- xs: `Array|String`
+- Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
 - [Go to source](https://github.com/klauscfhq/arare/tree/master/src/snd.js)
 
-Accepts an array `xs` of length `2`, also known as a `pair`, and returns the last element of the array.
+Accepts an array or a string `xs`, and returns the second element.
 
 ```js
 snd([1, 2]) //=> 2
@@ -2964,6 +3114,23 @@ swap(1, 4)('foobar') //=> 'faobor'
 swap(1)(4)('foobar') //=> 'faobor'
 ```
 
+#### `T()`
+
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/T.js)
+
+A constant function, which always returns `true` when invoked, regardless of the provided arguments.
+
+```js
+T() //=> true
+T([1, 2]) //=> true
+map(T, range(1, 4, 1)) //=> [true, true, true]
+map(T)(range(1, 4, 1)) //=> [true, true, true]
+map(T)(range(1)(4)(1)) //=> [true, true, true]
+```
+
 #### `tail(xs)`
 
 - xs: `Array|String`
@@ -3080,7 +3247,7 @@ array3(1, 2, 3, 4) //=> [1, 2, 3]
 - xs: `String`
 - Returns: `String`
 - Curried: `True`
-- Added on: `0.1.0`
+- Added on: `0.2.0`
 - [Go to source](https://github.com/klauscfhq/arare/tree/master/src/to-lower.js)
 
 Accepts a string `xs`, and returns the same string containing all characters in lower upper.
@@ -3098,8 +3265,8 @@ map(toLower)(pair('FOO')('BAR')) //=> ['foo', 'bar']
 - xs: `String`
 - Returns: `String`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/to-lower.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/to-upper.js)
 
 Accepts a string `xs`, and returns the same string containing all characters in upper case.
 
@@ -3109,6 +3276,23 @@ toUpper('FOO') //=> 'FOO'
 map(toUpper, pair('foo', 'bar')) //=> ['FOO', 'BAR']
 map(toUpper)(pair('foo', 'bar')) //=> ['FOO', 'BAR']
 map(toUpper)(pair('foo')('bar')) //=> ['FOO', 'BAR']
+```
+
+#### `trd(xs)`
+
+- xs: `Array|String`
+- Returns: `Any`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/trd.js)
+
+Accepts an array or a string `xs`, and returns the third element.
+
+```js
+trd([1, 2, 3]) //=> 3
+trd('foo') //=> 'o'
+trd(range(1, 4, 1)) //=> 3
+trd(range(1)(4)(1)) //=> 3
 ```
 
 #### `trunc(x)`
@@ -3126,6 +3310,23 @@ trunc(5) //=> 5
 trunc(5.123) //=> 5
 trunc(div(5, 10)) //=> 0
 trunc(div(5)(10)) //=> 0
+```
+
+#### `Ts(n)`
+
+- n: `Number`
+- Returns: `Array`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/Ts.js)
+
+Accepts a number `n`, and returns an array of length `n`, containing only the value `true`.
+
+```js
+Ts(0) //=> []
+Ts(1) //=> [true]
+Ts(3) //=> [true, true, true]
+map(not, Ts(3)) //=> [false, false, false]
 ```
 
 #### `unary(fn)`
