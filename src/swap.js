@@ -1,21 +1,23 @@
 'use strict'
 const adjustIndex = require('./adjust-index')
 const and = require('./and')
-const arrayify = require('./arrayify')
+const concat = require('./concat')
 const curry = require('./curry')
 const decr = require('./decr')
+const empty = require('./empty')
 const eq = require('./eq')
 const head = require('./head')
 const isEmpty = require('./is-empty')
 const len = require('./len')
 const map = require('./map')
-const mapcat = require('./mapcat')
 const max = require('./max')
 const min = require('./min')
 const notArr = require('./not-arr')
 const notStr = require('./not-str')
 const or = require('./or')
 const partitionAt = require('./partition-at')
+const prepend = require('./prepend')
+const reduce = require('./reduce')
 const sub = require('./sub')
 const tail = require('./tail')
 
@@ -31,7 +33,7 @@ function swap(i, j, xs) {
   const [hd, rest] = partitionAt(min(k, n), xs)
   const [md, tl] = partitionAt(sub(max(k, n), len(hd)), rest)
 
-  return mapcat(arrayify, [hd, head(tl), tail(md), head(md), tail(tl)])
+  return reduce(concat, empty(xs), [hd, prepend(head(tl), tail(md)), prepend(head(md), tail(tl))])
 }
 
 module.exports = curry(swap)
