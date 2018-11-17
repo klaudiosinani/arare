@@ -1311,6 +1311,27 @@ isEmpty(ones(1)) //=> false
 isEmpty('foo')  //=> false
 ```
 
+#### `insert(idx, x, xs)`
+
+- idx: `Number`
+- x: `Any`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.3.0`
+- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/insert.js)
+
+Accepts a number `idx`, a value `x`, an array or a string `xs`, and returns a shallow copy of `xs`, that contains the value `x`, inserted at the position corresponding to the index `idx`.
+
+```js
+insert(0, 20, []) //=> [20]
+insert(0, 20, '') //=> '20'
+insert(2, 20, range(1, 5, 1)) //=> [1, 2, 20, 3, 4]
+insert(2)(20)(range(1)(6)(1)) //=> [1, 2, 20, 3, 4]
+insert(3, '-', 'foobar') //=> 'foo-bar'
+insert(3)('-')('foobar') //=> 'foo-bar'
+```
+
 #### `isFn(x)`
 
 - x: `Any`
