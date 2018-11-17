@@ -1,4 +1,4 @@
-## Arare Documentation
+## Arare API Documentation
 
 The following is an alphabetically ordered list of all available functions along with usage examples.
 
