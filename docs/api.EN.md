@@ -1327,7 +1327,7 @@ Accepts a number `idx`, a value `x`, an array or a string `xs`, and returns a sh
 insert(0, 20, []) //=> [20]
 insert(0, 20, '') //=> '20'
 insert(2, 20, range(1, 5, 1)) //=> [1, 2, 20, 3, 4]
-insert(2)(20)(range(1)(6)(1)) //=> [1, 2, 20, 3, 4]
+insert(2)(20)(range(1)(5)(1)) //=> [1, 2, 20, 3, 4]
 insert(3, '-', 'foobar') //=> 'foo-bar'
 insert(3)('-')('foobar') //=> 'foo-bar'
 ```
