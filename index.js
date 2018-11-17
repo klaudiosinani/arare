@@ -68,6 +68,7 @@ const id = require('./src/id')
 const includes = require('./src/includes')
 const incr = require('./src/incr')
 const init = require('./src/init')
+const insert = require('./src/insert')
 const isArr = require('./src/is-arr')
 const isDate = require('./src/is-date')
 const isDef = require('./src/is-def')
@@ -272,6 +273,7 @@ module.exports = {
   includes,
   incr,
   init,
+  insert,
   isArr,
   isDate,
   isDef,
