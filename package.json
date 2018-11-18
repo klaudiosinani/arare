@@ -3,11 +3,11 @@
   "version": "0.3.0",
   "description": "🍘 Lightweight auto-curried functional programming library",
   "license": "MIT",
-  "repository": "klauscfhq/arare",
+  "repository": "klaussinani/arare",
   "author": {
     "name": "Klaus Sinani",
-    "email": "klauscfhq@protonmail.com",
-    "url": "https://klauscfhq.github.io"
+    "email": "klaussinani@gmail.com",
+    "url": "https://klaussinani.github.io"
   },
   "bin": {
     "arare": "repl.js"
