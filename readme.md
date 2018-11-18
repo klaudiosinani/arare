@@ -11,8 +11,8 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klauscfhq/arare">
-    <img alt="Build Status" src="https://travis-ci.com/klauscfhq/arare.svg?branch=master">
+  <a href="https://travis-ci.com/klaussinani/arare">
+    <img alt="Build Status" src="https://travis-ci.com/klaussinani/arare.svg?branch=master">
   </a>
 </p>
 
@@ -22,7 +22,7 @@ Lightweight and without any external dependencies arare enables you to write tac
 
 Please note that project is in its early days and that it is currently under active development.
 
-Come over to [Gitter](https://gitter.im/klauscfhq/arare) or [Twitter](https://twitter.com/klauscfhq) to share your thoughts on the project.
+Come over to [Gitter](https://gitter.im/klaussinani/arare) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
 
 
 ## Highlights
@@ -451,8 +451,8 @@ An alphabetically ordered list of all available functions can be found [**here**
 
 ## Team
 
-- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq)
+- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
 
 ## License
 
-[MIT](https://github.com/klauscfhq/arare/blob/master/license.md)
+[MIT](https://github.com/klaussinani/arare/blob/master/license.md)
