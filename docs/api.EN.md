@@ -134,8 +134,6 @@ append(3)(ones(1)) //=> [1, 3]
 append(3, pair(1, 2)) //=> [1, 2, 3]
 append(3)(pair(1, 2)) //=> [1, 2, 3]
 append(3)(pair(1)(2)) //=> [1, 2, 3]
-appendTo('o', 'fo') //=> 'foo'
-appendTo('o')('fo') //=> 'foo'
 ```
 
 #### `applyArgs(args, fn)`
@@ -297,9 +295,9 @@ assignWith(add(10))('a')({ a: 1, b: 2 }) //=> { a: 11, b: 2}
 Accepts a string `k`, a value `v`, an object `obj`, and returns a shallow copy of `obj` where the value corresponding to the property `k` is replaced by `v`.
 
 ```js
-assignWith(10, 'a', { a: 1, b: 2 }) //=> { a: 10, b: 2}
-assignWith(10, 'a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
-assignWith(10)('a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
+assign(10, 'a', { a: 1, b: 2 }) //=> { a: 10, b: 2}
+assign(10, 'a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
+assign(10)('a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
 ```
 
 #### `binary(fn)`
@@ -315,7 +313,7 @@ Accepts a number `n`, a function `fn`, and returns a wrapper function of `fn` wi
 ```js
 const array2 = binary(array)
 
-array2(1, 2) //=> 1 2
+array2(1, 2) //=> [1, 2]
 array2(1, 2, 3) //=> [1, 2]
 ```
 
@@ -657,8 +655,8 @@ Accepts a number `n`, an array or a string `xs`, and returns a new array or a st
 ```js
 drop(2, [1, 2, 3, 4]) //=> [3, 4]
 drop(2)([1, 2, 3, 4]) //=> [3, 4]
-drop(3, 'foo..') //=> '...'
-drop(3)('foo..') //=> '...'
+drop(3, 'foo...') //=> '...'
+drop(3)('foo...') //=> '...'
 ```
 
 #### `empty(xs)`
