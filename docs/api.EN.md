@@ -134,6 +134,8 @@ append(3)(ones(1)) //=> [1, 3]
 append(3, pair(1, 2)) //=> [1, 2, 3]
 append(3)(pair(1, 2)) //=> [1, 2, 3]
 append(3)(pair(1)(2)) //=> [1, 2, 3]
+append('o', 'fo') //=> 'foo'
+append('o')('fo') //=> 'foo'
 ```
 
 #### `applyArgs(args, fn)`
