@@ -1,4 +1,4 @@
-const {and, cond, eq, lte, lt, gte, partialRight} = require('..')
+const {cond, eq, lt} = require('..')
 
 const True = () => true
 const False = () => false
@@ -34,18 +34,7 @@ test('correctly calls the predicate', () => {
   expect(testCond(101)).toBe('greater than 100')
 })
 
-test('it handles multiple argument lengths', () => {
-  const inclusive = (pair, x) => and(gte(x, pair[0]), lte(x, pair[1]))
-
-  expect(inclusive([50, 100], 75)).toBe(true)
-})
-
-test('it handles multiple argument lengths v2', () => {
-  const inclusive = pair =>
-    and(partialRight(gte, [pair[0]]), partialRight(lte, [pair[1]]))
-
-  expect(inclusive([50, 100])(75)).toBe(true)
-})
+test.skip('it handles multiple argument lengths', () => {})
 
 test('it returns undefined if no catch-all is given', () => {
   const whoops = cond([
