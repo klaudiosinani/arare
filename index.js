@@ -19,6 +19,7 @@ const assignWith = require('./src/assign-with')
 const binary = require('./src/binary')
 const bool = require('./src/bool')
 const breakWhen = require('./src/break-when')
+const ceil = require('./src/ceil')
 const comp = require('./src/comp')
 const cond = require('./src/cond')
 const concat = require('./src/concat')
@@ -41,10 +42,12 @@ const endsWith = require('./src/ends-with')
 const entries = require('./src/entries')
 const eq = require('./src/eq')
 const eqProp = require('./src/eq-prop')
+const erase = require('./src/erase')
 const even = require('./src/even')
 const every = require('./src/every')
 const excludes = require('./src/excludes')
 const ext = require('./src/ext')
+const F = require('./src/F')
 const fact = require('./src/fact')
 const fill = require('./src/fill')
 const filter = require('./src/filter')
@@ -53,18 +56,20 @@ const findIndex = require('./src/find-index')
 const flatten = require('./src/flatten')
 const flip = require('./src/flip')
 const forEach = require('./src/for-each')
-const fst = require('./src/fst')
+const Fs = require('./src/Fs')
 const gather = require('./src/gather')
 const gcd = require('./src/gcd')
 const getNth = require('./src/get-nth')
 const gt = require('./src/gt')
 const gte = require('./src/gte')
+const halve = require('./src/halve')
 const hasProp = require('./src/has-prop')
 const head = require('./src/head')
 const id = require('./src/id')
 const includes = require('./src/includes')
 const incr = require('./src/incr')
 const init = require('./src/init')
+const insert = require('./src/insert')
 const isArr = require('./src/is-arr')
 const isDate = require('./src/is-date')
 const isDef = require('./src/is-def')
@@ -110,6 +115,7 @@ const notDate = require('./src/not-date')
 const notEmpty = require('./src/not-empty')
 const notFn = require('./src/not-fn')
 const notInt = require('./src/not-int')
+const notLower = require('./src/not-lower')
 const notNil = require('./src/not-nil')
 const notNull = require('./src/not-null')
 const notNum = require('./src/not-num')
@@ -117,6 +123,7 @@ const notObj = require('./src/not-obj')
 const notPair = require('./src/not-pair')
 const notRegExp = require('./src/not-reg-exp')
 const notStr = require('./src/not-str')
+const notUpper = require('./src/not-upper')
 const nullary = require('./src/nullary')
 const num = require('./src/num')
 const odd = require('./src/odd')
@@ -140,6 +147,8 @@ const reduce = require('./src/reduce')
 const reduceRight = require('./src/reduce-right')
 const reject = require('./src/reject')
 const remove = require('./src/remove')
+const removeAll = require('./src/remove-all')
+const removeRight = require('./src/remove-right')
 const replace = require('./src/replace')
 const replaceAll = require('./src/replace-all')
 const reverse = require('./src/reverse')
@@ -163,6 +172,7 @@ const str = require('./src/str')
 const sub = require('./src/sub')
 const sum = require('./src/sum')
 const swap = require('./src/swap')
+const T = require('./src/T')
 const tail = require('./src/tail')
 const take = require('./src/take')
 const takeRight = require('./src/take-right')
@@ -171,7 +181,9 @@ const takeWhile = require('./src/take-while')
 const ternary = require('./src/ternary')
 const toLower = require('./src/to-lower')
 const toUpper = require('./src/to-upper')
+const trd = require('./src/trd')
 const trunc = require('./src/trunc')
+const Ts = require('./src/Ts')
 const unary = require('./src/unary')
 const uncurry = require('./src/uncurry')
 const uneq = require('./src/uneq')
@@ -214,6 +226,7 @@ module.exports = {
   binary,
   bool,
   breakWhen,
+  ceil,
   comp,
   cond,
   concat,
@@ -236,10 +249,12 @@ module.exports = {
   entries,
   eq,
   eqProp,
+  erase,
   even,
   every,
   excludes,
   ext,
+  F,
   fact,
   fill,
   filter,
@@ -248,18 +263,20 @@ module.exports = {
   flatten,
   flip,
   forEach,
-  fst,
+  Fs,
   gather,
   gcd,
   getNth,
   gt,
   gte,
+  halve,
   hasProp,
   head,
   id,
   includes,
   incr,
   init,
+  insert,
   isArr,
   isDate,
   isDef,
@@ -305,6 +322,7 @@ module.exports = {
   notEmpty,
   notFn,
   notInt,
+  notLower,
   notNil,
   notNull,
   notNum,
@@ -312,6 +330,7 @@ module.exports = {
   notPair,
   notRegExp,
   notStr,
+  notUpper,
   nullary,
   num,
   odd,
@@ -335,6 +354,8 @@ module.exports = {
   reduceRight,
   reject,
   remove,
+  removeAll,
+  removeRight,
   replace,
   replaceAll,
   reverse,
@@ -358,6 +379,7 @@ module.exports = {
   sub,
   sum,
   swap,
+  T,
   tail,
   take,
   takeRight,
@@ -366,7 +388,9 @@ module.exports = {
   ternary,
   toLower,
   toUpper,
+  trd,
   trunc,
+  Ts,
   unary,
   uncurry,
   uneq,

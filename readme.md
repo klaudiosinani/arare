@@ -11,23 +11,23 @@
 </div>
 
 <p align="center">
-  <a href="https://travis-ci.com/klauscfhq/arare">
-    <img alt="Build Status" src="https://travis-ci.com/klauscfhq/arare.svg?branch=master">
+  <a href="https://travis-ci.com/klaussinani/arare">
+    <img alt="Build Status" src="https://travis-ci.com/klaussinani/arare.svg?branch=master">
   </a>
 </p>
 
 ## Description
 
-Lightweight and without any external dependencies arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 190 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Regular currying can still be achieved by applying one instead of multiple arguments at a time to a function. Finally, the library comes with a build-in interactive REPL environment, useful for directly inspecting and experimenting with all available modules without leaving the console.
+Lightweight and without any external dependencies arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 200 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Finally, the library comes with a build-in interactive REPL environment, useful for directly inspecting and experimenting with all available modules without leaving the console.
 
 Please note that project is in its early days and that it is currently under active development.
 
-Come over to [Gitter](https://gitter.im/klauscfhq/arare) or [Twitter](https://twitter.com/klauscfhq) to share your thoughts on the project.
+Come over to [Gitter](https://gitter.im/klaussinani/arare) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
 
 
 ## Highlights
 
-- Over 190 available functions
+- Over 200 available functions
 - Build-in interactive REPL
 - Point-free & tacit
 - High-order & pure functions
@@ -63,7 +63,8 @@ Import arare and start using directly any of the available modules.
 ```js
 const A = require('arare')
 
-A.map(A.add(10), A.range(1, 4, 1)) //=> [11, 12, 13]
+A.map(A.add(10), A.range(1, 4, 1))
+//=> [11, 12, 13]
 ```
 
 Alternatively, select and import only the modules that you need.
@@ -71,7 +72,8 @@ Alternatively, select and import only the modules that you need.
 ```js
 const {add, map, range} = require('arare')
 
-map(add(10), range(1, 4, 1)) //=> [11, 12, 13]
+map(add(10), range(1, 4, 1))
+//=> [11, 12, 13]
 ```
 
 ## REPL
@@ -96,285 +98,347 @@ arare # launch REPL
 
 The following lists contain all available functions grouped into categories according to the type of their respective returning value.
 
-Also, an alphabetically ordered list of all available functions can be found [here](docs/api.EN.md).
+An alphabetically ordered list of all available functions can be found [**here**](docs/api.EN.md).
 
 
 #### `Any`
 
 <details>
-<summary>Functions whose return value varies according to their input.</summary>
+<summary>Functions whose return value <b>varies</b> according to their input.</summary>
 
-- [`apply`](docs/api.EN.md#apply)
-- [`ext`](docs/api.EN.md#ext)
-- [`fst`](docs/api.EN.md#fst)
-- [`getNth`](docs/api.EN.md#getNth)
-- [`head`](docs/api.EN.md#head)
-- [`id`](docs/api.EN.md#id)
-- [`ite`](docs/api.EN.md#ite)
-- [`last`](docs/api.EN.md#last)
-- [`snd`](docs/api.EN.md#snd)
-- [`startsWith`](docs/api.EN.md#startsWith)
-- [`xapply`](docs/api.EN.md#xapply)
+<br/>
+
+- [`apply`](docs/api.EN.md#applyx-fn)
+- [`applyArgs`](docs/api.EN.md#applyArgsargs-fn)
+- [`ext`](docs/api.EN.md#extprop-obj)
+- [`find`](docs/api.EN.md#findfn-xs)
+- [`getNth`](docs/api.EN.md#getNthidx-xs)
+- [`head`](docs/api.EN.md#headxs)
+- [`id`](docs/api.EN.md#idx)
+- [`ite`](docs/api.EN.md#itefn-x-y)
+- [`last`](docs/api.EN.md#lastxs)
+- [`reduce`](docs/api.EN.md#reducefn-acc-xs)
+- [`reduceRight`](docs/api.EN.md#reduceRightfn-acc-xs)
+- [`snd`](docs/api.EN.md#sndxs)
+- [`startsWith`](docs/api.EN.md#startsWithx-xs)
+- [`trd`](docs/api.EN.md#trdxs)
+- [`xapply`](docs/api.EN.md#xapplyx-y-fn)
+
+<br/>
 
 </details>
 
 #### `Array`
 
 <details>
-<summary>Functions whose return value is an array.</summary>
+<summary>Functions whose return value is an <b>array</b>.</summary>
 
-- [`append`](docs/api.EN.md#append)
-- [`appendTo`](docs/api.EN.md#appendTo)
-- [`array`](docs/api.EN.md#array)
-- [`arrayify`](docs/api.EN.md#arrayify)
-- [`arrayMinMax`](docs/api.EN.md#arrayMinMax)
-- [`breakWhen`](docs/api.EN.md#breakWhen)
-- [`concat`](docs/api.EN.md#concat)
-- [`copy`](docs/api.EN.md#copy)
-- [`drop`](docs/api.EN.md#drop)
-- [`dropRight`](docs/api.EN.md#dropRight)
-- [`dropRightWhile`](docs/api.EN.md#dropRightWhile)
-- [`dropWhile`](docs/api.EN.md#dropWhile)
-- [`empty`](docs/api.EN.md#empty)
-- [`entries`](docs/api.EN.md#entries)
-- [`fill`](docs/api.EN.md#fill)
-- [`filter`](docs/api.EN.md#filter)
-- [`flatten`](docs/api.EN.md#flatten)
-- [`init`](docs/api.EN.md#init)
-- [`keys`](docs/api.EN.md#keys)
-- [`map`](docs/api.EN.md#map)
-- [`mapcat`](docs/api.EN.md#mapcat)
-- [`merge`](docs/api.EN.md#merge)
-- [`mergeBy`](docs/api.EN.md#mergeBy)
-- [`ones`](docs/api.EN.md#ones)
-- [`pair`](docs/api.EN.md#pair)
-- [`partition`](docs/api.EN.md#partition)
-- [`partitionAt`](docs/api.EN.md#partitionAt)
-- [`prepend`](docs/api.EN.md#prepend)
-- [`prependTo`](docs/api.EN.md#prependTo)
-- [`props`](docs/api.EN.md#props)
-- [`range`](docs/api.EN.md#range)
-- [`reduce`](docs/api.EN.md#reduce)
-- [`reduceRight`](docs/api.EN.md#reduceRight)
-- [`reject`](docs/api.EN.md#reject)
-- [`remove`](docs/api.EN.md#remove)
-- [`replace`](docs/api.EN.md#replace)
-- [`replaceAll`](docs/api.EN.md#replaceAll)
-- [`setHead`](docs/api.EN.md#setHead)
-- [`setHeadWith`](docs/api.EN.md#setHeadWith)
-- [`setLast`](docs/api.EN.md#setLast)
-- [`setLastWith`](docs/api.EN.md#setLastWith)
-- [`setNth`](docs/api.EN.md#setNth)
-- [`setNthWith`](docs/api.EN.md#setNthWith)
-- [`shift`](docs/api.EN.md#shift)
-- [`shiftLeft`](docs/api.EN.md#shiftLeft)
-- [`slice`](docs/api.EN.md#slice)
-- [`split`](docs/api.EN.md#split)
-- [`swap`](docs/api.EN.md#swap)
-- [`tail`](docs/api.EN.md#tail)
-- [`take`](docs/api.EN.md#take)
-- [`takeRight`](docs/api.EN.md#takeRight)
-- [`takeRightWhile`](docs/api.EN.md#takeRightWhile)
-- [`takeWhile`](docs/api.EN.md#takeWhile)
-- [`values`](docs/api.EN.md#values)
-- [`xshift`](docs/api.EN.md#xshift)
-- [`xshiftLeft`](docs/api.EN.md#xshiftLeft)
-- [`zeros`](docs/api.EN.md#zeros)
-- [`zip`](docs/api.EN.md#zip)
-- [`zipReverse`](docs/api.EN.md#zipReverse)
-- [`zipSelf`](docs/api.EN.md#zipSelf)
-- [`zipTail`](docs/api.EN.md#zipTail)
-- [`zipWith`](docs/api.EN.md#zipWith)
+<br/>
+
+- [`append`](docs/api.EN.md#appendx-xs)
+- [`appendTo`](docs/api.EN.md#appendToxs-x)
+- [`array`](docs/api.EN.md#arrayx-x)
+- [`arrayify`](docs/api.EN.md#arrayifyx)
+- [`arrayMinMax`](docs/api.EN.md#arrayMinMaxxs)
+- [`breakWhen`](docs/api.EN.md#breakWhenfn-xs)
+- [`concat`](docs/api.EN.md#concatxs-ys)
+- [`copy`](docs/api.EN.md#copyxs)
+- [`drop`](docs/api.EN.md#dropn-xs)
+- [`dropRight`](docs/api.EN.md#dropRightn-xs)
+- [`dropRightWhile`](docs/api.EN.md#dropRightWhilefn-xs)
+- [`dropWhile`](docs/api.EN.md#dropWhilefn-xs)
+- [`empty`](docs/api.EN.md#emptyxs)
+- [`entries`](docs/api.EN.md#entriesobj)
+- [`erase`](docs/api.EN.md#erasei-j-xs)
+- [`Fs`](docs/api.EN.md#Fsn)
+- [`fill`](docs/api.EN.md#filln-x)
+- [`filter`](docs/api.EN.md#filterfn-xs)
+- [`flatten`](docs/api.EN.md#flattenxs)
+- [`halve`](docs/api.EN.md#halvexs)
+- [`init`](docs/api.EN.md#initxs)
+- [`insert`](docs/api.EN.md#insertidx-x-xs)
+- [`keys`](docs/api.EN.md#keysobj)
+- [`map`](docs/api.EN.md#mapfn-xs)
+- [`mapcat`](docs/api.EN.md#mapcatfn-xs)
+- [`merge`](docs/api.EN.md#mergexs-ys)
+- [`mergeBy`](docs/api.EN.md#mergeByfn-xs-ys)
+- [`ones`](docs/api.EN.md#onesn)
+- [`pair`](docs/api.EN.md#pairx-y)
+- [`partition`](docs/api.EN.md#partitionfn-xs)
+- [`partitionAt`](docs/api.EN.md#partitionAtidx-xs)
+- [`prepend`](docs/api.EN.md#prependx-xs)
+- [`prependTo`](docs/api.EN.md#prependToxs-x)
+- [`props`](docs/api.EN.md#propsobj)
+- [`range`](docs/api.EN.md#rangex-y-step)
+- [`reject`](docs/api.EN.md#rejectfn-xs)
+- [`remove`](docs/api.EN.md#removex-xs)
+- [`removeAll`](docs/api.EN.md#removeAllx-xs)
+- [`removeRight`](docs/api.EN.md#removeRightx-xs)
+- [`replace`](docs/api.EN.md#replacex-rep-xs)
+- [`#replaceAllx-rep-xs`](docs/api.EN.md##replaceAllx-rep-xs)
+- [`reverse`](docs/api.EN.md#reversexs)
+- [`setHead`](docs/api.EN.md#setHeadx-xs)
+- [`setHeadWith`](docs/api.EN.md#setHeadWithfn-xs)
+- [`setLast`](docs/api.EN.md#setLastx-xs)
+- [`setLastWith`](docs/api.EN.md#setLastWithfn-xs)
+- [`setNth`](docs/api.EN.md#setNthn-x-xs)
+- [`setNthWith`](docs/api.EN.md#setNthWithn-fn-xs)
+- [`shift`](docs/api.EN.md#shiftxs)
+- [`shiftLeft`](docs/api.EN.md#shiftLeftxs)
+- [`slice`](docs/api.EN.md#slicei-j-xs)
+- [`split`](docs/api.EN.md#splitx-xs)
+- [`swap`](docs/api.EN.md#swapi-j-xs)
+- [`Ts`](docs/api.EN.md#Tsn)
+- [`tail`](docs/api.EN.md#tailxs)
+- [`take`](docs/api.EN.md#taken-xs)
+- [`takeRight`](docs/api.EN.md#takeRightn-xs)
+- [`takeRightWhile`](docs/api.EN.md#takeRightWhilefn-xs)
+- [`takeWhile`](docs/api.EN.md#takeWhilefn-xs)
+- [`values`](docs/api.EN.md#valuesobj)
+- [`xshift`](docs/api.EN.md#xshiftx-xs)
+- [`xshiftLeft`](docs/api.EN.md#xshiftLeftx-xs)
+- [`zeros`](docs/api.EN.md#zerosn)
+- [`zip`](docs/api.EN.md#zipxs-ys)
+- [`zipReverse`](docs/api.EN.md#zipReversexs)
+- [`zipSelf`](docs/api.EN.md#zipSelfxs)
+- [`zipTail`](docs/api.EN.md#zipTailxs)
+- [`zipWith`](docs/api.EN.md#zipWithfn-xs-ys)
+
+<br/>
 
 </details>
 
 #### `Boolean`
 
 <details>
-<summary>Functions whose return value is a boolean.</summary>
+<summary>Functions whose return value is a <b>boolean</b>.</summary>
 
-- [`and`](docs/api.EN.md#and)
-- [`bool`](docs/api.EN.md#bool)
-- [`endsWith`](docs/api.EN.md#endsWith)
-- [`eq`](docs/api.EN.md#eq)
-- [`eqProp`](docs/api.EN.md#eqProp)
-- [`even`](docs/api.EN.md#even)
-- [`every`](docs/api.EN.md#every)
-- [`excludes`](docs/api.EN.md#excludes)
-- [`gt`](docs/api.EN.md#gt)
-- [`gte`](docs/api.EN.md#gte)
-- [`hasProp`](docs/api.EN.md#hasProp)
-- [`includes`](docs/api.EN.md#includes)
-- [`isArr`](docs/api.EN.md#isArr)
-- [`isDate`](docs/api.EN.md#isDate)
-- [`isDef`](docs/api.EN.md#isDef)
-- [`isEmpty`](docs/api.EN.md#isEmpty)
-- [`isFn`](docs/api.EN.md#isFn)
-- [`isInt`](docs/api.EN.md#isInt)
-- [`isNeg`](docs/api.EN.md#isNeg)
-- [`isNil`](docs/api.EN.md#isNil)
-- [`isNull`](docs/api.EN.md#isNull)
-- [`isNum`](docs/api.EN.md#isNum)
-- [`isObj`](docs/api.EN.md#isObj)
-- [`isPair`](docs/api.EN.md#isPair)
-- [`isPos`](docs/api.EN.md#isPos)
-- [`isRegExp`](docs/api.EN.md#isRegExp)
-- [`isStr`](docs/api.EN.md#isStr)
-- [`isUndef`](docs/api.EN.md#isUndef)
-- [`lt`](docs/api.EN.md#lt)
-- [`lte`](docs/api.EN.md#lte)
-- [`nand`](docs/api.EN.md#nand)
-- [`none`](docs/api.EN.md#none)
-- [`nor`](docs/api.EN.md#nor)
-- [`not`](docs/api.EN.md#not)
-- [`notArr`](docs/api.EN.md#notArr)
-- [`notDate`](docs/api.EN.md#notDate)
-- [`notEmpty`](docs/api.EN.md#notEmpty)
-- [`notFn`](docs/api.EN.md#notFn)
-- [`notInt`](docs/api.EN.md#notInt)
-- [`notNil`](docs/api.EN.md#notNil)
-- [`notNull`](docs/api.EN.md#notNull)
-- [`notNum`](docs/api.EN.md#notNum)
-- [`notObj`](docs/api.EN.md#notObj)
-- [`notPair`](docs/api.EN.md#notPair)
-- [`notRegExp`](docs/api.EN.md#notRegExp)
-- [`notStr`](docs/api.EN.md#notStr)
-- [`odd`](docs/api.EN.md#odd)
-- [`or`](docs/api.EN.md#or)
-- [`some`](docs/api.EN.md#some)
-- [`startsWith`](docs/api.EN.md#startsWith)
-- [`xnor`](docs/api.EN.md#xnor)
-- [`xor`](docs/api.EN.md#xor)
+<br/>
+
+- [`and`](docs/api.EN.md#andx-y)
+- [`bool`](docs/api.EN.md#boolx)
+- [`endsWith`](docs/api.EN.md#endsWithx-xs)
+- [`eq`](docs/api.EN.md#eqx-y)
+- [`eqProp`](docs/api.EN.md#eqPropprop-xs-ys)
+- [`even`](docs/api.EN.md#evenx)
+- [`every`](docs/api.EN.md#everyfn-xs)
+- [`excludes`](docs/api.EN.md#excludesx-xs)
+- [`F`](docs/api.EN.md#F)
+- [`gt`](docs/api.EN.md#gtx-y)
+- [`gte`](docs/api.EN.md#gtex-y)
+- [`hasProp`](docs/api.EN.md#hasPropprop-obj)
+- [`includes`](docs/api.EN.md#includesx-xs)
+- [`isArr`](docs/api.EN.md#isArrx)
+- [`isDate`](docs/api.EN.md#isDatex)
+- [`isDef`](docs/api.EN.md#isDefx)
+- [`isEmpty`](docs/api.EN.md#isEmptyx)
+- [`isFn`](docs/api.EN.md#isFnx)
+- [`isInt`](docs/api.EN.md#isIntx)
+- [`isLower`](docs/api.EN.md#isLowerxs)
+- [`isNeg`](docs/api.EN.md#isNegx)
+- [`isNil`](docs/api.EN.md#isNilx)
+- [`isNull`](docs/api.EN.md#isNullx)
+- [`isNum`](docs/api.EN.md#isNumx)
+- [`isObj`](docs/api.EN.md#isObjx)
+- [`isPair`](docs/api.EN.md#isPairx)
+- [`isPos`](docs/api.EN.md#isPosx)
+- [`isRegExp`](docs/api.EN.md#isRegExpx)
+- [`isStr`](docs/api.EN.md#isStrx)
+- [`isUndef`](docs/api.EN.md#isUndefx)
+- [`isUpper`](docs/api.EN.md#isUpperxs)
+- [`lt`](docs/api.EN.md#ltx-y)
+- [`lte`](docs/api.EN.md#ltex-y)
+- [`nand`](docs/api.EN.md#nandx-y)
+- [`none`](docs/api.EN.md#nonefn-xs)
+- [`nor`](docs/api.EN.md#norx-y)
+- [`not`](docs/api.EN.md#notx)
+- [`notArr`](docs/api.EN.md#notArrx)
+- [`notDate`](docs/api.EN.md#notDatex)
+- [`notEmpty`](docs/api.EN.md#notEmptyx)
+- [`notFn`](docs/api.EN.md#notFnx)
+- [`notInt`](docs/api.EN.md#notIntx)
+- [`notLower`](docs/api.EN.md#notLowerxs)
+- [`notNil`](docs/api.EN.md#notNilx)
+- [`notNull`](docs/api.EN.md#notNullx)
+- [`notNum`](docs/api.EN.md#notNumx)
+- [`notObj`](docs/api.EN.md#notObjx)
+- [`notPair`](docs/api.EN.md#notPairx)
+- [`notRegExp`](docs/api.EN.md#notRegExpx)
+- [`notStr`](docs/api.EN.md#notStrx)
+- [`notUpper`](docs/api.EN.md#notUpperxs)
+- [`odd`](docs/api.EN.md#oddx)
+- [`or`](docs/api.EN.md#orx-y)
+- [`some`](docs/api.EN.md#somefn-xs)
+- [`startsWith`](docs/api.EN.md#startsWithx-xs)
+- [`T`](docs/api.EN.md#T)
+- [`uneq`](docs/api.EN.md#uneqx-y)
+- [`uneqProp`](docs/api.EN.md#uneqPropprop-obj1-obj2)
+- [`xnor`](docs/api.EN.md#xnorx-y)
+- [`xor`](docs/api.EN.md#xorx-y)
+
+<br/>
 
 </details>
 
 #### `Function`
 
 <details>
-<summary>Functions whose return value is a function.</summary>
+<summary>Functions whose return value is a <b>function</b>.</summary>
 
-- [`applyArgs`](docs/api.EN.md#applyArgs)
-- [`arity`](docs/api.EN.md#arity)
-- [`binary`](docs/api.EN.md#binary)
-- [`comp`](docs/api.EN.md#comp)
-- [`cons`](docs/api.EN.md#cons)
-- [`curry`](docs/api.EN.md#curry)
-- [`gather`](docs/api.EN.md#glather)
-- [`nullary`](docs/api.EN.md#nullary)
-- [`partial`](docs/api.EN.md#partial)
-- [`partialRight`](docs/api.EN.md#partialRight)
-- [`pipe`](docs/api.EN.md#pipe)
-- [`reverseArgs`](docs/api.EN.md#reverseArgs)
-- [`spread`](docs/api.EN.md#spread)
-- [`ternary`](docs/api.EN.md#ternary)
-- [`unary`](docs/api.EN.md#unary)
-- [`xcurry`](docs/api.EN.md#xcurry)
+<br/>
+
+- [`arity`](docs/api.EN.md#arityn-fn)
+- [`binary`](docs/api.EN.md#binaryfn)
+- [`comp`](docs/api.EN.md#compfn-fn)
+- [`cons`](docs/api.EN.md#consx)
+- [`curry`](docs/api.EN.md#curryfn)
+- [`flip`](docs/api.EN.md#flipfn)
+- [`gather`](docs/api.EN.md#gatherfn)
+- [`nullary`](docs/api.EN.md#nullaryfn)
+- [`partial`](docs/api.EN.md#partialfn-args)
+- [`partialRight`](docs/api.EN.md#partialRightfn-args)
+- [`pipe`](docs/api.EN.md#pipefn-fn)
+- [`reverseArgs`](docs/api.EN.md#reverseArgsfn)
+- [`spread`](docs/api.EN.md#spreadfn)
+- [`ternary`](docs/api.EN.md#ternaryfn)
+- [`unary`](docs/api.EN.md#unaryfn)
+- [`xarray`](docs/api.EN.md#xarrayx)
+- [`xcurry`](docs/api.EN.md#xcurryx-fn)
+
+<br/>
 
 </details>
 
 #### `Number`
 
 <details>
-<summary> Functions whose return value is a number.</summary>
+<summary> Functions whose return value is a <b>number</b>.</summary>
 
-- [`abs`](docs/api.EN.md#abs)
-- [`absDiff`](docs/readme.md#absDiff)
-- [`add`](docs/api.EN.md#add)
-- [`adjustIndex`](docs/api.EN.md#adjustIndex)
-- [`arrayMax`](docs/api.EN.md#arrayMax)
-- [`arrayMin`](docs/api.EN.md#arrayMin)
-- [`cube`](docs/api.EN.md#cube)
-- [`decr`](docs/api.EN.md#decr)
-- [`div`](docs/api.EN.md#div)
-- [`fact`](docs/api.EN.md#fact)
-- [`findIndex`](docs/api.EN.md#findIndex)
-- [`gcd`](docs/api.EN.md#gcd)
-- [`incr`](docs/api.EN.md#incr)
-- [`lcm`](docs/api.EN.md#lcm)
-- [`len`](docs/api.EN.md#len)
-- [`max`](docs/api.EN.md#max)
-- [`min`](docs/api.EN.md#min)
-- [`minMax`](docs/api.EN.md#minMax)
-- [`mod`](docs/api.EN.md#mod)
-- [`mult`](docs/api.EN.md#mult)
-- [`neg`](docs/api.EN.md#neg)
-- [`num`](docs/api.EN.md#num)
+<br/>
+
+- [`abs`](docs/api.EN.md#absx)
+- [`absDiff`](docs/api.EN.md#absDiffx-y)
+- [`add`](docs/api.EN.md#addx-y)
+- [`adjustIndex`](docs/api.EN.md#adjustIndexmin-max-xs-idx)
+- [`arrayMax`](docs/api.EN.md#arrayMaxxs)
+- [`arrayMin`](docs/api.EN.md#arrayMinxs)
+- [`ceil`](docs/api.EN.md#ceilx)
+- [`count`](docs/api.EN.md#countx-xs)
+- [`cube`](docs/api.EN.md#cubex)
+- [`decr`](docs/api.EN.md#decrx)
+- [`div`](docs/api.EN.md#divx-y)
+- [`fact`](docs/api.EN.md#factx)
+- [`findIndex`](docs/api.EN.md#findIndexfn-x)
+- [`gcd`](docs/api.EN.md#gcdx-y)
+- [`incr`](docs/api.EN.md#incrx)
+- [`lcm`](docs/api.EN.md#lcmx-y)
+- [`len`](docs/api.EN.md#lenxs)
+- [`max`](docs/api.EN.md#maxx-y)
+- [`min`](docs/api.EN.md#minx-y)
+- [`minMax`](docs/api.EN.md#minMaxxs-x)
+- [`mod`](docs/api.EN.md#modx-y)
+- [`mult`](docs/api.EN.md#multx-y)
+- [`neg`](docs/api.EN.md#negx)
+- [`num`](docs/api.EN.md#numx)
 - [`one`](docs/api.EN.md#one)
-- [`pow`](docs/api.EN.md#pow)
-- [`prod`](docs/api.EN.md#prod)
-- [`recip`](docs/api.EN.md#recip)
-- [`square`](docs/api.EN.md#square)
-- [`sum`](docs/api.EN.md#sum)
-- [`trunc`](docs/api.EN.md#trunc)
+- [`pow`](docs/api.EN.md#powx-y)
+- [`prod`](docs/api.EN.md#prodxs)
+- [`recip`](docs/api.EN.md#recipx)
+- [`square`](docs/api.EN.md#squarex)
+- [`sub`](docs/api.EN.md#subx-y)
+- [`sum`](docs/api.EN.md#sumxs)
+- [`trunc`](docs/api.EN.md#truncx)
 - [`zero`](docs/api.EN.md#zero)
+
+<br/>
 
 </details>
 
 #### `String`
 
 <details>
-<summary>Functions whose return value is a string.</summary>
+<summary>Functions whose return value is a <b>string</b>.</summary>
 
-- [`append`](docs/api.EN.md#append)
-- [`appendTo`](docs/api.EN.md#appendTo)
-- [`breakWhen`](docs/api.EN.md#breakWhen)
-- [`concat`](docs/api.EN.md#concat)
-- [`drop`](docs/api.EN.md#drop)
-- [`dropRight`](docs/api.EN.md#dropRight)
-- [`dropRightWhile`](docs/api.EN.md#dropRightWhile)
-- [`dropWhile`](docs/api.EN.md#dropWhile)
-- [`empty`](docs/api.EN.md#empty)
-- [`init`](docs/api.EN.md#init)
-- [`join`](docs/api.EN.md#join)
-- [`partition`](docs/api.EN.md#partition)
-- [`partitionAt`](docs/api.EN.md#partitionAt)
-- [`prepend`](docs/api.EN.md#prepend)
-- [`prependTo`](docs/api.EN.md#prependTo)
-- [`remove`](docs/api.EN.md#remove)
-- [`replace`](docs/api.EN.md#replace)
-- [`replaceAll`](docs/api.EN.md#replaceAll)
-- [`setHead`](docs/api.EN.md#setHead)
-- [`setHeadWith`](docs/api.EN.md#setHeadWith)
-- [`setLast`](docs/api.EN.md#setLast)
-- [`setLastWith`](docs/api.EN.md#setLastWith)
-- [`setNth`](docs/api.EN.md#setNth)
-- [`setNthWith`](docs/api.EN.md#setNthWith)
-- [`shift`](docs/api.EN.md#shift)
-- [`shiftLeft`](docs/api.EN.md#shiftLeft)
-- [`slice`](docs/api.EN.md#slice)
-- [`str`](docs/api.EN.md#str)
-- [`swap`](docs/api.EN.md#swap)
-- [`tail`](docs/api.EN.md#tail)
-- [`take`](docs/api.EN.md#take)
-- [`takeRight`](docs/api.EN.md#takeRight)
-- [`takeRightWhile`](docs/api.EN.md#takeRightWhile)
-- [`takeWhile`](docs/api.EN.md#takeWhile)
-- [`xshift`](docs/api.EN.md#xshift)
-- [`xshiftLeft`](docs/api.EN.md#xshiftLeft)
+<br/>
+
+- [`append`](docs/api.EN.md#appendx-xs)
+- [`appendTo`](docs/api.EN.md#appendToxs-x)
+- [`breakWhen`](docs/api.EN.md#breakWhenfn-xs)
+- [`concat`](docs/api.EN.md#concatxs-ys)
+- [`drop`](docs/api.EN.md#dropn-xs)
+- [`dropRight`](docs/api.EN.md#dropRightn-xs)
+- [`dropRightWhile`](docs/api.EN.md#dropRightWhilefn-xs)
+- [`dropWhile`](docs/api.EN.md#dropWhilefn-xs)
+- [`empty`](docs/api.EN.md#emptyxs)
+- [`erase`](docs/api.EN.md#erasei-j-xs)
+- [`halve`](docs/api.EN.md#halvexs)
+- [`init`](docs/api.EN.md#initxs)
+- [`insert`](docs/api.EN.md#insertidx-x-xs)
+- [`join`](docs/api.EN.md#joinx-xs)
+- [`partition`](docs/api.EN.md#partitionfn-xs)
+- [`partitionAt`](docs/api.EN.md#partitionAtidx-xs)
+- [`prepend`](docs/api.EN.md#prependx-xs)
+- [`prependTo`](docs/api.EN.md#prependToxs-x)
+- [`remove`](docs/api.EN.md#removex-xs)
+- [`remove`](docs/api.EN.md#removeAllx-xs)
+- [`remove`](docs/api.EN.md#removeRightx-xs)
+- [`replace`](docs/api.EN.md#replacex-rep-xs)
+- [`#replaceAllx-rep-xs`](docs/api.EN.md##replaceAllx-rep-xs)
+- [`reverse`](docs/api.EN.md#reversexs)
+- [`setHead`](docs/api.EN.md#setHeadx-xs)
+- [`setHeadWith`](docs/api.EN.md#setHeadWithfn-xs)
+- [`setLast`](docs/api.EN.md#setLastx-xs)
+- [`setLastWith`](docs/api.EN.md#setLastWithfn-xs)
+- [`setNth`](docs/api.EN.md#setNthn-x-xs)
+- [`setNthWith`](docs/api.EN.md#setNthWithn-fn-xs)
+- [`shift`](docs/api.EN.md#shiftxs)
+- [`shiftLeft`](docs/api.EN.md#shiftLeftxs)
+- [`slice`](docs/api.EN.md#slicei-j-xs)
+- [`str`](docs/api.EN.md#strx)
+- [`swap`](docs/api.EN.md#swapi-j-xs)
+- [`tail`](docs/api.EN.md#tailxs)
+- [`take`](docs/api.EN.md#taken-xs)
+- [`takeRight`](docs/api.EN.md#takeRightn-xs)
+- [`takeRightWhile`](docs/api.EN.md#takeRightWhilefn-xs)
+- [`takeWhile`](docs/api.EN.md#takeWhilefn-xs)
+- [`toLower`](docs/api.EN.md#toLowerxs)
+- [`toUpper`](docs/api.EN.md#toUpperxs)
+- [`xshift`](docs/api.EN.md#xshiftx-xs)
+- [`xshiftLeft`](docs/api.EN.md#xshiftLeftx-xs)
+
+<br/>
 
 </details>
 
 #### `Object`
 
 <details>
-<summary>Functions whose return value is a plain object.</summary>
+<summary>Functions whose return value is a plain <b>object</b>.</summary>
 
-- [`assign`](docs/api.EN.md#assign)
-- [`assignWith`](docs/api.EN.md#assignWith)
-- [`copy`](docs/api.EN.md#copy)
-- [`countAll`](docs/api.EN.md#countAll)
-- [`countBy`](docs/api.EN.md#countBy)
-- [`countIn`](docs/api.EN.md#countIn)
-- [`zipObj`](docs/api.EN.md#zipObj)
+<br/>
+
+- [`assign`](docs/api.EN.md#assignk-v-obj)
+- [`assignWith`](docs/api.EN.md#assignWithfn-k-obj)
+- [`copy`](docs/api.EN.md#copyxs)
+- [`countAll`](docs/api.EN.md#countAllxs)
+- [`countBy`](docs/api.EN.md#countByfn-xs)
+- [`countIn`](docs/api.EN.md#countInmin-max-xs)
+- [`zipObj`](docs/api.EN.md#zipObjxs-ys)
+
+<br/>
 
 </details>
 
 #### `Undefined`
 
 <details>
-<summary>Functions whose return value is undefined.</summary>
+<summary>Functions whose return value is <b>undefined</b>.</summary>
 
-- [`forEach`](docs/api.EN.md#forEach)
+<br/>
+
+- [`forEach`](docs/api.EN.md#forEachfn-xs)
+
+<br/>
 
 </details>
 
@@ -387,8 +451,8 @@ Also, an alphabetically ordered list of all available functions can be found [he
 
 ## Team
 
-- Klaus Sinani [(@klauscfhq)](https://github.com/klauscfhq)
+- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
 
 ## License
 
-[MIT](https://github.com/klauscfhq/arare/blob/master/license.md)
+[MIT](https://github.com/klaussinani/arare/blob/master/license.md)

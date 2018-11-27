@@ -1,8 +1,8 @@
-## Arare Documentation
+## Arare API Documentation
 
 The following is an alphabetically ordered list of all available functions along with usage examples.
 
-In case you spotted an error or think that an example or description is not clear enough and should be further improved, please feel free to open an [issue](https://github.com/klauscfhq/arare/issues/new/choose) or [pull request](https://github.com/klauscfhq/arare/compare).
+In case you spotted an error or think that an example or description is not clear enough and should be further improved, please feel free to open an [issue](https://github.com/klaussinani/arare/issues/new/choose) or [pull request](https://github.com/klaussinani/arare/compare).
 
 #### `absDiff(x, y)`
 
@@ -11,7 +11,7 @@ In case you spotted an error or think that an example or description is not clea
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/abs-diff.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/abs-diff.js)
 
 Accepts two numbers `x` & `y`, and returns `|x - y|`, the absolute value of their difference.
 
@@ -27,7 +27,7 @@ absDiff(5)(10) //=> 5
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/abs.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/abs.js)
 
 Accept a number `x`, and returns `|x|`, its absolute value.
 
@@ -44,7 +44,7 @@ map(abs, [-5, 5]) //=> [5, 5]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/add.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/add.js)
 
 Accepts two numbers `x` & `y`, and returns `x + y`, their sum.
 
@@ -62,7 +62,7 @@ add(5)(5) //=> 10
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/adjust-index.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/adjust-index.js)
 
 Accepts two numbers `min` & `max`, an array or string `xs`, a number `idx`, checks whether `idx` is negative, and if so returns `min`, otherwise checks whether `idx` is equal to or greater than the length of `xs`, and if so returns `max`. If none of the two above holds, then `idx` is returned as is, since `0 <= idx < xs.length`.
 
@@ -82,7 +82,7 @@ adjustIndex(0)(2)([1, 2, 3])(1) //=> 1
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/and.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/and.js)
 
 Accepts two booleans `x` & `y`, and returns `x && y`, the result of applying the logical `AND` operator between `x` and `y`. Values `x`, `y` are automatically coerced to booleans if not provided as such.
 
@@ -102,7 +102,7 @@ and(false)(false) //=> false
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/append-to.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/append-to.js)
 
 Accepts an array or a string `xs`, a value `x`, and returns a new array or string, containing all elements of `xs` as well as `x`, with `x` set as the last element.
 
@@ -123,7 +123,7 @@ appendTo('fo')('o') //=> 'foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/append.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/append.js)
 
 
 Accepts a value `x`, an array or a string `xs`, and returns a new array or string, containing all elements of `xs`, as well as `x`, with `x` set as the last element.
@@ -134,8 +134,8 @@ append(3)(ones(1)) //=> [1, 3]
 append(3, pair(1, 2)) //=> [1, 2, 3]
 append(3)(pair(1, 2)) //=> [1, 2, 3]
 append(3)(pair(1)(2)) //=> [1, 2, 3]
-appendTo('o', 'fo') //=> 'foo'
-appendTo('o')('fo') //=> 'foo'
+append('o', 'fo') //=> 'foo'
+append('o')('fo') //=> 'foo'
 ```
 
 #### `applyArgs(args, fn)`
@@ -145,7 +145,7 @@ appendTo('o')('fo') //=> 'foo'
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/apply-args.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/apply-args.js)
 
 Accepts an array of arguments `args`, a function `fn`, and returns the result of applying `fn` to the arguments stored in `args`. Note that the `args` array is spread when passed to `fn`.
 
@@ -161,7 +161,7 @@ applyArgs([1, 2])(add) //=> 3
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/apply.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/apply.js)
 
 Accepts a value `x`, a function `fn`, applies `fn` to `x` and returns the result.
 
@@ -179,7 +179,7 @@ apply(apply(-1, abs))(apply(2, add)) //=> 3
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/arity.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/arity.js)
 
 Accepts a number `n`, a function `fn`, and returns a wrapper function of `fn` of [arity](https://en.wikipedia.org/wiki/Arity) `n`, which when invoked with arguments returns the results of supplying only `n` of these arguments to `fn`.
 
@@ -197,7 +197,7 @@ array5(1, 2, 3, 4, 5, 6, 7) //=> [1, 2, 3, 4, 5]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/array-max.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/array-max.js)
 
 Accepts an array `xs`, and returns the largest number in `xs`.
 
@@ -212,7 +212,7 @@ arrayMax([1, 2, 3, 4]) //=> 4
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/array-min-max.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/array-min-max.js)
 
 Accepts an array `xs`, and returns a new array `[min, max]`, where `min` is the smallest number and `max` is the largest number, in `xs`.
 
@@ -227,7 +227,7 @@ arrayMinMax([1, 2, 3]) //=> [1, 3]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/array-min.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/array-min.js)
 
 Accepts an array `xs` and returns the smallest number in `xs`.
 
@@ -242,7 +242,7 @@ arrayMin([1, 2, 3, 4]) //=> 1
 - Returns: `Function`
 - Curried: `False`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/array.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/array.js)
 
 Accepts one of more `x` arguments, and returns an array containing those `x` arguments. Please note that the functions in not curried by default, but can easily become so by using [`xcurry`]().
 
@@ -257,7 +257,7 @@ array(1, 2, 3) //=> [1, 2, 3]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/arrayify.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/arrayify.js)
 
 Accepts a value `x`, and returns an array holding that single value `x` only if `x` is not already an array. If `x` is indeed an array, then it returns a shallow copy of `x`.
 
@@ -275,7 +275,7 @@ arrayify([5]) //=> [5]
 - Returns: `Object`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/assign-with.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/assign-with.js)
 
 Accepts a function `fn`, a string `k`, an object `obj`, and returns a shallow copy of `obj` where the value corresponding to the property `k` is replaced by result of applying `fn` to the initial value stored under `k`.
 
@@ -292,14 +292,14 @@ assignWith(add(10))('a')({ a: 1, b: 2 }) //=> { a: 11, b: 2}
 - obj: `Object`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/assign.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/assign.js)
 
 Accepts a string `k`, a value `v`, an object `obj`, and returns a shallow copy of `obj` where the value corresponding to the property `k` is replaced by `v`.
 
 ```js
-assignWith(10, 'a', { a: 1, b: 2 }) //=> { a: 10, b: 2}
-assignWith(10, 'a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
-assignWith(10)('a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
+assign(10, 'a', { a: 1, b: 2 }) //=> { a: 10, b: 2}
+assign(10, 'a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
+assign(10)('a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
 ```
 
 #### `binary(fn)`
@@ -308,14 +308,14 @@ assignWith(10)('a')({ a: 1, b: 2 }) //=> { a: 10, b: 2}
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/binary.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/binary.js)
 
 Accepts a number `n`, a function `fn`, and returns a wrapper function of `fn` with an [arity](https://en.wikipedia.org/wiki/Arity) of `2`, which when invoked with its own arguments returns the result of supplying only `2` of those arguments to `fn`.
 
 ```js
 const array2 = binary(array)
 
-array2(1, 2) //=> 1 2
+array2(1, 2) //=> [1, 2]
 array2(1, 2, 3) //=> [1, 2]
 ```
 
@@ -325,7 +325,7 @@ array2(1, 2, 3) //=> [1, 2]
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/bool.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/bool.js)
 
 Accepts a value `x`, converts it to a boolean and returns the result. Can be considered as a curried version of default `Boolean` function.
 
@@ -341,7 +341,7 @@ bool(1) //=> true
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/break-when.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/break-when.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns a new two-element array `[passed, rest]`, where the first element `passed` is an array or a string holding the very first elements of `xs`, from the left to the right side, which do not satisfy the predicate `fn`, and the second element `rest` is an array or a string holding the remaining elements of `xs`.
 
@@ -352,13 +352,30 @@ breakWhen(eq('-'), '123-456-78') //=> ['123', '-456-78']
 breakWhen(eq('-'))('123-456-78') //=> ['123', '-456-78']
 ```
 
+#### `ceil(x)`
+
+- x: `Number`
+- Returns: `Number`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/ceil.js)
+
+Accepts a number `x`, and returns the smallest integer greater than or equal to `x`.
+
+```js
+ceil(5) //=> 5
+ceil(5.123) //=> 6
+ceil(div(5, 10)) //=> 1
+ceil(div(5)(10)) //=> 1
+```
+
 #### `comp(fn[, fn])`
 
 - fn: `Function`
 - Returns: `Function`
 - Curried: `False`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/comp.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/comp.js)
 
 Accepts one or more functions `fn`, and returns a new function that is the [composition](https://en.wikipedia.org/wiki/Function_composition), from right to left, of the given `fn` functions. 
 Note that the returned composed function is not automatically curried, but can easily become so by using the [`xcurry`]() module.
@@ -376,7 +393,7 @@ absAdd5(-5) //=> 10
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/concat.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/concat.js)
 
 Accepts an array or a string `xs`, an array or a string `ys`, and returns an new array where `xs` is concatenated with `ys`, only if `xs` is an array, or a string where `xs` is concatenated with `ys`, only if `xs` is a string.
 
@@ -393,7 +410,7 @@ concat('foo', [3, 4]) //=> 'foo3, 4'
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/cons.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/cons.js)
 
 Accepts a value `x` and return a new constant zero arity function that when invoked returns always `x`.
 
@@ -411,7 +428,7 @@ map(zero)(range(5, 0, -1) //=> [0, 0, 0, 0, 0]
 - Returns: `Array|Object`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/copy.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/copy.js)
 
 Accepts an array or an object `xs`, and returns a shallow copy of `xs`.
 
@@ -430,7 +447,7 @@ copy(range(1)(10)(3)) //=> [1, 4, 7]
 - Returns: `Object`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/count-all.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/count-all.js)
 
 Accepts an array `xs`, and returns an object where the keys are the elements of `xs` and each key has as a value the number of times it appears in `xs`. Can be considered as a variation of [`countBy`] where [`id`] is used the transforming function.
 
@@ -447,7 +464,7 @@ countAll(concat(zeros(5))(ones(4)))
 - Returns: `Object`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/count-by.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/count-by.js)
 
 Accepts a function `fn`, an array `xs`, and returns an object where its keys are the results of applying `fn` to each element of `xs`, and each key has as a value the total number of times the result of each `fn` application appears.
 
@@ -468,7 +485,7 @@ countBy(toUpper)(concat(fill(3)('a'))(fill(4)('b'))) //=> {A: 3, B: 4}
 - Returns: `Object`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/count-in.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/count-in.js)
 
 Accepts two numbers `min` & `max`, an array `xs`, and returns an object where its keys are all the integer numbers `i`, where `min <= i <= max`, and each key has as a value the total number of times `i` appears in `xs`.
 
@@ -490,7 +507,7 @@ countIn(0)(4)(mapcat(fill(5))([1, 2, 3, 4])) //=> {0: 0, 1: 5, 2: 5, 3: 5, 4: 5}
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/count.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/count.js)
 
 Accepts a value `x`, an array or a string `xs`, and returns the the total number of times `x` appears in `xs`.
 
@@ -507,7 +524,7 @@ count('o')('foo') //=> 2
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/cube.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/cube.js)
 
 Accepts a number `x`, and returns the result of `x` to the power of 3.
 
@@ -522,7 +539,7 @@ cube(5) //=> 125
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/curry.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/curry.js)
 
 Accepts a function `fn`, and returns a variadic curried version of `fn`.
 Note that the property [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length) of `fn` is used to infer its arity, in order for it to be automatically curried. If your function uses any default parameter values or the rest parameter syntax in its signature then please switch to [`xcurry`](), to manually curry it, since the value returned by `fn.length` will not represent the actual number of arguments expected by `fn`.
@@ -542,7 +559,7 @@ curryAdd3(1)(2)(3) //=> 6
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/decr.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/decr.js)
 
 Accepts a number `x`, and returns the value of `x` decremented by `1`.
 
@@ -560,7 +577,7 @@ map(decr)(zeros(3)) //=> [-1, -1, -1]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/div.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/div.js)
 
 Accepts two numbers `x` & `y`, and returns the results of `x` divided by `y`.
 
@@ -579,7 +596,7 @@ map(div(2))(fill(3)(10)) //=> [5, 5, 5]
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/drop-right-while.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/drop-right-while.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns a new array or a string where all the first elements, from the right to left side of `xs`, which satisfy the predicate `fn`, are not included.
 
@@ -597,7 +614,7 @@ dropRightWhile(eq('.'))('foo...') //=> 'foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/drop-right.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/drop-right.js)
 
 Accepts a number `n`, an array or a string `xs`, and returns a new array or a string, where the `n` first elements, from the right to the left side of `xs`, are not included.
 
@@ -615,7 +632,7 @@ dropRight(3)('foo...') //=> 'foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/drop-while.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/drop-while.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns a new array or a string, where all the first elements, from the left to right side of `xs`, which satisfy the predicate `fn`, are not included.
 
@@ -633,15 +650,15 @@ dropWhile(uneq('.'))('foo...') //=> '...'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/drop.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/drop.js)
 
 Accepts a number `n`, an array or a string `xs`, and returns a new array or a string, where the `n` first elements, from the left to the right side of `xs`, are not included.
 
 ```js
 drop(2, [1, 2, 3, 4]) //=> [3, 4]
 drop(2)([1, 2, 3, 4]) //=> [3, 4]
-drop(3, 'foo..') //=> '...'
-drop(3)('foo..') //=> '...'
+drop(3, 'foo...') //=> '...'
+drop(3)('foo...') //=> '...'
 ```
 
 #### `empty(xs)`
@@ -650,7 +667,7 @@ drop(3)('foo..') //=> '...'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/empty.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/empty.js)
 
 Accepts an array or a string `xs`, and returns an empty array or an empty string.
 
@@ -668,7 +685,7 @@ empty('foo') //=> ''
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/ends-with.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/ends-with.js)
 
 Accepts a string `x`, a string `xs`, and returns `true` if `xs` ends with the string `x`, or `false` if it does not.
 
@@ -685,7 +702,7 @@ endsWith('bar')('foo...') //=> false
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/entries.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/entries.js)
 
 Accepts an object `obj`, and returns an array of all enumerable own properties and values of `obj`, where each corresponding pair of property/value is represented as a two-element array.
 
@@ -704,7 +721,7 @@ entries(zipObj(range(0)(10)(2))(zeros(4))) //=> {'0': 0, '2': 0, '4': 0, '6': 0,
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/eq-prop.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/eq-prop.js)
 
 Accepts a string `prop`, two objects `xs` & `ys`, and returns `true` if both object have an equal value corresponding to the `prop` property, or `false` if they do not. The equality check is accomplished by using the [`eq`]() module.
 
@@ -722,7 +739,7 @@ eqProp('a')({'a': 2}, {'b': 3}) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/eq.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/eq.js)
 
 Accepts two values `x` & `y`, and returns `true` if both are strictly equal (`===`), or `false` if they are not.
 
@@ -735,13 +752,35 @@ eq(1, 1) //=> true
 eq(1)(1) //=> true
 ```
 
+#### `erase(i, j, xs)`
+
+- i: `Number`
+- j: `Number`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.1.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/erase.js)
+
+Accepts two numbers `i` & `j`, an array or a string `xs`, and returns a new array or a string that contains all elements of `xs`, except for the elements between the indices `i` & `j`, without including the element corresponding to the index `j`.
+
+```js
+erase(1, 5, range(0, 6, 1)) //=> [1, 5]
+erase(1, 5)(range(0, 6, 1)) //=> [1, 5]
+erase(1)(5)(range(0, 6, 1)) //=> [1, 5]
+erase(1)(5)(range(0)(6)(1)) //=> [1, 5]
+erase(1, 5, 'foobar') //=> 'for'
+erase(1, 5)('foobar') //=> 'for'
+erase(1)(5)('foobar') //=> 'for'
+```
+
 #### `even(x)`
 
 - x: `Number`
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/even.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/even.js)
 
 Accepts a number `x`, and returns `true` if `x` is an even number, or `false` if it is an odd.
 
@@ -759,7 +798,7 @@ dropWhile(even)([1, 3, 5, 7]) //=> []
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/every.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/every.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns `true` if all elements in `xs` satisfy the predicate `fn`, or `false` if at least one element in `xs` does not satisfy it.
 
@@ -781,7 +820,7 @@ every(eq('.'))('foo....') //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/excludes.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/excludes.js)
 
 Accepts a value `x`, an array or a string `xs`, and returns `true` if `x` does not belong in `xs`, or `false` if `x` is part of `xs`. The check is accomplished by using the [`eq`]() module. 
 
@@ -801,7 +840,7 @@ excludes('foo')('foo-bar') //=> false
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/ext.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/ext.js)
 
 Accepts a string `prop`, an object `obj`, and extracts the value corresponding to the `prop` property of `obj`.
 
@@ -812,13 +851,30 @@ map(ext('a'), [{'a': 1}, {'a': 2}, {'a': 3}]) //=> [1, 2, 3]
 map(ext('a'))([{'a': 1}, {'a': 2}, {'a': 3}]) //=> [1, 2, 3]
 ```
 
+#### `F()`
+
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/F.js)
+
+A constant function, which always returns `false` when invoked, regardless of the provided arguments.
+
+```js
+F() //=> false
+F([1, 2]) //=> false
+map(F, range(1, 4, 1)) //=> [false, false, false]
+map(F)(range(1, 4, 1)) //=> [false, false, false]
+map(F)(range(1)(4)(1)) //=> [false, false, false]
+```
+
 #### `fact(x)`
 
 - x: `Number`
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/fact.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/fact.js)
 
 Accepts a number `x`, and returns its factorial value.
 
@@ -837,7 +893,7 @@ map(fact)(range(1)(5)(1)) //=> [1, 2, 6, 24]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/fill.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/fill.js)
 
 Accepts a number `n`, a value `x`, and returns an array containing `n` times the value `x`.
 
@@ -855,7 +911,7 @@ mapcat(fill(2))(['a', 'b']) //=> [ 'a', 'a', 'b', 'b' ]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/filter.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/filter.js)
 
 Accepts a predicate function `fn`, an array `xs`, and returns a new array containing all elements of `xs`, that satisfy the predicate `fn`.
 
@@ -872,7 +928,7 @@ filter(even)(range(0)(5)(1)) //=> [0, 2, 4]
 - Return: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/find-index.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/find-index.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns the index of the first element in `xs` that satisfies the predicate. The elements of `xs` are scanned from left to right. If no element satisfies the predicate, then `-1` is returned.
 
@@ -890,7 +946,7 @@ findIndex(odd)(range(0, 10, 2)) //=> -1
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/find.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/find.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns the first element of `xs` that satisfies the predicate. The elements of `xs` are scanned from left to right. If no element satisfies the predicate, then `undefined` is returned.
 
@@ -907,7 +963,7 @@ find(even)(range(1, 10, 2)) //=> undefined
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/faltten.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/faltten.js)
 
 Accepts an array `xs`, and returns a new array, where all nested arrays residing in `xs` are flattened out.
 
@@ -923,7 +979,7 @@ flatten([1, 2, [3, 4, [5, 6], 7]]) //=> [1, 2, 3, 4, 5, 6, 7]
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/flip.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/flip.js)
 
 Accepts a function `fn`, and returns a function of arity `2`, which wraps `fn`, and once invoked it passes the first `2` of the given arguments, in a flipped order, to `fn`.
 
@@ -941,7 +997,7 @@ flippedDiv(10)(5) //=> 0.5
 - Returns: `Undefined`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/for-each.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/for-each.js)
 
 Accepts a function `fn`, an array `xs`, and iterates over `xs` applying `fn` to every element.
 
@@ -949,18 +1005,21 @@ Accepts a function `fn`, an array `xs`, and iterates over `xs` applying `fn` to 
 forEach(incr, [1, 2, 3]) //=> 2 3 4
 ```
 
-#### `fst(xs)`
+#### `Fs(n)`
 
-- xs: `Array`
-- Returns: `Any`
+- n: `Number`
+- Returns: `Array`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/fst.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/Fs.js)
 
-Accepts an array `xs` of length 2, also known as `pair`, and returns its fist element.
+Accepts a number `n`, and returns an array of length `n`, containing only the value `false`.
 
 ```js
-fst([1, 2]) //=> 1
+Fs(0) //=> []
+Fs(1) //=> [false]
+Fs(3) //=> [false, false, false]
+map(not, Fs(3)) //=> [true, true, true]
 ```
 
 #### `gather(fn)`
@@ -969,7 +1028,7 @@ fst([1, 2]) //=> 1
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/gather.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/gather.js)
 
 Accepts a function `fn`, and returns a new function, which wraps `fn`, gathers all given arguments to an array, and returns the result of applying `fn` to those arguments. Note that the returned wrapper function is not automatically curried.
 
@@ -987,7 +1046,7 @@ gatherAndReverse(1, 2, 3, 4) //=> [4, 3, 2, 1]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/gcd.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/gcd.js)
 
 Accepts two number `x` & `y`, and returns their greatest common divisor.
 
@@ -1003,7 +1062,7 @@ gcd(24)(8) //=> 8
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/get-nth.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/get-nth.js)
 
 Accepts a number `idx`, an array or a string `xs`, and returns the element of `xs` which corresponds to the `idx` index.
 
@@ -1021,7 +1080,7 @@ getNth(0)('foo') //=> 'f'
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/gt.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/gt.js)
 
 Accepts two numbers `x` & `y`, and returns `true` if `x` is greater than `y`, or `false` if `x` is less than or equal to `y`. 
 
@@ -1044,7 +1103,7 @@ every(gt(1))(range(2)(10)(2)) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/gte.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/gte.js)
 
 Accepts two numbers `x` & `y`, and returns `true` if `x` is greater
  than or equal to `y`, or `false` if `x` is less than `y`. 
@@ -1061,6 +1120,25 @@ every(gte(1))(range(1, 10, 2)) //=> true
 every(gte(1))(range(1)(10)(2)) //=> true
 ```
 
+#### `halve(xs)`
+
+- xs: `Array|String`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/halve.js)
+
+Accepts an array or a string `xs`, partitions `xs` in half and returns a new array containing the two halves.
+
+```js
+halve([]) //=> [[], []]
+halve('') //=> ['', '']
+halve(ones(1)) //=> [[1], []]
+halve('1') //=> ['1', '']
+halve(range(1, 7, 1)) //=> [[1, 2, 3], [4, 5, 6]]
+halve(range(1)(7)(1)) //=> [[1, 2, 3], [4, 5, 6]]
+halve('foobar') //=> ['foo', 'bar']
+```
+
 #### `hasProp(prop, obj)`
 
 - prop: `String`
@@ -1068,7 +1146,7 @@ every(gte(1))(range(1)(10)(2)) //=> true
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/has-prop.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/has-prop.js)
 
 Accepts a string `prop`, an object `obj`, and returns `true` if `obj` has the property `prop`, or `false` if it does not.
 
@@ -1085,7 +1163,7 @@ hasProp('b')({'a': 1}) //=> false
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/head.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/head.js)
 
 Accepts an array or a string `xs`, and return the first element of `xs`.
 
@@ -1104,7 +1182,7 @@ map(head)(array(zeros(2), ones(2)) //=> //=> [0, 1]
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/id.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/id.js)
 
 Accepts a value `x`, and returns `x`.
 
@@ -1124,7 +1202,7 @@ filter(id)(zeros(3)) //=> []
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/includes.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/includes.js)
 
 Accepts a values `x`, an array or a string `xs`, and returns `true` if `x` is included in `xs`, or `false` if `x` is not included in `xs`.
 
@@ -1141,7 +1219,7 @@ includes('oba')('foobar') //=> true
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/incr.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/incr.js)
 
 Accepts a number `x`, and returns the value of `x` incremented by `1`.
 
@@ -1158,7 +1236,7 @@ map(incr)(zeros(3)) //=> [1, 1, 1]
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/init.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/init.js)
 
 Accepts an array or a string `xs`, and returns a new array or a string containing all elements of `xs`, with the exception of the last one.
 
@@ -1176,7 +1254,7 @@ init('foobar!') //=> 'foobar'
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-arr.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-arr.js)
 
 Accepts a value `x`, and returns `true` if `xs` is an array.
 
@@ -1191,7 +1269,7 @@ isArr('') //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-date.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-date.js)
 
 Accepts a value `x`, and returns `true` if that value is a date.
 
@@ -1206,7 +1284,7 @@ isDate([]) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-def.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-def.js)
 
 Accepts a value `x`, and returns `true` if that value is not equal to `undefined`.
 
@@ -1221,7 +1299,7 @@ isDef(undefined) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-empty.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-empty.js)
 
 Accepts a value `x`, and returns `true` if `xs` is an array or a string and has a length equal to zero.
 
@@ -1233,13 +1311,34 @@ isEmpty(ones(1)) //=> false
 isEmpty('foo')  //=> false
 ```
 
+#### `insert(idx, x, xs)`
+
+- idx: `Number`
+- x: `Any`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.3.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/insert.js)
+
+Accepts a number `idx`, a value `x`, an array or a string `xs`, and returns a shallow copy of `xs`, that contains the value `x`, inserted at the position corresponding to the index `idx`.
+
+```js
+insert(0, 20, []) //=> [20]
+insert(0, 20, '') //=> '20'
+insert(2, 20, range(1, 5, 1)) //=> [1, 2, 20, 3, 4]
+insert(2)(20)(range(1)(5)(1)) //=> [1, 2, 20, 3, 4]
+insert(3, '-', 'foobar') //=> 'foo-bar'
+insert(3)('-')('foobar') //=> 'foo-bar'
+```
+
 #### `isFn(x)`
 
 - x: `Any`
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-fn.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-fn.js)
 
 Accepts a value `x`, and returns `true` if `x` is a function.
 
@@ -1254,7 +1353,7 @@ isFn(5) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-int.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-int.js)
 
 Accepts a value `x`, and returns `true` if `x` is an integer.
 
@@ -1268,10 +1367,10 @@ isInt(0.1) //=> false
 - xs: `String`
 - Returns: `Boolean`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-lower.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-lower.js)
 
-Accepts a string `xs`, and returns true if every character in `xs` is in lower case.
+Accepts a string `xs`, and returns `true` if every character in `xs` is in lower case.
 
 ```js
 isLower('foo') //=> true
@@ -1286,7 +1385,7 @@ isUpper('%$^') //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-neg.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-neg.js)
 
 Accepts a value `x`, and returns `true` if `x` is negative number.
 
@@ -1301,7 +1400,7 @@ isNeg(-5) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-nil.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-nil.js)
 
 Accepts a value `x`, and returns `true` if `x` is equal to `0`.
 
@@ -1317,7 +1416,7 @@ isNil(10) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-null.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-null.js)
 
 Accepts a value `x`, and returns `true` if `x` is equal to `null`.
 
@@ -1332,7 +1431,7 @@ isNull(10) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-num.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-num.js)
 
 Accepts a value `x`, and returns `true` if `x` is a number.
 
@@ -1347,7 +1446,7 @@ isNum('foo') //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-obj.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-obj.js)
 
 Accepts a value `x`, and returns `true` if `x` is an object.
 
@@ -1362,7 +1461,7 @@ isObj(5) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-pair.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-pair.js)
 
 Accepts a value `x`, and returns `true` if `x` is an array of length `2`.
 
@@ -1382,7 +1481,7 @@ isPair('fo') //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-pos.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-pos.js)
 
 Accepts a value `x`, and returns `true` if `x` is a positive number.
 
@@ -1400,7 +1499,7 @@ isPos(neg(1)) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-reg-exp.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-reg-exp.js)
 
 Accepts a value `x`, and returns `true` if `x` is a regular expression.
 
@@ -1415,7 +1514,7 @@ isRegExp(5) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-str.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-str.js)
 
 Accepts a value `x`, and returns `true` if `x` is a string.
 
@@ -1434,7 +1533,7 @@ isStr(num('foo')) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-undef.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-undef.js)
 
 Accepts a value `x`, and returns `true` if `x` is equal to `undefined`. 
 
@@ -1448,10 +1547,10 @@ isUndef('foo') //=> false
 - xs: `String`
 - Returns: `Boolean`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/is-lower.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/is-upper.js)
 
-Accepts a string `xs`, and returns true if every character in `xs` is in upper case.
+Accepts a string `xs`, and returns `true` if every character in `xs` is in upper case.
 
 ```js
 isUpper('foo') //=> false
@@ -1467,7 +1566,7 @@ isUpper('%$^') //=> false
 - y: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/ite.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/ite.js)
 
 Accepts a predicate function `fn`, two values `x` & `y`, and returns `x` if `x` satisfies the predicate `fn`, or `y` if `xs` does not. Can be considered as a curried version of the ternary operator. Note that `x` & `y` need to be calculated since both are passed as arguments to `ite`.
 
@@ -1486,7 +1585,7 @@ ite(odd, 1, 2) //=> 1
 - Return: `String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/join.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/join.js)
 
 Accepts a string `x`, an array `xs`, and returns a new string by concatenating all element of `xs`, while including `x` between each pair of adjacent `xs` elements.
 
@@ -1505,7 +1604,7 @@ join(str(0))(ones(3)) //=> '10101'
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/keys.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/keys.js)
 
 Accepts an object `obj`, and returns an array containing all enumerable own properties of `obj`.
 
@@ -1522,7 +1621,7 @@ keys(zipObj(range(0)(3)(1), ones(3))) //=> ['0', '1', '2']
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/last.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/last.js)
 
 Accepts an array or a string `xs`, and return the last element of `xs`.
 
@@ -1542,7 +1641,7 @@ map(last)(array(ones(2), zeros(2))) //=> [1, 0]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/lcm.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/lcm.js)
 
 Accepts two numbers `x` & `y`, and returns their least common multiple.
 
@@ -1557,7 +1656,7 @@ lcm(12)(32) //=> 96
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/len.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/len.js)
 
 Accepts an array or a string `xs`, and returns its length.
 
@@ -1577,7 +1676,7 @@ map(len)(array(ones(3), zeros(3))) //=> [3, 3]
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/lt.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/lt.js)
 
 Accepts two numbers `x` & `y`, and returns `true` if `x` is less than `y`, or `false` if `x` is greater than or equal to `y`. 
 
@@ -1597,7 +1696,7 @@ lt(3)(2) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/lte.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/lte.js)
 
 Accepts two numbers `x` & `y`, and returns `true` if `x` is less than or equal to `y`, or `false` if `x` is greater than `y`. 
 
@@ -1617,7 +1716,7 @@ lt(3)(2) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/map.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/map.js)
 
 Accepts a function `fn`, an array `xs`, and returns a new array containing as elements the result of applying `fn` to each and every element of `xs`.
 
@@ -1638,7 +1737,7 @@ map(bool)(['', 1, 0, -1]) //=> [false, true, false, true]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/mapcat.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/mapcat.js)
 
 Accepts a function `fn`, an array `xs`, and returns the result of concatenating each outcome from the application of `fn` to each element of `xs`.
 
@@ -1657,7 +1756,7 @@ mapcat(take(2), array(fill(4)('a'), fill(4)('b')) //=> [ 'a', 'a', 'b', 'b' ]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/max.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/max.js)
 
 Accepts two numbers `x` & `y`, and returns the largest of the two.
 
@@ -1674,7 +1773,7 @@ max(1)(10) //=> 10
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/merge-by.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/merge-by.js)
 
 Accepts a comparing function `fn`, two arrays `xs` & `ys`, and returns a new array, which is the result of merging `xs` with `ys`. The order of the elements in the returned array is deemed by the `fn` function, which compares each two consecutive elements of `xs` & `ys`, and forwards the one that satisfies the comparison, to the returned array.
 
@@ -1693,7 +1792,7 @@ mergeBy(gte)(range(1)(7)(2))(range(2)(7)(2)) //=> [2, 4, 6, 1, 3, 5]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/merge.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/merge.js)
 
 Accepts two arrays `xs` & `ys`, and returns a new array, which the result of merging `xs` and `ys` by the smallest number.
 
@@ -1710,7 +1809,7 @@ merge(range(1)(7)(2))(range(2)(7)(2)) //=> [1, 2, 3, 4, 5, 6]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/min-max.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/min-max.js)
 
 Accepts an array `xs` of length `2`, `[min, max]`, also known as `pair`, a number `x`, and returns a new `pair`, which contains the updated smallest and largest values, between `x`, `min` and `max`. 
 
@@ -1731,7 +1830,7 @@ minMax(take(2)(range(100)(0)(-1)))(1) //=> [1, 100]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/min.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/min.js)
 
 Accepts two numbers `x` & `y`, and returns the smallest of the two.
 
@@ -1752,7 +1851,7 @@ reduce(min)(Infinity)(appendTo(range(1)(10)(1))(0)) //=> 0
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/mod.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/mod.js)
 
 Accepts two number `x` & `y`, and returns the remainder of their division.
 
@@ -1772,7 +1871,7 @@ map(apply(2)(flip(mod)))(range(0)(5)(1)) //=> [ 0, 1, 0, 1, 0 ]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/mult.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/mult.js)
 
 Accepts two number `x` & `y`, and returns the result of their multiplication.
 
@@ -1790,7 +1889,7 @@ map(mult(10))(ones(3)) //=> [10, 10, 10]
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/nand.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/nand.js)
 
 Accepts two booleans `x` & `y`, and returns `!(x && y)`, the result of applying the logical `NAND` operator between `x` and `y`. Values `x`, `y` are automatically coerced to booleans if not provided as such.
 
@@ -1809,7 +1908,7 @@ nand(1)(1) //=> false
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/neg.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/neg.js)
 
 Accepts a number `x`, converts it to a negative and returns the new value.
 
@@ -1828,7 +1927,7 @@ map(neg)(range(1)(10)(2)) //=> [-1, -3, -5, -7, -9]
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/none.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/none.js)
 
 Accepts a predicate function `fn`, an array `xs`, and returns `true` if none of the elements in `xs` satisfy the predicate, or `false` if even one element satisfies it.
 
@@ -1848,7 +1947,7 @@ none(isNeg)(range(1)(4)(1)) //=> true
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/nor.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/nor.js)
 
 Accepts two booleans `x` & `y`, and returns `!(x || y)`, the result of applying the logical `NOR` operator between `x` and `y`. Values `x`, `y` are automatically coerced to booleans if not provided as such.
 
@@ -1867,7 +1966,7 @@ nor(1)(1) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-arr.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-arr.js)
 
 Accepts a value `x`, and returns `true` if `x` is not an array.
 
@@ -1883,7 +1982,7 @@ notArr(zero(0)) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-date.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-date.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not a date.
 
@@ -1898,7 +1997,7 @@ notDate(new Date()) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-empty.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-empty.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not an array or a string of length equal to `0`.
 
@@ -1917,7 +2016,7 @@ notEmpty(zeros(0)) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-fn.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-fn.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not a function.
 
@@ -1934,7 +2033,7 @@ notFn(map(mult(10))) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-int.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-int.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not an integer.
 
@@ -1946,13 +2045,30 @@ notInt(5) //=> false
 notInt(applyArgs(pair(2, 10), flip(div))) //=> false
 ```
 
+#### `notLower(xs)`
+
+- xs: `String`
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-lower.js)
+
+Accepts a string `xs`, and returns `true` if every character in `xs` is not in lower case.
+
+```js
+notLower('foo') //=> false
+notLower('FOO') //=> true
+notLower('100') //=> true
+notLower('%$^') //=> true
+```
+
 #### `notNil(x)`
 
 - x: `Any`
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-nil.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-nil.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not equal to `0`.
 
@@ -1969,7 +2085,7 @@ notNil(head(zeros(2))) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-null.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-null.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not a equal to `null`.
 
@@ -1986,7 +2102,7 @@ notNull(last(fill(1, null))) // => false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-num.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-num.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not a number.
 
@@ -2005,7 +2121,7 @@ notNum(len('foo')) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-obj.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-obj.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not a object.
 
@@ -2021,7 +2137,7 @@ notObj({a: 1}) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-pair.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-pair.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not an array of length equal to `2`.
 
@@ -2040,7 +2156,7 @@ notPair(take(2)(ones(3))) //=> false
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-reg-exp.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-reg-exp.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not a regular expression.
 
@@ -2055,7 +2171,7 @@ notRegExp('bar') //=> true
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not-str.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-str.js)
 
 Accepts a value `x`, and returns `true` if `xs` is not a string.
 
@@ -2065,13 +2181,30 @@ notStr(range(1, 4, 1)) //=> true
 notStr(range(1)(4)(1)) //=> true
 ```
 
+#### `notUpper(xs)`
+
+- xs: `String`
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not-upper.js)
+
+Accepts a string `xs`, and returns `true` if every character in `xs` is not in upper case.
+
+```js
+notUpper('foo') //=> true
+notUpper('FOO') //=> false
+notUpper('100') //=> true
+notUpper('%$^') //=> true
+```
+
 #### `not(x)`
 
 - x: `Boolean`
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/not.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/not.js)
 
 Accepts a boolean `x`, and returns the logical negation of `x`.
 
@@ -2088,7 +2221,7 @@ not(not(id(0))) //=> false
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/nullary.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/nullary.js)
 
 Accepts a function `fn`, and returns a wrapper function of `fn`, with an arity of `0`, which when invoked its own arguments returns the result of supplying `1` of those arguments to `fn`.
 
@@ -2105,7 +2238,7 @@ array0(1, 2) //=> []
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/num.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/num.js)
 
 Accepts a value `x`, converts it to a number and returns the result. Can be considered as a curried version of default `Number` function.
 
@@ -2124,7 +2257,7 @@ map(num)(pair('1')('2')) //=> [1, 2]
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/odd.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/odd.js)
 
 Accepts a number `x`, and returns `true` if `x` is an odd number, or `false` if it is an even.
 
@@ -2141,7 +2274,7 @@ filter(odd)(range(0)(9)(1)) //=> [1, 3, 5, 7]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/one.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/one.js)
 
 A constant function, which always returns the number `1` when invoked, regardless of the provided arguments.
 
@@ -2159,7 +2292,7 @@ map(one)(range(1)(4)(1)) //=> [1, 1, 1]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/ones.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/ones.js)
 
 Accepts a number `n`, and returns an array of `n` length, containing `n` times the number `1`.
 
@@ -2179,7 +2312,7 @@ map(ones)(range(1)(4)(1)) //=> [[1], [1, 1], [1, 1, 1]]
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/or.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/or.js)
 
 Accepts two booleans `x` & `y`, and returns `x || y`, the result of applying the logical `OR` operator between `x` and `y`. Values `x`, `y` are automatically coerced to booleans.
 
@@ -2199,7 +2332,7 @@ or(1)(1) //=> true
 - Return: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/pair.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/pair.js)
 
 Accepts two values `x` & `y`, and returns an array of length `2`, also known as a pair, containing the two `x` & `y` values.
 
@@ -2215,7 +2348,7 @@ pair(1)(2) //=> [1, 2]
 - Returns: fn
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/partial-right.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/partial-right.js)
 
 Accepts an array of arguments `args`, a function `fn`, and returns a new wrapper function of `fn`, which when invoked with its own arguments, returns the result of applying `fn` to a new group of arguments consisted of the later provided wrapper function arguments, followed by the initial `args` arguments.
 
@@ -2233,7 +2366,7 @@ div10Add5(100) // => 15
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/partial.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/partial.js)
 
 Accepts an array of arguments `args`, a function `fn`, and returns a new wrapper function of `fn`, which when invoked with its own arguments, returns the result of applying `fn` to a new group of arguments consisted of the initial `args` arguments, followed by the later provided wrapper function arguments.
 
@@ -2251,7 +2384,7 @@ incrementAll(range(1)(5)(1)) //=> [2, 3, 4, 5]
 - xs: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/partition-at.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/partition-at.js)
 
 Accepts a number `idx`, an array or a string `xs`, and returns a new array containing two elements. The first one is an array or a string holding all elements of `xs` from index `0` up to index `idx`, except for the element corresponding to index `idx`, and the second one is an array or a string holding all of the remaining elements in `xs`.
 
@@ -2270,7 +2403,7 @@ partitionAt(3)('foobar') //=> ['foo', 'bar']
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/partition.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/partition.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns a new array containing two elements. The first one is an array or a string holding all elements of `xs` that satisfy the predicate `fn`, and the second one an array or a string holding all elements that do not satisfy the predicate `fn`.
 
@@ -2291,7 +2424,7 @@ partition(isLower)('AbCdEfG') //=> ['bdf', 'ACEG']
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/pipe.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/pipe.js)
 
 Accepts one or more functions `fn`, and returns a new function that is the [composition](https://en.wikipedia.org/wiki/Function_composition), from left to right, of the given `fn` functions. Note that the returned function is not automatically curried, but can easily become so by using [`xcurry`]().
 
@@ -2308,7 +2441,7 @@ absAdd5(1) //=> 60
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/pow.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/pow.js)
 
 Accepts two numbers `x` & `y`, and returns the result of `x` to the power of `y`.
 
@@ -2326,7 +2459,7 @@ pow(5)(2) //=> 25
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/prepend-to.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/prepend-to.js)
 
 Accepts an array or a string `xs`, a value `x` and returns a new array or string with `x` included at the start of `xs`.
 
@@ -2347,7 +2480,7 @@ prependTo('oo')('f') //=> 'foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/prepend.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/prepend.js)
 
 Accepts a value `x`, an array or a string `xs` and returns a new array or string with `x` included to the start of `xs`. Can be considered the the flipped version of `prependTo`.
 
@@ -2366,7 +2499,7 @@ prepend('f')('oo') //=> 'foo'
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/prod.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/prod.js)
 
 Accepts an array `xs`, and returns the total product of all numbers in the array.
 
@@ -2382,7 +2515,7 @@ sum([1, 2, 3, 4]) //=> 24
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/props.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/props.js)
 
 Accepts an object `obj`, and returns an array containing all own properties of `obj`.
 
@@ -2401,7 +2534,7 @@ keys(zipObj(range(1)(4)(1))(zeros(3))) //=> [ '1', '2', '3' ]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/range.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/range.js)
 
 Accepts two numbers `x` & `y`, a number `step`, and returns a new array, containing all elements from `x` to `y`, without including `y`. Note that if `x` is less that `y`, the `step` must be a positive number, thus the returning array will contain numbers ascending from `x` to `y`, and if `x` is greater than `y`, then the step must be a negative number, thus the returning array will contain numbers descending from `x` to `y`.
 
@@ -2420,7 +2553,7 @@ range(4)(1)(-1) // => [4, 3, 2]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/recip.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/recip.js)
 
 Accepts a number `x`, and returns `1 / x`, its reciprocal value.
 
@@ -2438,7 +2571,7 @@ apply(10, pipe(recip, recip)) //=> 10
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/reduce.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/reduce.js)
 
 Accepts a reducer function `fn`, a accumulative value `acc`, an array `xs`, and returns a single value resulting from the application of the reducer `fn` on each element of the array `xs`, along with the accumulative value `acc`. The result of each iteration is passed as the new accumulative value to next one. Note that elements of the array are scanned from left to right.
 
@@ -2461,7 +2594,7 @@ reduce(mult)(1)(fill(3)(5)) //=> 125
 - Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/reduce-right.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/reduce-right.js)
 
 Accepts a reducer function `fn`, a accumulative value `acc`, an array `xs`, and returns a single value resulting from the application of the reducer `fn` on each element of the array `xs`, along with the accumulative value `acc`. The result of each iteration is passed as the new accumulative value to next one. Note that elements of the array are scanned from right to left.
 
@@ -2483,7 +2616,7 @@ reduce(mult)(1)(fill(3)(5)) //=> 125
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/reject.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/reject.js)
 
 Accepts a predicate function `fn`, an array `xs`, and returns a new array containing all elements of `xs` that do not satisfy the predicate `fn`.
 
@@ -2493,49 +2626,64 @@ reject(even)(range(0, 6, 1)) //=> [1, 3, 5]
 reject(even)(range(0)(6)(1)) //=> [1, 3, 5]
 ```
 
-#### `remove(i, j, xs)`
-
-- i: `Number`
-- j: `Number`
-- xs: `Array|String`
-- Returns: `Array|String`
-- Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/remove.js)
-
-Accepts two numbers `i` & `j`, an array or a string `xs`, and returns a new array or a string that contains all elements of `xs`, except for the elements between the indices `i` & `j`, without including the element corresponding to the index `j`.
-
-```js
-remove(1, 5, range(0, 6, 1)) //=> [1, 5]
-remove(1, 5)(range(0, 6, 1)) //=> [1, 5]
-remove(1)(5)(range(0, 6, 1)) //=> [1, 5]
-remove(1)(5)(range(0)(6)(1)) //=> [1, 5]
-remove(1, 5, 'foobar') //=> 'or'
-remove(1, 5)('foobar') //=> 'or'
-remove(1)(5)('foobar') //=> 'or'
-```
-
-#### `replaceAll(x, rep, xs)`
+#### `remove(x, xs)`
 
 - x: `Any`
-- rep: `Any`
 - xs: `Array|String`
 - Returns: `Array|String`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/replace-all.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/remove.js)
 
-Accepts a value `x`, a value `rep`, an array or a string `xs`, and returns a new array or a string, where all occurrences of `x` in `xs` are replaced by `rep`. If `xs` is a string, then `rep` is automatically converted to a string.
+Accepts a value `x`, an array or a string `xs`, and returns a new array or a string, where the first occurrence of `x` in `xs`, from the left to right side, is removed.
 
 ```js
-replaceAll(1, 10, concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
-replaceAll(1, 10)(concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
-replaceAll(1)(10)(concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
-replaceAll(1)(10)(concat(pair(1, 20))(pair(1, 50))) //=> [10, 20, 10, 50]
-replaceAll(1)(10)(concat(pair(1)(20))(pair(1)(50))) //=> [10, 20, 10, 50]
-replaceAll('_', 'o', 'f__bar') //=> 'foobar'
-replaceAll('_', 'o')('f__bar') //=> 'foobar'
-replaceAll('_')('o')('f__bar') //=> 'foobar'
+remove(0, concat(pair(0, 20), pair(0, 50))) //=> [20, 0, 50]
+remove(0)(concat(pair(0, 20), pair(0, 50))) //=> [20, 0, 50]
+remove(0)(concat(pair(0, 20))(pair(0, 50))) //=> [20, 0, 50]
+remove(0)(concat(pair(0)(20))(pair(0)(50))) //=> [20, 0, 50]
+remove('!', 'b!r!') //=> 'br!'
+remove('!')('b!r!') //=> 'br!'
+```
+
+#### `removeAll(x, xs)`
+
+- x: `Any`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/remove-all.js)
+
+Accepts a value `x`, an array or a string `xs`, and returns a new array or a string, where all occurrence of `x` in `xs`, are removed.
+
+```js
+removeAll(0, concat(pair(0, 20), pair(0, 50))) //=> [20, 50]
+removeAll(0)(concat(pair(0, 20), pair(0, 50))) //=> [20, 50]
+removeAll(0)(concat(pair(0, 20))(pair(0, 50))) //=> [20, 50]
+removeAll(0)(concat(pair(0)(20))(pair(0)(50))) //=> [20, 50]
+removeAll('!', 'b!r!') //=> 'br'
+removeAll('!')('b!r!') //=> 'br'
+```
+
+#### `removeRight(x, xs)`
+
+- x: `Any`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/remove-right.js)
+
+Accepts a value `x`, an array or a string `xs`, and returns a new array or a string, where the first occurrence of `x` in `xs`, from the right to left side, is removed.
+
+```js
+removeRight(0, concat(pair(0, 20), pair(0, 50))) //=> [0, 20, 50]
+removeRight(0)(concat(pair(0, 20), pair(0, 50))) //=> [0, 20, 50]
+removeRight(0)(concat(pair(0, 20))(pair(0, 50))) //=> [0, 20, 50]
+removeRight(0)(concat(pair(0)(20))(pair(0)(50))) //=> [0, 20, 50]
+removeRight('!', 'b!r!') //=> 'b!r'
+removeRight('!')('b!r!') //=> 'b!r'
 ```
 
 #### `replace(x, rep, xs)`
@@ -2546,7 +2694,7 @@ replaceAll('_')('o')('f__bar') //=> 'foobar'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/replace.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/replace.js)
 
 Accepts a value `x`, a value `rep`, an array or a string `xs`, and returns a new array or a string, where the first occurrence of `x` in `xs` is replaced by `rep`. If `xs` is a string, then `rep` is automatically converted to a string. Note that elements in `xs` are scanned from left to right.
 
@@ -2561,13 +2709,36 @@ replace('!', 'a')('b!r!') //=> 'bar!'
 replace('!')('a')('b!r!') //=> 'bar!'
 ```
 
+#### `replaceAll(x, rep, xs)`
+
+- x: `Any`
+- rep: `Any`
+- xs: `Array|String`
+- Returns: `Array|String`
+- Curried: `True`
+- Added on: `0.1.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/replace-all.js)
+
+Accepts a value `x`, a value `rep`, an array or a string `xs`, and returns a new array or a string, where all occurrences of `x` in `xs` are replaced by `rep`. If `xs` is a string, then `rep` is automatically converted to a string.
+
+```js
+replaceAll(1, 10, concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
+replaceAll(1, 10)(concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
+replaceAll(1)(10)(concat(pair(1, 20), pair(1, 50))) //=> [10, 20, 10, 50]
+replaceAll(1)(10)(concat(pair(1, 20))(pair(1, 50))) //=> [10, 20, 10, 50]
+replaceAll(1)(10)(concat(pair(1)(20))(pair(1)(50))) //=> [10, 20, 10, 50]
+replaceAll('_', 'o', 'f__bar') //=> 'foobar'
+replaceAll('_', 'o')('f__bar') //=> 'foobar'
+replaceAll('_')('o')('f__bar') //=> 'foobar'
+```
+
 #### `reverseArgs(fn)`
 
 - fn: `Function`
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/reverse-args.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/reverse-args.js)
 
 Accepts a function `fn`, and returns a new wrapper function of `fn`, which when invoked with its own arguments, returns the result of applying `fn` to these arguments in a reverse order.
 
@@ -2586,7 +2757,7 @@ revArray(1, 2, 3, 4) //=> [4, 3, 2, 1]
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/reverse.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/reverse.js)
 
 Accepts an array or a string `xs`, and returns a new array or string containing all `xs` elements in a reversed order.
 
@@ -2603,7 +2774,7 @@ reverse('foobar') //=> 'raboof'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/set-head-with.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/set-head-with.js)
 
 Accepts a function `fn`, an array or a string `xs`, and returns a shallow copy of `xs`, where the first element is replaced by the result of the application of `fn` to the originally first element of `xs`. 
 
@@ -2622,7 +2793,7 @@ setHeadWith(toUpper)('hello') //=> Hello
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/set-head.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/set-head.js)
 
 Accepts a value `x`, an array or a string `xs`, and returns a shallow copy of `xs`, where the originally first element is replaced by `x`.
 
@@ -2641,7 +2812,7 @@ setHead('F')('_oo') //=> 'Foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/set-last-with.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/set-last-with.js)
 
 Accepts a function `fn`, an array or a string `xs`, and returns a shallow copy of `xs`, where the last element is replaced by the result of the application of `fn` to the originally last element of `xs`.
 
@@ -2660,7 +2831,7 @@ setLastWith(toLower)('foO') //=> 'foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/set-last.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/set-last.js)
 
 Accepts a value `x`, an array or a string `xs`, and returns a shallow copy of `xs`, where the last element is replaced by `x`.
 
@@ -2680,7 +2851,7 @@ setLast('o')('fo_') //=> 'foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/set-nth-with.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/set-nth-with.js)
 
 Accepts a function `fn`, an array or a string `xs`, and returns a shallow copy of `xs`, where the element corresponding to the `nth` index is replaced by the result of the application of `fn` to the original value of the `nth` element in `xs`.
 
@@ -2703,7 +2874,7 @@ setLastWith(1)(toLower)('fOo') //=> 'foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/set-nth.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/set-nth.js)
 
 Accepts a value `x`, an array or a string `xs`, and returns a shallow copy of `xs`, where the element corresponding to the `nth` index is replaced by `x`.
 
@@ -2724,7 +2895,7 @@ setNth(1)('o')('f_o') //=> 'foo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/shift-left.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/shift-left.js)
 
 Accepts an array or a string `xs`, and returns a new array or a string containing all elements of `xs`, with the difference that each element has its position shifted once, towards the left side.
 
@@ -2740,7 +2911,7 @@ shiftLeft('foo') //=> 'oof'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/shift.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/shift.js)
 
 Accepts an array or a string `xs`, and returns a new array or a string, containing all elements of `xs`, with the difference that each element has its position shifted once, towards the right side.
 
@@ -2758,7 +2929,7 @@ shift('foo') //=> 'ofo'
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/slice.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/slice.js)
 
 Accepts two numbers `i` & `j`, an array of a string `xs`, and returns a shallow copy of `xs`, containing only the elements from index `i` to `j`, except for the element corresponding to index `j`.
 
@@ -2776,13 +2947,13 @@ slice(0)(3)('foobar') //=> 'foo'
 
 #### `snd(xs)`
 
-- xs: `Array`
-- Returns: `Array`
+- xs: `Array|String`
+- Returns: `Any`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/snd.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/snd.js)
 
-Accepts an array `xs` of length `2`, also known as a `pair`, and returns the last element of the array.
+Accepts an array or a string `xs`, and returns the second element.
 
 ```js
 snd([1, 2]) //=> 2
@@ -2797,7 +2968,7 @@ snd(pair(1)(2)) //=> 2
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/some.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/some.js)
 
 Accepts an predicate function `fn`, an array or a string `xs`, and returns `true` if at least one elements in `xs` satisfies the predicate `fn`, or `false` if no element in `xs` satisfies it.
 
@@ -2819,7 +2990,7 @@ some(eq('.'))('foo' //=> false
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/split.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/split.js)
 
 Accepts a string `x`, a string `xs`, and returns a new array containing only substrings of `xs`, resulting from the removal of every occurrence of `x` in `xs`. In other words, `x` is used as a separator to determine where to make each split should take place in `xs`.
 
@@ -2837,7 +3008,7 @@ mapcat(split(','))(pair('1,2,3')('4,5,6')) //=> ['1', '2', '3', '4', '5', '6']
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/spread.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/spread.js)
 
 Accepts a function `fn`, and returns a new function, which wraps `fn`, accepts an array of arguments, spreads the array and returns the result of applying to those arguments. Note that the returned wrapper function is not automatically curried.
 
@@ -2858,7 +3029,7 @@ map(spreadDiv)(array(pair(10)(2))(pair(20)(4))) //=> [5, 5]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/square.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/square.js)
 
 Accepts a number `x` and returns the result of `x` to the power of `2`.
 
@@ -2877,7 +3048,7 @@ map(square)(range(2)(11)(2)) //=> [4, 16, 36, 64, 100]
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/starts-with.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/starts-with.js)
 
 Accepts a string `x`, a string `xs`, and returns `true` if `xs` starts with the string `x`, or `false` if it does not.
 
@@ -2894,7 +3065,7 @@ startsWith('bar')('foo...') //=> false
 - Returns: `String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/str.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/str.js)
 
 Accepts a value `x`, converts it to string and returns the result. Can be considered as a curried version of the default `String()` function.
 
@@ -2911,7 +3082,7 @@ str(range(1)(4)(1)) //=> '1, 2, 3'
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/sub.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/sub.js)
 
 Accepts two numbers `x` & `y`, and returns `x - y`, the result of subtracting `y` from `x`.
 
@@ -2929,7 +3100,7 @@ map(apply(5)(flip(sub)))(fill(4)(5)) //=> [ 0, 0, 0, 0 ]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/sum.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/sum.js)
 
 Accepts an array `xs`, and returns the total sum of all number in the array.
 
@@ -2948,7 +3119,7 @@ sum(range(1)(4)(1)) //=> 6
 - return: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/swap.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/swap.js)
 
 Accepts two numbers `i` & `j`, an array or a string `xs`, and returns a shallow copy of `xs`, where the element corresponding to the index `i` is swapped with the element corresponding to the index `j`.
 
@@ -2964,13 +3135,30 @@ swap(1, 4)('foobar') //=> 'faobor'
 swap(1)(4)('foobar') //=> 'faobor'
 ```
 
+#### `T()`
+
+- Returns: `Boolean`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/T.js)
+
+A constant function, which always returns `true` when invoked, regardless of the provided arguments.
+
+```js
+T() //=> true
+T([1, 2]) //=> true
+map(T, range(1, 4, 1)) //=> [true, true, true]
+map(T)(range(1, 4, 1)) //=> [true, true, true]
+map(T)(range(1)(4)(1)) //=> [true, true, true]
+```
+
 #### `tail(xs)`
 
 - xs: `Array|String`
 - return: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/tail.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/tail.js)
 
 Accepts an array or a string `xs`, and returns a new array of a string containing all elements of `xs` except for the first element.
 
@@ -2991,7 +3179,7 @@ tail('bar') //=> 'ar'
 - return: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/take-right-while.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/take-right-while.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns a new array or a string, where only the first elements of `xs`, from the right to left side, that satisfy the predicate `fn`, are included.
 
@@ -3009,7 +3197,7 @@ dropRightWhile(eq('.'))('foo...') //=> '...'
 - return: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/take-right.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/take-right.js)
 
 Accepts a number `n`, an array or a string `xs`, and returns a new array or a string, where only the `n` first elements of `xs`, from the right to the left side, are included.
 
@@ -3027,7 +3215,7 @@ takeRight(3)('foo...') //=> '...'
 - return: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/take-while.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/take-while.js)
 
 Accepts a predicate function `fn`, an array or a string `xs`, and returns a new array or a string, where only the first elements of `xs`, from the left to right side, that satisfy the predicate `fn`, are included.
 
@@ -3045,7 +3233,7 @@ takeWhile(uneq('.'))('foo...') //=> 'foo'
 - return: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/take.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/take.js)
 
 Accepts a number `n`, an array or a string `xs`, and returns a new array or a string, where only the `n` first elements of `xs`, from the left to the right side, are included.
 
@@ -3062,7 +3250,7 @@ take(3)('foo..') //=> 'foo'
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/ternary.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/ternary.js)
 
 Accepts a function `fn`, and returns a wrapper function of `fn` with an arity of `3`, which when invoked with its own arguments returns the result of supplying only `3` of those arguments to `fn`.
 
@@ -3080,8 +3268,8 @@ array3(1, 2, 3, 4) //=> [1, 2, 3]
 - xs: `String`
 - Returns: `String`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/to-lower.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/to-lower.js)
 
 Accepts a string `xs`, and returns the same string containing all characters in lower upper.
 
@@ -3098,8 +3286,8 @@ map(toLower)(pair('FOO')('BAR')) //=> ['foo', 'bar']
 - xs: `String`
 - Returns: `String`
 - Curried: `True`
-- Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/to-lower.js)
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/to-upper.js)
 
 Accepts a string `xs`, and returns the same string containing all characters in upper case.
 
@@ -3111,13 +3299,30 @@ map(toUpper)(pair('foo', 'bar')) //=> ['FOO', 'BAR']
 map(toUpper)(pair('foo')('bar')) //=> ['FOO', 'BAR']
 ```
 
+#### `trd(xs)`
+
+- xs: `Array|String`
+- Returns: `Any`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/trd.js)
+
+Accepts an array or a string `xs`, and returns the third element.
+
+```js
+trd([1, 2, 3]) //=> 3
+trd('foo') //=> 'o'
+trd(range(1, 4, 1)) //=> 3
+trd(range(1)(4)(1)) //=> 3
+```
+
 #### `trunc(x)`
 
 - x: `Number`
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/trunc.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/trunc.js)
 
 Accepts a number `x`, and returns the integer part of `x`.
 
@@ -3128,13 +3333,30 @@ trunc(div(5, 10)) //=> 0
 trunc(div(5)(10)) //=> 0
 ```
 
+#### `Ts(n)`
+
+- n: `Number`
+- Returns: `Array`
+- Curried: `True`
+- Added on: `0.2.0`
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/Ts.js)
+
+Accepts a number `n`, and returns an array of length `n`, containing only the value `true`.
+
+```js
+Ts(0) //=> []
+Ts(1) //=> [true]
+Ts(3) //=> [true, true, true]
+map(not, Ts(3)) //=> [false, false, false]
+```
+
 #### `unary(fn)`
 
 - fn: `Function`
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/unary.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/unary.js)
 
 Accepts a function `fn`, and returns a wrapper function of `fn`, with an arity of `1`, which when invoked with its own arguments returns the result of supplying only `1` of those arguments to `fn`.
 
@@ -3153,7 +3375,7 @@ array(1, 2) //=> [1]
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/uneq-prop.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/uneq-prop.js)
 
 Accepts a string `prop`, two objects `xs` & `ys`, and returns `true` if both objects do not have an equal value corresponding to the `prop` property, or `false` if they do. The equality check is accomplished by using the [`eq`]() module.
 
@@ -3173,7 +3395,7 @@ uneqProp('a')({'a': 2}, {'b': 3}) //=> true
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/uneq.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/uneq.js)
 
 Accepts two values `x` & `y`, and returns `true` if both are not strictly equal (`===`), or `false` if they are.
 
@@ -3194,7 +3416,7 @@ uneq(1)(1) //=> false
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/values.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/values.js)
 
 Accepts an object `obj`, and returns an array of all the values of `obj`.
 
@@ -3213,7 +3435,7 @@ values(zipObj(pair('a')('b'))(pair(1)(2))) //=> [1, 2]
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/xapply.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/xapply.js)
 
 Accepts a number `x`, a value `y`, a function `fn`, and returns the result of consequently applying `x` times the `fn` function to the value `y`.
 
@@ -3236,7 +3458,7 @@ xapply(2)(100)(apply(10)(flip(div)))
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/xarray.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/xarray.js)
 
 Accepts a number `x`, and returns a curried function of arity `x`, that when invoked with total number `x` of arguments, returns an array of all `x` given arguments.
 
@@ -3255,7 +3477,7 @@ array(1)(2)(3) //=> [1, 2, 3]
 - Returns: `Function`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/xcurry.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/xcurry.js)
 
 Accepts a number `x`, a function `fn`, and returns a curried version of `fn` with an arity of `x`.
 
@@ -3273,7 +3495,7 @@ curriedAdd(5)(5) //=> 10
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/xnor.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/xnor.js)
 
 Accepts two booleans `x` & `y`, and returns the result of applying the logical complement of the `Exclusive OR` operator between `x` and `y`. Values `x`, `y` are automatically coerced to booleans.
 
@@ -3293,7 +3515,7 @@ xnor(1)(1) //=> true
 - Returns: `Boolean`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/xor.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/xor.js)
 
 Accepts two booleans `x` & `y`, and returns the result of applying the logical `Exclusive OR` operator between `x` and `y`. Values `x`, `y` are automatically coerced to booleans.
 
@@ -3313,7 +3535,7 @@ xor(1)(1) //=> false
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/xshift-left.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/xshift-left.js)
 
 Accepts a number `x`, an array or a string `xs`, and returns a shallow copy of `xs`, with the difference that each element has its position shifted `x` times towards the left side.
 
@@ -3330,7 +3552,7 @@ xshiftLeft(3)(range(1)(6)(1)) //=> [4, 5, 1, 2, 3]
 - Returns: `Array|String`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/xshift.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/xshift.js)
 
 Accepts a number `x`, an array or a string `xs`, and returns a shallow copy of `xs`, with the difference that each element has its position shifted `x` times towards the right side.
 
@@ -3345,7 +3567,7 @@ xshift(3)(range(1)(6)(1)) //=> [3, 4, 5, 1, 2]
 - Returns: `Number`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/zero.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/zero.js)
 
 A zero-arity constant function, which always returns the number `0` when invoked, regardless of the provided arguments.
 
@@ -3363,7 +3585,7 @@ map(zero)(range(1)(6)(1)) //=> [0, 0, 0, 0, 0]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/zeros.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/zeros.js)
 
 Accepts a number `n`, and returns an array of length `n`, containing `n` times the number `0`.
 
@@ -3381,7 +3603,7 @@ map(incr, zeros(3)) //=> [1, 1, 1]
 - Returns: `Object`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/zip-obj.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/zip-obj.js)
 
 Accepts two arrays or strings `xs` & `ys`, and returns an object, where the elements of `xs` are its properties and the elements of `ys` are its values.
 
@@ -3399,7 +3621,7 @@ zipObj('bar')(zeros(4)) //=> { b:0 1, a: 0, r: 0 }
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/zip-reverse.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/zip-reverse.js)
 
 Accepts an array or a string `xs`, and returns a new array, where each element of `xs` is paired to its corresponding element in the reverse of `xs`.
 
@@ -3415,7 +3637,7 @@ zipReverse(range(1)(4)(1)) //=> [[1, 3], [2, 2], [3, 1]]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/zip-self.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/zip-self.js)
 
 Accepts an array or a string `xs`, and returns a new array, where each element of `xs` is paired to itself.
 
@@ -3431,7 +3653,7 @@ zipSelf(range(1)(4)(1)) //=> [[1, 1], [2, 2], [3, 3]]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/zip-tail.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/zip-tail.js)
 
 Accepts an array or a string `xs`, and returns a new array, where each element of `xs` is paired to its corresponding element in the tail of `xs`.
 
@@ -3448,7 +3670,7 @@ zipTail(range(1, 4, 1)) //=> [[1, 2], [2, 3]]
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/zip-with.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/zip-with.js)
 
 Accepts a reducer function of arity `2`, two arrays or strings `xs` & `ys`, and returns a new array containing the result of applying the reducer `fn` to each pair of elements of `xs` & `ys`.
 
@@ -3467,7 +3689,7 @@ zipWith(gather(reverse))(range(1)(4)(1))('foo') //=> [['f', 1], ['o', 2], ['o', 
 - Returns: `Array`
 - Curried: `True`
 - Added on: `0.1.0`
-- [Go to source](https://github.com/klauscfhq/arare/tree/master/src/zip.js)
+- [Go to source](https://github.com/klaussinani/arare/tree/master/src/zip.js)
 
 Accepts two arrays or strings `xs` & `ys`, and returns a new array containing, as pairs, all elements of `xs` & `ys`.
 

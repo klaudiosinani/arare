@@ -1,13 +1,13 @@
 {
   "name": "arare",
-  "version": "0.1.0",
-  "description": "Lightweight auto-curried functional programming library",
+  "version": "0.3.1",
+  "description": "🍘 Lightweight auto-curried functional programming library",
   "license": "MIT",
-  "repository": "klauscfhq/arare",
+  "repository": "klaussinani/arare",
   "author": {
     "name": "Klaus Sinani",
-    "email": "klauscfhq@protonmail.com",
-    "url": "https://klauscfhq.github.io"
+    "email": "klaussinani@gmail.com",
+    "url": "https://klaussinani.github.io"
   },
   "bin": {
     "arare": "repl.js"
@@ -33,7 +33,7 @@
     "coverage": "jest --coverage && open coverage/lcov-report/index.html"
   },
   "devDependencies": {
-    "ava": "1.0.0-beta.8",
+    "ava": "1.0.0-rc.2",
     "jest": "^23.6.0",
     "xo": "*"
   },
@@ -41,7 +41,8 @@
     "rule": {
       "curly": 0,
       "max-params": 1,
-      "no-use-extend-native/no-use-extend-native": 1
+      "no-use-extend-native/no-use-extend-native": 1,
+      "unicorn/filename-case": 0
     },
     "semicolon": false,
     "space": 2,
