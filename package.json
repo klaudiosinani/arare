@@ -27,8 +27,10 @@
     "programming"
   ],
   "scripts": {
+    "lint": "xo",
     "test": "jest",
-    "lint": "xo"
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage && open coverage/lcov-report/index.html"
   },
   "devDependencies": {
     "ava": "1.0.0-beta.8",

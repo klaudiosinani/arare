@@ -3,8 +3,6 @@ const {and, cond, eq, lte, lt, gte, partialRight} = require('..')
 const True = () => true
 const False = () => false
 
-test('my passing test', () => {})
-
 test('it executes the transformer if the predicate returns true', () => {
   const testCond = cond([[False, () => 'nope'], [True, () => 'yep']])
 
@@ -45,7 +43,15 @@ test('it handles multiple argument lengths', () => {
 test('it handles multiple argument lengths v2', () => {
   const inclusive = pair =>
     and(partialRight(gte, [pair[0]]), partialRight(lte, [pair[1]]))
-  // Const inclusive50to100 = inclusive([50, 100]);
 
   expect(inclusive([50, 100])(75)).toBe(true)
+})
+
+test('it returns undefined if no catch-all is given', () => {
+  const whoops = cond([
+    [x => eq(x, 'hi'), () => true],
+    [x => eq(x, 'bye'), () => false]
+  ])
+
+  expect(whoops('?')).toEqual(undefined)
 })
