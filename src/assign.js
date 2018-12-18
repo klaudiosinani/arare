@@ -1,4 +1,4 @@
-'set strict'
+'use strict'
 const copy = require('./copy')
 const curry = require('./curry')
 const str = require('./str')
