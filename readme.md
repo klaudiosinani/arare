@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  🍘 Lightweight auto-curried functional programming library
+  Lightweight auto-curried functional programming library
 </h4>
 
 <div align="center">
