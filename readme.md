@@ -10,20 +10,9 @@
   <img alt="Header" width="85%" src="media/header.png"/>
 </div>
 
-<p align="center">
-  <a href="https://travis-ci.com/klaussinani/arare">
-    <img alt="Build Status" src="https://travis-ci.com/klaussinani/arare.svg?branch=master">
-  </a>
-</p>
-
 ## Description
 
 Lightweight and without any external dependencies arare enables you to write tacit, point-free, declarative & clean code while avoiding side-effects and mutations. Internally the library itself, comprised of over 200 functions, follows the functional programming paradigm and is materialized using fundamental functional qualities such as currying, recursion, tail calls, high-order functions, referential transparency, side-effects elimination and function composition. Additionally, arare utilizes automatic [variadic](https://en.wikipedia.org/wiki/Variadic_function) [currying](https://en.wikipedia.org/wiki/Currying) for its functions, thus allowing the user to write more flexible, practical & minimal code, compared to regular strict currying. Finally, the library comes with a build-in interactive REPL environment, useful for directly inspecting and experimenting with all available modules without leaving the console.
-
-Please note that project is in its early days and that it is currently under active development.
-
-Come over to [Gitter](https://gitter.im/klaussinani/arare) or [Twitter](https://twitter.com/klaussinani) to share your thoughts on the project.
-
 
 ## Highlights
 
@@ -451,8 +440,8 @@ An alphabetically ordered list of all available functions can be found [**here**
 
 ## Team
 
-- Klaus Sinani [(@klaussinani)](https://github.com/klaussinani)
+- Klaudio Sinani [(@klaudiosinani)](https://github.com/klaudiosinani)
 
 ## License
 
-[MIT](https://github.com/klaussinani/arare/blob/master/license.md)
+[MIT](https://github.com/klaudiosinani/arare/blob/master/license.md)
